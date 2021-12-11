@@ -1,0 +1,101 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 1
+  &__top
+    padding-top: 13px
+    padding-bottom: 14px
+    border-bottom: 1px solid $white-light
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__contact
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    font-weight: 700
+    line-height: 24px
+    &-phone
+      position: relative
+      padding-left: 37px
+      margin-right: 33px
+      &::before
+        position: absolute
+        content: ''
+        left: 0
+        width: 24px
+        height: 24px
+        background-image: url('../img/header/phone.svg')
+    &-email
+      position: relative
+      padding-left: 36px
+      margin-right: 45px
+      &::before
+        position: absolute
+        content: ''
+        left: 0
+        width: 24px
+        height: 24px
+        background-image: url('../img/header/email.svg')
+    &-btn
+      padding: 13px 30px
+      font-size: 16px
+      line-height: 19px
+      &:hover
+        background-color: $white
+        color: #000
+
+.logo
+  display: flex
+  align-items: center
+  &__img
+    margin-right: 20px
+  &__text
+    display: flex
+    flex-direction: column
+  &__title
+    font-family: $ptserif
+    font-weight: 700
+    font-size: 20px
+    line-height: 26px
+    &-strong
+      font-family: $roboto
+      font-weight: 400
+      font-size: 18px
+      line-height: 21px
+
+.menu
+  padding-top: 20px
+  font-size: 16px
+  line-height: 19px
+  &__item
+    padding: 5px
+    position: relative
+    display: inline-block
+    margin-right: 32px
+    &:hover
+      padding: 5px
+      background-color: $white
+      border-radius: 6px 6px 0 0
+      .menu__link
+        color: $black
+      .submenu
+        display: block
+
+.submenu
+  display: none
+  padding: 10px 14px
+  position: absolute
+  left: 0
+  min-width: 212px
+  width: 100%
+  height: auto
+  background-color: $white
+  border-radius: 0 6px 6px 6px
+  &__link
+    font-size: 16px
+    line-height: 38px
+    color: $blue

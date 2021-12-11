@@ -1,0 +1,66 @@
+.footer
+  padding-top: 39px
+  padding-bottom: 45px
+  background-color: $black-light
+  color: $white
+  &__top
+    padding-bottom: 18px
+    border-bottom: 1px solid rgba($white, 0.2)
+  &-menu
+    display: flex
+    justify-content: space-between
+    &__title
+      margin-bottom: 17px
+      font-weight: 500
+      font-size: 16px
+      line-height: 19px
+      text-transform: uppercase
+  &-submenu
+    display: flex
+    flex-direction: column
+    row-gap: 17px
+    font-size: 16px
+    opacity: 0.8
+  &__bottom
+    padding-top: 32px
+    display: flex
+    justify-content: space-between
+  &-contact
+    width: 782px
+    display: flex
+    justify-content: space-between
+    &__item
+      min-width: 200px
+      max-width: 237px
+    &__title
+      margin-bottom: 7px
+      font-weight: 500
+      font-size: 14px
+      line-height: 18px
+    &__text, &__link
+      font-size: 14px
+      line-height: 18px
+      opacity: 0.8
+  &-copy
+    width: 212px
+    display: flex
+    flex-direction: column
+    &__link
+      margin-bottom: 20px
+      font-size: 14px
+      line-height: 18px
+      text-decoration: underline
+    &__text
+      position: relative
+      padding-right: 67px
+      align-self: flex-end
+      font-size: 12px
+      line-height: 16px
+      opacity: 0.8
+      &::after
+        content: ''
+        position: absolute
+        right: 0
+        width: 53px
+        height: 22px
+        background-image: url('../img/footer/vector.png')

@@ -1,0 +1,67 @@
+.popularOffers
+  padding-top: 76px
+  &__wrapper
+    margin-top: 40px
+    padding-bottom: 80px
+    display: grid
+    grid-template-columns: repeat(4, 256px)
+    gap: 32px
+    border-bottom: 1px solid $white-light
+  &__card
+    &:nth-child(3)
+      grid-column: span 2
+      grid-row: span 2
+      width: 544px
+      height: 544px
+
+.card
+  position: relative
+  width: 256px
+  height: 256px
+  border-radius: 6px
+  overflow: hidden
+  &__link
+    position: relative
+    padding: 16px 21px 19px 17px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 100%
+    height: 100%
+    color: $white
+    border-radius: 6px
+    overflow: hidden
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(180deg, $black 0%, $white 48.44%, $white 76.04%, $black 100%)
+      mix-blend-mode: multiply
+      opacity: 0.7
+      z-index: -1
+    &:hover
+      .card__image
+        transform: scale(1.1)
+        transition: 1s
+    &--all
+      justify-content: center
+      text-align: center
+  &__image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -2
+  &__title
+    font-weight: 500
+    font-size: 18px
+    line-height: 23px
+    &--all
+      font-size: 24px
+      line-height: 31px
+  &__cost
+    font-size: 16px

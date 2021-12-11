@@ -1,0 +1,44 @@
+.aboutUs
+  padding-top: 80px
+  &__title
+    font-size: 44px
+    line-height: 57px
+    text-transform: uppercase
+  &-content
+    margin-top: 45px
+    padding-bottom: 54px
+    display: grid
+    grid-template-columns: 352px 1fr
+    column-gap: 30px
+    border-bottom: 1px solid $white-light
+    &__inner
+      width: 736px
+    &__img
+      background-image: url("../img/about-us/aboutUs-2.jpg"), url("../img/about-us/aboutUs-1.jpg")
+      background-size: 256px 318px, 256px 256px
+      background-position: left 96px top 140px, left top
+      background-repeat: no-repeat, no-repeat
+    &__text
+      margin-bottom: 9px
+      line-height: 25px
+  &-advantages
+    &__list
+      padding-top: 41px
+      padding-bottom: 85px
+      display: flex
+      justify-content: space-between
+      column-gap: 50px
+    &__item
+      min-width: 132px
+      max-width: 314px
+    &__count
+      font-family: $ptserif
+      font-weight: 700
+      font-size: 58px
+      line-height: 75px
+      color: $green-light
+    &__text
+      display: block
+      font-weight: 500
+      font-size: 20px
+      line-height: 26px
