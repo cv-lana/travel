@@ -1,0 +1,82 @@
+.locallity
+  padding-top: 79px
+  padding-bottom: 80px
+  &__text
+    margin-bottom: 44px
+    font-size: 20px
+    line-height: 28px
+  &__link
+    text-decoration: underline
+    color: $blue
+  &__list
+    display: flex
+    flex-direction: column
+    row-gap: 32px
+  &__item
+    display: grid
+    grid-template-columns: 352px 1fr
+    background-color: $grey-light
+    border-radius: 6px
+    overflow: hidden
+  &__image
+    width: 352px
+    height: 352px
+  &__content
+    padding: 21px 33px 24px
+    display: grid
+    grid-template-columns: 1fr 1fr
+  &-description
+    padding-right: 16px
+    display: flex
+    flex-direction: column
+    border-right: 1px solid $white-light
+    &__title
+      margin-bottom: 17px
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+    &__text
+      width: 351px
+      font-size: 16px
+      margin-bottom: 13px
+    &__button
+      margin-top: auto
+      width: 156px
+      height: 44px
+      border: 1px solid $blue
+      background-color: $white
+      color: $blue
+      font-size: 16px
+      line-height: 19px
+      &:hover
+        background-color: $blue
+        color: $white
+  &-bases
+    padding-left: 16px
+    &__title
+      margin-bottom: 18px
+      font-weight: 500
+      font-size: 20px
+      line-height: 23px
+      text-transform: uppercase
+      color: grey
+    &__list
+      display: flex
+      flex-direction: column
+      width: 328px
+      height: 260px
+      overflow-y: auto
+      scrollbar-width: thin
+      scrollbar-color: $grey $white-light
+      &::-webkit-scrollbar
+        width: 8px
+      &::-webkit-scrollbar-track
+        background-color: $white-light
+        border-radius: 4px
+      &::-webkit-scrollbar-thumb
+        background-color: $grey
+        border-radius: 4px
+    &__item
+      margin-bottom: 16px
+      font-size: 16px
+      color: $blue

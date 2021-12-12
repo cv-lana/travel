@@ -1,0 +1,15 @@
+.breadcrumbs
+  background-color: transparent
+  &__list
+    padding: 22px 0
+    display: flex
+  &__item
+    font-size: 14px
+    line-height: 16px
+    color: $white
+    &:not(:last-child)
+      &::after
+        content: '/'
+        margin-right: 4px
+  &__text
+    font-weight: 500

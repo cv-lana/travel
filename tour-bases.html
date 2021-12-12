@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Турбазы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="src/index.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header header--page">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__wrapper">
+            <a class="logo header__logo" href="#">
+              <img class="logo__img" src="img/header/logo.png" alt="Logo" width="54" height="54">
+              <div class="logo__text">
+                <span class="logo__title">Байкальский отдых</span>
+                <span class="logo__title-strong">Турагентство</span>
+              </div>
+            </a>
+
+            <div class="header-contact">
+              <a class="link header-contact__link" href="tel:89243541540">
+                <svg class="header-contact__icon header-contact__icon--page" width="24" height="24" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM15.227 18.184C13.637 18.086 10.51 16.26 9.05301 14.62C7.60001 12.979 6.15701 9.657 6.25201 8.064C6.25201 8.064 7.98399 5.773 8.77899 5.819C9.57999 5.867 11.822 8.395 10.974 9.147C10.134 9.894 9.33701 9.848 9.29001 10.641C9.24501 11.436 9.99098 12.282 10.735 13.124C11.487 13.97 12.233 14.809 13.03 14.854C13.825 14.904 13.874 14.111 14.714 13.359C15.558 12.611 17.804 15.143 17.755 15.938C17.711 16.73 15.227 18.184 15.227 18.184Z" />
+                </svg>
+                8-924-3-541-540
+              </a>
+              <a class="link header-contact__link" href="mailto:baikalholiday@mail.ru">
+                <svg class="header-contact__icon header-contact__icon--page" width="24" height="24" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 0C5.371 0 0 5.373 0 12C0 18.629 5.371 24 12 24C18.626 24 24 18.629 24 12C24 5.373 18.626 0 12 0ZM19.177 7.028L19.194 7.031L12.497 13.729C12.273 13.952 11.88 13.952 11.656 13.727L4.95599 7.028H19.177ZM4.48901 7.477C4.48901 7.472 4.492 7.469 4.492 7.469L9.04303 12.018L4.48901 16.572V7.477ZM4.93701 17.098C4.91701 17.098 4.89799 17.088 4.87799 17.085L9.49402 12.47L11.203 14.179C11.434 14.412 11.746 14.539 12.077 14.539C12.405 14.539 12.717 14.412 12.948 14.179L14.601 12.525L19.173 17.098H4.93701ZM19.626 16.646L15.054 12.074L19.626 7.502V16.646Z" />
+                </svg>
+                baikalholiday@mail.ru
+              </a>
+              <button class="button header-contact__btn header-contact__btn--page" type="button">Обратный
+                звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="menu header__menu">
+        <div class="container">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link">Бронирование</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Отели и базы отдыха</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Теплоходы и катера</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Транспортные услуги</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Экскурсии</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Экскурсии и туры</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Экстрим туры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Туры на Байкал</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Туры Зима-Весна</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Туры Лето-Осень</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Туры охоты и рыбалки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">О Байкале</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Карта Байкала</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Достопримечательности</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Полезная информация</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">О нас</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Контакты</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="link submenu__link" href="#">Агентствам</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="main">
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="link breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__text">Турбазы</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="banner" style="background-image: url('img/tour-bases/banner-tour-bases.jpg');">
+        <div class="container">
+          <div class="banner__content">
+            <h1 class="title banner__title">Базы отдыха на озере Байкале</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="locallity">
+        <h2 class="hidden">Каталог баз отдыха</h2>
+        <div class="container">
+          <p class="locallity__text">
+            Расположение местностей по побережью озера, можете посмотреть на
+            <a class="link locallity__link" href="#">карте Байкала</a>
+          </p>
+          <ul class="locallity__list">
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Байкальский прибой">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Байкальский прибой</h3>
+                  <p class="locallity-description__text">
+                    Байкальский прибой – популярная зона отдыха на восточном берегу Байкала, в 130 км от города
+                    Улан-Удэ,
+                    столицы Бурятии. Находится на побережье залива Посольский сор, соседствует с зоной отдыха
+                    «Култушная».
+                  </p>
+                  <p class="locallity-description__text">
+                    Две песчаные косы отделяют залив от Байкала, залив мелководный и хорошо прогревается.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Байкал»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Энергия»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="с. Посольское">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">с. Посольское</h3>
+                  <p class="locallity-description__text">
+                    Природная уникальность села в том, что оно расположено у основания северной косы Посольского сора,
+                    отделяющей залив от Байкала. Протяженность этой песчаной косы - более 7 км. Ширина косы – 10–15
+                    метров, по которой может проехать полноприводный автомобиль практически до самого центра Посольского
+                    сора. Расстояние от города Улан-Удэ – 163 км.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «София»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Горячинск">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Горячинск</h3>
+                  <p class="locallity-description__text">
+                    Старинный поселок рыбаков «Горячинск» находится на восточном побережье озера, расположен около 190
+                    км от города Улан-Удэ. Поселок назван в честь целебных горячих источников.
+                  </p>
+                  <p class="locallity-description__text">
+                    Воды источников Горячинска благоприятно действуют на организм человека и полезны для лечения.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Горячий ключ»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Туристический комплекс «Авангард»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Отель «Белая карета»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Элитный гостевой дом «Harmony»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Горхон» Горячинск</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Подворье»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Усадьба «Добрыня»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Дворик»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Сухая">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Сухая</h3>
+                  <p class="locallity-description__text">
+                    Местность и село Сухая находится в 180 км от города Улан-Удэ на восточном берегу озера Байкал. Это
+                    живописное место с красивым сосновым лесом и множеством песчаных пляжей. Недалеко от Сухой находятся
+                    термальные источники, где можно принимать лечебные ванны.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Тэнгэри» (Поднебесье)</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Аметист»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Парк-отель «Звездный»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «12 Месяцев»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Созвездие»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Villa»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Турка">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Турка</h3>
+                  <p class="locallity-description__text">
+                    Поселок Турка находится на восточном берегу озера Байкал в 169 км от города Улан-Удэ, в устье
+                    одноименной реки. Вокруг поселка богатые охотничьи угодья, а земля и мягкий климат позволяют
+                    выращивать без утепления малину и клубнику. Около села обширные плантации клюквы, черники, брусники,
+                    грибов.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиница «Байкальская гавань»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Каникулы в Простоквашино»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Зурбаган»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Домики в Турке «Подворье»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиничный комплекс «Мэбис Байкал»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Култушная">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Култушная</h3>
+                  <p class="locallity-description__text">
+                    Местность Култушная известная своими песчаными пляжами и теплой водой, зона отдыха и туризма на
+                    побережье Посольского сора. На Култушной работает более двадцати баз отдыха, открытый рынок и
+                    магазины. Для отдыхающих есть почти все, что необходимо – от уличных кафе до проката лодок и
+                    катамаранов.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Отель «Култушная»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Коттеджи ВСЖД на Култушной</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Байкал»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Турист»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом на Култушной</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «5-е Авеню»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Иркутская база отдыха на Култушной</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Усть-Баргузин">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Усть-Баргузин</h3>
+                  <p class="locallity-description__text">
+                    Усть-Баргузин — посёлок городского типа в Баргузинском районе Бурятии. Расположен в устье реки
+                    Баргузин в 50 километрах к юго-западу от районного центра – поселка Баргузин и в 270 км от города
+                    Улан-Удэ. На берегу реки находится пристань, где в теплое время года через реку Баргузин ходит
+                    паромная переправа.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Причал»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «SYNDBAD» (Синдбад)</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Новая Волна»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Отель «Баргуджин Токум»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гусихинские термальные источники</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Лемасово">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Лемасово</h3>
+                  <p class="locallity-description__text">
+                    Местность Лемасово – одна из четырех основных рекреационных зон на юго-восточном побережье озера
+                    Байкал. Находится Лемасово на заливе Черкалов Сор, в 150 км от города Улан-Удэ, рядом с селом
+                    Посольское. Черкалов сор – мелководный залив – не больше одного метра глубины, с песчаным
+                    побережьем, поросший кустарником и березой.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Дали-Байкалтур»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Чивыркуйский залив">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Чивыркуйский залив</h3>
+                  <p class="locallity-description__text">
+                    Один из самых живописных заливов озера Байкал, Чивыркуйский залив относится к территории
+                    Забайкальского национального парка. Это самый теплый залив озера Байкал – настоящее заповедное
+                    место. Берег залива изрезан многочисленными живописными бухтами, покрытыми тайгой. Чивыркуй славится
+                    отличной рыбалкой.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиница на воде «Экотур»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Юрты в Чивыркуйском заливе</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Катунь»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом в Катуне «Чивыркуй»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="п. Листвянка">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">п. Листвянка</h3>
+                  <p class="locallity-description__text">
+                    Листвянка – небольшой поселок городского типа на южном берегу Байкала в Иркутском районе Иркутской
+                    области, расположенный у самого истока Ангары, на расстоянии 66 км. от города Иркутск. Зажатий между
+                    берегом Байкала и отрогами Приморского хребта, лентой протянулась более чем на пять километров.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиница «Анастасия»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиница «Крестовая Падь»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Конференц-отель «Маяк»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Деревенька»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиница «Легенда Байкала»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиница «Байкальские терема»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиница «У Озера»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Байкал 1»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Гремячинск">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Гремячинск</h3>
+                  <p class="locallity-description__text">
+                    Гремячинск - это первое село на побережье Байкала по Баргузинскому тракту. Находится в устье реки
+                    Кика. Расстояние до города Улан-Удэ 138 км., дорога займет около 1,5 – 2 часов. Гремячинск
+                    развивается как один из центров туризма Прибайкалья.
+                  </p>
+                  <p class="locallity-description__text">
+                    Здесь вас ждет песчаный берег Байкала и небольшой лесной массив.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Адреналин»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «У Озера»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Парк-отель «Байкальская ривьера»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Турбаза «Гостиный Двор»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Апсара»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Алтан-Байкал»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Энергия» Гремячинск</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Максимиха">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Максимиха</h3>
+                  <p class="locallity-description__text">
+                    Максимиха – поселок на побережье Баргузинского залива, самого большого залива на озере Байкал,
+                    находится в 237 км от города Улан-Удэ. Это побережье одно из красивейших мест озера Байкал. Выгодное
+                    географическое расположение, уникальный микроклимат, природные и культурные достопримечательности
+                    ежегодно привлекают множество туристов.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Эко-отель «Байкальское Шале»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Кумуткан»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">База отдыха «Байкал-Лидер»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Тамир»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Любимый»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Райский уголок»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Культурно-оздоровительный комплекс «Радуга»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="locallity__item">
+              <div class="locallity__image">
+                <img src="img/tour-bases/bases.jpg" alt="Энхалук">
+              </div>
+              <div class="locallity__content">
+                <div class="locallity-description">
+                  <h3 class="locallity-description__title">Энхалук</h3>
+                  <p class="locallity-description__text">
+                    Энхалук - популярное место отдыха в республике Бурятия. Здесь круглый год действуют турбазы,
+                    предлагающие полный
+                    комплекс туристических услуг и комфортабельный отдых. Поселок находится недалеко от известного
+                    залива Провал в Кабанском районе республики Бурятия, на восточном берегу озера Байкал.
+                  </p>
+                  <button class="button locallity-description__button" type="button">Подробней</button>
+                </div>
+
+                <div class="locallity-bases">
+                  <h3 class="locallity-bases__title">Турбазы</h3>
+                  <ul class="locallity-bases__list">
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Байкальский дворик»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Байкальская солянка»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Байкальский рассвет»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «На Сиреневой»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостевой дом «Благодать»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиничный комплекс «Королевская гавань»</a>
+                    </li>
+                    <li class="locallity-bases__item">
+                      <a class="link locallity-bases__link" href="#">Гостиничный комплекс «Байкал Холидей»</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="booking">
+        <div class="booking__container">
+          <h2 class="title">Забронируйте отдых на Байкале</h2>
+
+          <form class="form" id="form1" name="user-form" action="#">
+            <div class="form__input-wrapper">
+              <div class="form__input-group">
+                <input class="form__input" type="text" name="user-name" placeholder="Ваше имя" required>
+                <div class="error"></div>
+              </div>
+              <div class="form__input-group">
+                <input class="form__input" type="tel" name="user-phone" placeholder="Телефон" required>
+                <div class="error"></div>
+              </div>
+              <div class="form__input-group">
+                <input class="form__input" type="email" name="user-email" placeholder="E-mail" required>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="form__input-wrapper">
+              <div class="form__input-group">
+                <input class="form__input" type="text" name="location" placeholder="Местность Байкала" required>
+                <div class="error"></div>
+              </div>
+              <div class="form__input-group">
+                <input class="form__input" type="text" name="adults" placeholder="Количество взрослых" required>
+                <div class="error"></div>
+              </div>
+              <div class="form__input-group">
+                <input class="form__input" type="text" name="children" placeholder="Количество детей, их возраст">
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="form__input-wrapper">
+              <div class="form__date-wrapper">
+                <div class="form__date">
+                  <input class="form__input" type="text" name="dateOn" placeholder="Дата заезда" id="dateOn">
+                  <div class="error"></div>
+                </div>
+                <div class="form__date">
+                  <input class="form__input" type="text" name="dateOff" placeholder="Дата отъезда">
+                  <div class="error"></div>
+                </div>
+              </div>
+              <div class="form__message-wrapper">
+                <textarea class="form__message" name="user-comment" placeholder="Комментарий"></textarea>
+                <div class="error"></div>
+              </div>
+
+            </div>
+
+            <div class="form__input-wrapper">
+              <div class="form__button-wrapper">
+                <button class="button form__button" type="submit">Отправить заявку</button>
+                <div class="error"></div>
+              </div>
+
+              <div class="form__checkbox-wrapper">
+                <input class="form__checkbox" type="checkbox">
+                <label>Согласие на обработку персональных данных</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <ul class="footer-menu">
+            <li class="footer-menu__item">
+              <h3 class="footer-menu__title">Бронирование</h3>
+              <ul class="footer-submenu">
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Отели и базы отдыха</a>
+                </li>
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Теплоходы и катера</a>
+                </li>
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Транспортные услуги</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-menu__item">
+              <h3 class="footer-menu__title">Экскурсии</h3>
+              <ul class="footer-submenu">
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Экскурсии и туры</a>
+                </li>
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Экстрим туры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-menu__item">
+              <h3 class="footer-menu__title">Туры на Байкал</h3>
+              <ul class="footer-submenu">
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Туры Зима-Весна</a>
+                </li>
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Туры Лето-Осень</a>
+                </li>
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Туры охоты и рыбалки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-menu__item">
+              <h3 class="footer-menu__title">О Байкале</h3>
+              <ul class="footer-submenu">
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Карта Байкала</a>
+                </li>
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Достопримечательности</a>
+                </li>
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Полезная информация</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-menu__item">
+              <h3 class="footer-menu__title">О нас</h3>
+              <ul class="footer-submenu">
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Контакты</a>
+                </li>
+                <li class="footer-submenu__item">
+                  <a class="link footer-submenu__link" href="#">Агентствам</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__bottom">
+          <ul class="footer-contact">
+            <li class="footer-contact__item">
+              <h3 class="footer-contact__title">Турагентство «Байкальский отдых»</h3>
+              <span class="footer-contact__text">© 2021. Все права защищены</span>
+            </li>
+            <li class="footer-contact__item">
+              <h3 class="footer-contact__title">Заказ туров и бронирование:</h3>
+              <a class="link footer-contact__link" href="tel:89243541540">тел. 8-924-3-541-540</a>
+              <a class="link footer-contact__link" href="mailto:baikalholiday@mail.ru">e-mail: baikalholiday@mail.ru</a>
+            </li>
+            <li class="footer-contact__item">
+              <h3 class="footer-contact__title">Адрес:</h3>
+              <span class="footer-contact__text">
+                г. Улан-Удэ, ул.Гражданская, 20, отель «Рестон», 1 этаж
+              </span>
+            </li>
+          </ul>
+
+          <div class="footer-copy">
+            <a class="link footer-copy__link" href="#">Политика конфиденциальности</a>
+            <span class="footer-copy__text">Дизайн</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal__content">
+          <button class="button modal__close"></button>
+          <h2 class="modal__title">Мы вам перезвоним!</h2>
+          <input class="modal__input" type="text" placeholder="Ваше имя*" name="name" required>
+          <div class="error"></div>
+          <input class="modal__input" type="text" placeholder="Телефон*" name="phone" required>
+          <div class="error"></div>
+          <input class="modal__input" type="text" placeholder="Удобное время для звонка">
+          <div class="modal__wrapper">
+            <input class="modal__checkbox" type="checkbox">
+            <label>Согласие на обработку персональных данных</label>
+          </div>
+          <button class="button modal__button" type="submit">Отправить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

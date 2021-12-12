@@ -1,5 +1,8 @@
 *
   box-sizing: border-box
+html,
+body
+  height: 100%
 body
   font-family: $roboto
   font-weight: 400
@@ -7,10 +10,11 @@ body
   line-height: 21px
   background-color: $white
   color: $black
+  scroll-behavior: smooth
 a
   text-decoration: none
   display: inline-block
-  color: $white
+  color: inherit
   cursor: pointer
 ul,
 li
@@ -28,6 +32,12 @@ textarea
     font-size: 16px
     color: $grey
 
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100%
+.main
+  flex: 1 0 auto
 .container
   max-width: 1150px
   margin: 0 auto

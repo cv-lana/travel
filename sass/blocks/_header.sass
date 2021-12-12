@@ -4,6 +4,10 @@
   left: 0
   width: 100%
   z-index: 1
+  color: $white
+  &--page
+    position: relative
+    color: $black
   &__top
     padding-top: 13px
     padding-bottom: 14px
@@ -12,41 +16,42 @@
     display: flex
     justify-content: space-between
     align-items: center
-  &__contact
+  &-contact
     display: flex
     justify-content: flex-end
     align-items: center
+    column-gap: 33px
     font-weight: 700
     line-height: 24px
-    &-phone
-      position: relative
-      padding-left: 37px
-      margin-right: 33px
-      &::before
-        position: absolute
-        content: ''
-        left: 0
-        width: 24px
-        height: 24px
-        background-image: url('../img/header/phone.svg')
-    &-email
-      position: relative
-      padding-left: 36px
-      margin-right: 45px
-      &::before
-        position: absolute
-        content: ''
-        left: 0
-        width: 24px
-        height: 24px
-        background-image: url('../img/header/email.svg')
-    &-btn
+    &__icon
+      opacity: 0.8
+      fill: $white
+      &--page
+        opacity: 0.4
+        fill: $black
+    &__link
+      display: flex
+      justify-content: space-between
+      align-items: center
+      column-gap: 13px
+    &__btn
       padding: 13px 30px
+      margin-left: 12px
       font-size: 16px
       line-height: 19px
       &:hover
         background-color: $white
-        color: #000
+        color: $black
+      &--page
+        background-color: $white
+        border-color: $blue-dark
+        color: $blue-dark
+        &:hover
+          background-color: $blue-dark
+          color: $white
+  &__menu
+    padding-top: 20px
+    padding-bottom: 9px
 
 .logo
   display: flex
@@ -68,7 +73,6 @@
       line-height: 21px
 
 .menu
-  padding-top: 20px
   font-size: 16px
   line-height: 19px
   &__item
