@@ -1324,6 +1324,7 @@ textarea::placeholder {
 }
 
 .banner {
+  position: relative;
   padding-top: 201px;
   margin-top: -60px;
   max-width: 100%;
@@ -1333,10 +1334,25 @@ textarea::placeholder {
   background-repeat: no-repeat;
 }
 
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: -1;
+}
+
 .banner__title {
   font-size: 44px;
   line-height: 58px;
   color: #ffffff;
+}
+
+.banner__title--center {
+  margin-top: -31px;
 }
 
 .locallity {
@@ -1457,5 +1473,69 @@ textarea::placeholder {
   margin-bottom: 16px;
   font-size: 16px;
   color: #0050b2;
+}
+
+.allExcursions {
+  padding-top: 63px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+.allExcursions-info {
+  margin-bottom: 64px;
+}
+
+.allExcursions-info__text {
+  margin-bottom: 11px;
+  width: 826px;
+  line-height: 25px;
+}
+
+.allExcursions-content__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.allExcursions-content__item {
+  width: 352px;
+  height: 400px;
+  border: 1px solid #D9D9DE;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.allExcursions-content__link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.allExcursions-content__image {
+  width: 352px;
+  height: 224px;
+}
+
+.allExcursions-content__description {
+  padding: 12px 16px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+.allExcursions-content__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.allExcursions-content__text {
+  font-size: 16px;
+}
+
+.allExcursions-content__text-desc {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

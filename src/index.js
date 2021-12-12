@@ -1,6 +1,5 @@
 const toggleModal = () => {
   const btnModal = document.querySelector('.header-contact__btn');
-  console.log(btnModal);
   const modal = document.querySelector('.modal__overlay');
 
   const modalOpen = () => {
