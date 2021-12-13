@@ -441,7 +441,7 @@ textarea::placeholder {
   color: #ffffff;
 }
 
-.header--page {
+.header--position-relative {
   position: relative;
   color: #000000;
 }
@@ -1323,6 +1323,22 @@ textarea::placeholder {
   font-weight: 500;
 }
 
+.preview-info {
+  padding: 62px 0;
+}
+
+.preview-info__wrapper {
+  width: 826px;
+}
+
+.preview-info__text {
+  line-height: 25px;
+}
+
+.preview-info__text:not(:last-child) {
+  margin-bottom: 18px;
+}
+
 .banner {
   position: relative;
   padding-top: 201px;
@@ -1371,13 +1387,13 @@ textarea::placeholder {
   color: #0050b2;
 }
 
-.locallity__list {
+.locallity__wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
 
-.locallity__item {
+.locallity__card {
   display: grid;
   grid-template-columns: 352px 1fr;
   background-color: #f5f5f7;
@@ -1391,7 +1407,7 @@ textarea::placeholder {
 }
 
 .locallity__content {
-  padding: 21px 33px 24px;
+  padding: 21px 16px 24px 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -1448,7 +1464,6 @@ textarea::placeholder {
 .locallity-bases__list {
   display: flex;
   flex-direction: column;
-  width: 328px;
   height: 260px;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -1476,28 +1491,16 @@ textarea::placeholder {
 }
 
 .allExcursions {
-  padding-top: 63px;
-  padding-bottom: 80px;
-  background-color: #ffffff;
+  margin-bottom: 80px;
 }
 
-.allExcursions-info {
-  margin-bottom: 64px;
-}
-
-.allExcursions-info__text {
-  margin-bottom: 11px;
-  width: 826px;
-  line-height: 25px;
-}
-
-.allExcursions-content__list {
+.allExcursions__wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
 
-.allExcursions-content__item {
+.allExcursions__card {
   width: 352px;
   height: 400px;
   border: 1px solid #D9D9DE;
@@ -1505,19 +1508,19 @@ textarea::placeholder {
   overflow: hidden;
 }
 
-.allExcursions-content__link {
+.allExcursions__link {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.allExcursions-content__image {
+.allExcursions__image {
   width: 352px;
   height: 224px;
 }
 
-.allExcursions-content__description {
+.allExcursions__description {
   padding: 12px 16px 22px;
   display: flex;
   flex-direction: column;
@@ -1525,17 +1528,93 @@ textarea::placeholder {
   flex-basis: 100%;
 }
 
-.allExcursions-content__title {
+.allExcursions__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
 }
 
-.allExcursions-content__text {
+.allExcursions__text {
   font-size: 16px;
 }
 
-.allExcursions-content__text-desc {
+.allExcursions__text-desc {
   display: block;
+}
+
+.huntingFishing {
+  margin-bottom: 80px;
+}
+
+.huntingFishing__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.huntingFishing__card {
+  display: grid;
+  grid-template-columns: 352px 1fr;
+  background-color: #f5f5f7;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.huntingFishing__image {
+  width: 352px;
+  height: 352px;
+}
+
+.huntingFishing__content {
+  padding: 24px 24px 24px 33px;
+  display: flex;
+  flex-direction: column;
+}
+
+.huntingFishing__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+
+.huntingFishing__text {
+  font-size: 16px;
+}
+
+.huntingFishing__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.huntingFishing-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.huntingFishing-details__wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.huntingFishing-details__text {
+  font-weight: 500;
+}
+
+.huntingFishing__btn {
+  padding: 13px;
+  width: 156px;
+  height: 44px;
+  align-self: flex-end;
+  text-align: center;
+  border: 1px solid #0050b2;
+  color: #0050b2;
+}
+
+.huntingFishing__btn:hover {
+  background-color: #0050b2;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

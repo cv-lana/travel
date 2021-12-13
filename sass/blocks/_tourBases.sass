@@ -8,11 +8,11 @@
   &__link
     text-decoration: underline
     color: $blue
-  &__list
+  &__wrapper
     display: flex
     flex-direction: column
     row-gap: 32px
-  &__item
+  &__card
     display: grid
     grid-template-columns: 352px 1fr
     background-color: $grey-light
@@ -22,7 +22,7 @@
     width: 352px
     height: 352px
   &__content
-    padding: 21px 33px 24px
+    padding: 21px 16px 24px 32px
     display: grid
     grid-template-columns: 1fr 1fr
   &-description
@@ -63,7 +63,6 @@
     &__list
       display: flex
       flex-direction: column
-      width: 328px
       height: 260px
       overflow-y: auto
       scrollbar-width: thin
