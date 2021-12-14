@@ -414,10 +414,6 @@ textarea::placeholder {
   display: none;
 }
 
-.link:hover {
-  color: #d51a1a;
-}
-
 .title {
   font-family: "PT Serif", serif;
   font-weight: 700;
@@ -491,20 +487,10 @@ textarea::placeholder {
   line-height: 19px;
 }
 
-.header-contact__btn:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 .header-contact__btn--page {
   background-color: #ffffff;
   border-color: #0061D9;
   color: #0061D9;
-}
-
-.header-contact__btn--page:hover {
-  background-color: #0061D9;
-  color: #ffffff;
 }
 
 .header__menu {
@@ -550,20 +536,6 @@ textarea::placeholder {
   position: relative;
   display: inline-block;
   margin-right: 32px;
-}
-
-.menu__item:hover {
-  padding: 5px;
-  background-color: #ffffff;
-  border-radius: 6px 6px 0 0;
-}
-
-.menu__item:hover .menu__link {
-  color: #000000;
-}
-
-.menu__item:hover .submenu {
-  display: block;
 }
 
 .submenu {
@@ -624,11 +596,6 @@ textarea::placeholder {
   font-weight: 500;
 }
 
-.promo__button:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 .promo__link {
   position: absolute;
   bottom: 33px;
@@ -636,10 +603,6 @@ textarea::placeholder {
   width: 40px;
   height: 40px;
   background-image: url("../img/promo/arrow-down.png");
-}
-
-.promo__link:hover {
-  background-image: url("../img/promo/arrow-down-hover.svg");
 }
 
 .tours {
@@ -744,11 +707,6 @@ textarea::placeholder {
   mix-blend-mode: multiply;
   opacity: 0.7;
   z-index: -1;
-}
-
-.card__link:hover .card__image {
-  transform: scale(1.1);
-  transition: 1s;
 }
 
 .card__link--all {
@@ -1086,11 +1044,6 @@ textarea::placeholder {
   border: 1px solid #0061D9;
 }
 
-.form__button:hover {
-  background-color: #ffffff;
-  color: #0061D9;
-}
-
 .form__button-wrapper {
   margin-top: 6px;
 }
@@ -1371,29 +1324,29 @@ textarea::placeholder {
   margin-top: -31px;
 }
 
-.locallity {
+.tourBases {
   padding-top: 79px;
   padding-bottom: 80px;
 }
 
-.locallity__text {
+.tourBases__text {
   margin-bottom: 44px;
   font-size: 20px;
   line-height: 28px;
 }
 
-.locallity__link {
+.tourBases__link {
   text-decoration: underline;
   color: #0050b2;
 }
 
-.locallity__wrapper {
+.tourBases__wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
 
-.locallity__card {
+.tourBases__card {
   display: grid;
   grid-template-columns: 352px 1fr;
   background-color: #f5f5f7;
@@ -1401,38 +1354,38 @@ textarea::placeholder {
   overflow: hidden;
 }
 
-.locallity__image {
+.tourBases__image {
   width: 352px;
   height: 352px;
 }
 
-.locallity__content {
+.tourBases__content {
   padding: 21px 16px 24px 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.locallity-description {
+.tourBases-description {
   padding-right: 16px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid #D9D9DE;
 }
 
-.locallity-description__title {
+.tourBases-description__title {
   margin-bottom: 17px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
-.locallity-description__text {
+.tourBases-description__text {
   width: 351px;
   font-size: 16px;
   margin-bottom: 13px;
 }
 
-.locallity-description__button {
+.tourBases-description__button {
   margin-top: auto;
   width: 156px;
   height: 44px;
@@ -1443,16 +1396,11 @@ textarea::placeholder {
   line-height: 19px;
 }
 
-.locallity-description__button:hover {
-  background-color: #0050b2;
-  color: #ffffff;
-}
-
-.locallity-bases {
+.tourBases-bases {
   padding-left: 16px;
 }
 
-.locallity-bases__title {
+.tourBases-bases__title {
   margin-bottom: 18px;
   font-weight: 500;
   font-size: 20px;
@@ -1461,7 +1409,7 @@ textarea::placeholder {
   color: grey;
 }
 
-.locallity-bases__list {
+.tourBases-bases__list {
   display: flex;
   flex-direction: column;
   height: 260px;
@@ -1470,21 +1418,21 @@ textarea::placeholder {
   scrollbar-color: #76767a #D9D9DE;
 }
 
-.locallity-bases__list::-webkit-scrollbar {
+.tourBases-bases__list::-webkit-scrollbar {
   width: 8px;
 }
 
-.locallity-bases__list::-webkit-scrollbar-track {
+.tourBases-bases__list::-webkit-scrollbar-track {
   background-color: #D9D9DE;
   border-radius: 4px;
 }
 
-.locallity-bases__list::-webkit-scrollbar-thumb {
+.tourBases-bases__list::-webkit-scrollbar-thumb {
   background-color: #76767a;
   border-radius: 4px;
 }
 
-.locallity-bases__item {
+.tourBases-bases__item {
   margin-bottom: 16px;
   font-size: 16px;
   color: #0050b2;
@@ -1520,7 +1468,7 @@ textarea::placeholder {
   height: 224px;
 }
 
-.allExcursions__description {
+.allExcursions__content {
   padding: 12px 16px 22px;
   display: flex;
   flex-direction: column;
@@ -1534,12 +1482,10 @@ textarea::placeholder {
   line-height: 26px;
 }
 
-.allExcursions__text {
+.allExcursions__info {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
-}
-
-.allExcursions__text-desc {
-  display: block;
 }
 
 .huntingFishing {
@@ -1613,8 +1559,93 @@ textarea::placeholder {
   color: #0050b2;
 }
 
-.huntingFishing__btn:hover {
-  background-color: #0050b2;
-  color: #ffffff;
+.extremeTours {
+  margin-bottom: 80px;
+}
+
+.extremeTours__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.extremeTours__card {
+  width: 352px;
+  height: 384px;
+  border: 1px solid #D9D9DE;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.extremeTours__link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.extremeTours__image {
+  width: 100%;
+  height: 224px;
+}
+
+.extremeTours__content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+.extremeTours__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.extremeTours__info {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .link:hover {
+    color: #d51a1a;
+  }
+  .header-contact__btn:hover, .promo__button:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .header-contact__btn--page:hover, .promo__button--page:hover {
+    background-color: #0061D9;
+    color: #ffffff;
+  }
+  .menu__item:hover {
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 6px 6px 0 0;
+  }
+  .menu__item:hover .menu__link {
+    color: #000000;
+  }
+  .menu__item:hover .submenu {
+    display: block;
+  }
+  .promo__link:hover {
+    background-image: url("../img/promo/arrow-down-hover.svg");
+  }
+  .card__link:hover .card__image {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  .form__button:hover {
+    background-color: #ffffff;
+    color: #0061D9;
+  }
+  .tourBases-description__button:hover, .huntingFishing__btn:hover {
+    background-color: #0050b2;
+    color: #ffffff;
+  }
 }
 /*# sourceMappingURL=style.css.map */
