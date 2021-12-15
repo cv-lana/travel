@@ -1253,7 +1253,9 @@ textarea::placeholder {
 }
 
 .breadcrumbs {
+  position: relative;
   background-color: transparent;
+  z-index: 2;
 }
 
 .breadcrumbs__list {
@@ -1294,7 +1296,7 @@ textarea::placeholder {
 
 .banner {
   position: relative;
-  padding-top: 201px;
+  padding-top: 60px;
   margin-top: -60px;
   max-width: 100%;
   height: 496px;
@@ -1310,18 +1312,50 @@ textarea::placeholder {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.banner__content {
+  position: relative;
+  margin-top: 110px;
+  text-align: center;
+  z-index: 2;
 }
 
 .banner__title {
+  position: relative;
+  padding-top: 30px;
   font-size: 44px;
   line-height: 58px;
   color: #ffffff;
+  z-index: 2;
 }
 
 .banner__title--center {
-  margin-top: -31px;
+  padding-top: 0px;
+}
+
+.banner__button {
+  position: relative;
+  margin-top: 55px;
+  padding: 13px 33px 13px 13px;
+  width: 236px;
+  height: 50px;
+  text-align: center;
+  background-color: #3FA9F5;
+  border-color: #3FA9F5;
+  border-radius: 25px;
+  z-index: 2;
+}
+
+.banner__button::after {
+  position: absolute;
+  margin: 3px 0 0 12px;
+  content: '';
+  width: 9px;
+  height: 14px;
+  background-image: url("../img/ships-yachts/arrow.svg");
 }
 
 .tourBases {
@@ -1609,6 +1643,71 @@ textarea::placeholder {
   font-size: 16px;
 }
 
+.shipsYachts {
+  margin-bottom: 80px;
+}
+
+.shipsYachts__title {
+  margin-bottom: 62px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.shipsYachts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.shipsYachts__card {
+  position: relative;
+  width: 544px;
+  height: 352px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.shipsYachts__card::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #ffffff 54.17%, #000000 100%);
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.shipsYachts__link {
+  padding: 23px 32px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.shipsYachts__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.shipsYachts__text {
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
 @media (min-width: 992px) {
   .link:hover {
     color: #d51a1a;
@@ -1646,6 +1745,9 @@ textarea::placeholder {
   .tourBases-description__button:hover, .huntingFishing__btn:hover {
     background-color: #0050b2;
     color: #ffffff;
+  }
+  .banner__button:hover {
+    background-color: #0061D9;
   }
 }
 /*# sourceMappingURL=style.css.map */
