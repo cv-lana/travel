@@ -1313,7 +1313,6 @@ textarea::placeholder {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
-  z-index: 1;
 }
 
 .banner__content {
@@ -1329,7 +1328,6 @@ textarea::placeholder {
   font-size: 44px;
   line-height: 58px;
   color: #ffffff;
-  z-index: 2;
 }
 
 .banner__title--center {
@@ -1346,7 +1344,6 @@ textarea::placeholder {
   background-color: #3FA9F5;
   border-color: #3FA9F5;
   border-radius: 25px;
-  z-index: 2;
 }
 
 .banner__button::after {
@@ -1806,6 +1803,54 @@ textarea::placeholder {
 .pagination__item--active {
   background-color: #333333;
   color: #ffffff;
+}
+
+.hotels {
+  margin-bottom: 80px;
+}
+
+.hotels__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.hotels__card {
+  width: 352px;
+  height: 352px;
+  border: 1px solid #D9D9DE;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hotels__link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.hotels__image {
+  width: 352px;
+  height: 224px;
+}
+
+.hotels__content {
+  padding: 17px 25px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+.hotels__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.hotels__cost {
+  font-size: 16px;
 }
 
 @media (min-width: 992px) {
