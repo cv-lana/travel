@@ -1,0 +1,69 @@
+.placesInterest
+  margin-bottom: 80px
+  &__wrapper
+    margin-bottom: 64px
+    display: flex
+    flex-direction: column
+    gap: 32px
+  &__card
+    display: grid
+    grid-template-columns: 352px 1fr
+    background-color: $grey-light
+    border-radius: 6px
+    overflow: hidden
+  &__image
+    width: 352px
+    height: 352px
+  &__content
+    padding: 21px 64px 24px 33px
+    display: flex
+    flex-direction: column
+  &__title
+    margin-bottom: 17px
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+  &__info
+    font-size: 16px
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__button
+    padding: 12px
+    margin-top: auto
+    width: 156px
+    height: 44px
+    font-size: 16px
+    line-height: 19px
+    border-color: $blue-dark
+    text-align: center
+    color: $blue
+
+.pagination
+  display: flex
+  gap: 16px
+  &__button
+    background-position: center
+    background-repeat: no-repeat
+    background-color: transparent
+    cursor: pointer
+    border: none
+    outline: none
+    &--prev
+      background-image: url('../img/places-interest/arrow-prev.svg')
+    &--next
+      background-image: url('../img/places-interest/arrow-next.svg')
+  &__list
+    display: flex
+    align-items: center
+    background-color: $grey-light
+  &__item
+    width: 44px
+    height: 44px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 14px
+    line-height: 18px
+    &--active
+      background-color: $black-light-2
+      color: $white

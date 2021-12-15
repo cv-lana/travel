@@ -1708,6 +1708,106 @@ textarea::placeholder {
   color: #ffffff;
 }
 
+.placesInterest {
+  margin-bottom: 80px;
+}
+
+.placesInterest__wrapper {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.placesInterest__card {
+  display: grid;
+  grid-template-columns: 352px 1fr;
+  background-color: #f5f5f7;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.placesInterest__image {
+  width: 352px;
+  height: 352px;
+}
+
+.placesInterest__content {
+  padding: 21px 64px 24px 33px;
+  display: flex;
+  flex-direction: column;
+}
+
+.placesInterest__title {
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.placesInterest__info {
+  font-size: 16px;
+}
+
+.placesInterest__info:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.placesInterest__button {
+  padding: 12px;
+  margin-top: auto;
+  width: 156px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 19px;
+  border-color: #0061D9;
+  text-align: center;
+  color: #0050b2;
+}
+
+.pagination {
+  display: flex;
+  gap: 16px;
+}
+
+.pagination__button {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.pagination__button--prev {
+  background-image: url("../img/places-interest/arrow-prev.svg");
+}
+
+.pagination__button--next {
+  background-image: url("../img/places-interest/arrow-next.svg");
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f7;
+}
+
+.pagination__item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.pagination__item--active {
+  background-color: #333333;
+  color: #ffffff;
+}
+
 @media (min-width: 992px) {
   .link:hover {
     color: #d51a1a;
@@ -1748,6 +1848,10 @@ textarea::placeholder {
   }
   .banner__button:hover {
     background-color: #0061D9;
+  }
+  .placesInterest__button:hover {
+    background-color: #0061D9;
+    color: #ffffff;
   }
 }
 /*# sourceMappingURL=style.css.map */
