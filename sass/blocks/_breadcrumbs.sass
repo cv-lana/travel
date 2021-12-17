@@ -2,6 +2,8 @@
   position: relative
   background-color: transparent
   z-index: 2
+  &--static
+    position: static
   &__list
     padding: 22px 0
     display: flex
@@ -13,5 +15,7 @@
       &::after
         content: '/'
         margin-right: 4px
+    &--color-grey
+      color: $grey
   &__text
     font-weight: 500

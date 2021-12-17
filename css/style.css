@@ -370,7 +370,7 @@ li {
   padding: 0;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -433,13 +433,14 @@ textarea::placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   color: #ffffff;
 }
 
 .header--position-relative {
   position: relative;
   color: #000000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .header__top {
@@ -1258,6 +1259,10 @@ textarea::placeholder {
   z-index: 2;
 }
 
+.breadcrumbs--static {
+  position: static;
+}
+
 .breadcrumbs__list {
   padding: 22px 0;
   display: flex;
@@ -1272,6 +1277,10 @@ textarea::placeholder {
 .breadcrumbs__item:not(:last-child)::after {
   content: '/';
   margin-right: 4px;
+}
+
+.breadcrumbs__item--color-grey {
+  color: #76767a;
 }
 
 .breadcrumbs__text {
@@ -1355,9 +1364,29 @@ textarea::placeholder {
   background-image: url("../img/ships-yachts/arrow.svg");
 }
 
+.banner__button-download {
+  position: relative;
+  padding: 13px 10px 13px 38px;
+  margin-top: 36px;
+  width: 234px;
+  height: 50px;
+  background-color: #64bd22;
+  border-color: #64bd22;
+}
+
+.banner__button-download::before {
+  content: '';
+  position: absolute;
+  margin-left: -28px;
+  width: 16px;
+  height: 20px;
+  background-image: url("../img/transport-services/download.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .tourBases {
-  padding-top: 79px;
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 
 .tourBases__text {
@@ -1427,11 +1456,11 @@ textarea::placeholder {
   line-height: 19px;
 }
 
-.tourBases-bases {
+.tourBases-inner {
   padding-left: 16px;
 }
 
-.tourBases-bases__title {
+.tourBases-inner__title {
   margin-bottom: 18px;
   font-weight: 500;
   font-size: 20px;
@@ -1440,7 +1469,7 @@ textarea::placeholder {
   color: grey;
 }
 
-.tourBases-bases__list {
+.tourBases-inner__list {
   display: flex;
   flex-direction: column;
   height: 260px;
@@ -1449,21 +1478,21 @@ textarea::placeholder {
   scrollbar-color: #76767a #D9D9DE;
 }
 
-.tourBases-bases__list::-webkit-scrollbar {
+.tourBases-inner__list::-webkit-scrollbar {
   width: 8px;
 }
 
-.tourBases-bases__list::-webkit-scrollbar-track {
+.tourBases-inner__list::-webkit-scrollbar-track {
   background-color: #D9D9DE;
   border-radius: 4px;
 }
 
-.tourBases-bases__list::-webkit-scrollbar-thumb {
+.tourBases-inner__list::-webkit-scrollbar-thumb {
   background-color: #76767a;
   border-radius: 4px;
 }
 
-.tourBases-bases__item {
+.tourBases-inner__item {
   margin-bottom: 16px;
   font-size: 16px;
   color: #0050b2;
@@ -1922,6 +1951,82 @@ textarea::placeholder {
   color: #ffffff;
 }
 
+.contacts {
+  margin: 80px 0;
+}
+
+.contacts__wrapper {
+  width: 832px;
+}
+
+.contacts__title {
+  margin-bottom: 54px;
+  font-size: 44px;
+  line-height: 58px;
+  text-align: left;
+}
+
+.contacts-item__desc {
+  line-height: 25px;
+}
+
+.contacts-item__desc:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-item__image {
+  margin-top: 39px;
+  margin-bottom: 48px;
+  width: 832px;
+  height: 558px;
+  background-image: url("../img/contacts/contact-bg.jpg");
+}
+
+.contacts-item__title {
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.contacts-item__subtitle {
+  margin-top: 36px;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.contacts-item__text {
+  line-height: 25px;
+}
+
+.contacts-item__link {
+  line-height: 25px;
+  text-decoration: underline;
+  color: #0050b2;
+}
+
+.contacts-item__link:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.contacts__adress {
+  margin-top: 27px;
+  margin-bottom: 32px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.contacts__link {
+  color: #0050b2;
+}
+
+.contacts__map {
+  width: 832px;
+  height: 617px;
+}
+
 @media (min-width: 992px) {
   .link:hover {
     color: #d51a1a;
@@ -1962,6 +2067,11 @@ textarea::placeholder {
   }
   .banner__button:hover {
     background-color: #0061D9;
+    border-color: #0061D9;
+  }
+  .banner__button-download:hover {
+    background-color: green;
+    border-color: green;
   }
   .placesInterest__button:hover {
     background-color: #0061D9;
