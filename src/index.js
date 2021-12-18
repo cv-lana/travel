@@ -1,3 +1,13 @@
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    preloader.classList.add('preloader-hide');
+    setInterval(() => {
+      preloader.classList.add('preloader-hidden');
+    }, 900);
+  }
+});
+
 const toggleModal = () => {
   const btnModal = document.querySelector('.header-contact__btn');
   const modal = document.querySelector('.modal__overlay');

@@ -428,6 +428,71 @@ textarea::placeholder {
   text-align: center;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.preloader-hide {
+  animation: hidePreloader 1s;
+}
+
+.preloader-hidden {
+  display: none;
+}
+
+.loader {
+  width: 110px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader__item {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-color: #0050b2;
+  border-radius: 100%;
+  animation: bounce 1.4s ease-in-out infinite both;
+}
+
+.bounce-1 {
+  animation-delay: -0.32s;
+}
+
+.bounce-2 {
+  animation-delay: -0.16s;
+}
+
+.bounce-3 {
+  animation-delay: 0s;
+}
+
+@keyframes hidePreloader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -1172,7 +1237,7 @@ textarea::placeholder {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
-  z-index: 2;
+  z-index: 20;
 }
 
 .modal__overlay--open {
@@ -1447,13 +1512,15 @@ textarea::placeholder {
 
 .tourBases-description__button {
   margin-top: auto;
+  padding: 12px;
   width: 156px;
   height: 44px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
   border: 1px solid #0050b2;
   background-color: #ffffff;
   color: #0050b2;
-  font-size: 16px;
-  line-height: 19px;
 }
 
 .tourBases-inner {
