@@ -2094,6 +2094,159 @@ textarea::placeholder {
   height: 617px;
 }
 
+.goryachinsk {
+  padding: 61px 0 96px;
+}
+
+.goryachinsk__wrapper {
+  padding-bottom: 59px;
+  display: flex;
+  gap: 32px;
+  border-bottom: 1px solid #D9D9DE;
+}
+
+.goryachinsk__content {
+  max-width: 736px;
+  width: 100%;
+}
+
+.goryachinsk__title {
+  margin-bottom: 51px;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 58px;
+}
+
+.goryachinsk__image {
+  margin-bottom: 28px;
+  width: 736px;
+  height: 491px;
+}
+
+.goryachinsk-description__text {
+  line-height: 25px;
+}
+
+.goryachinsk-description__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.goryachinsk-info__title {
+  margin: 40px 0 22px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.goryachinsk-info__wrapper:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.goryachinsk-info__text {
+  line-height: 25px;
+}
+
+.goryachinsk-info__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.goryachinsk-info__inner:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.goryachinsk-info__inner:last-child {
+  margin-top: 17px;
+}
+
+.goryachinsk-info__subtitle {
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.goryachinsk-info__time {
+  line-height: 25px;
+}
+
+.goryachinsk-bases {
+  padding: 27px 24px;
+  max-width: 352px;
+  width: 100%;
+  align-self: flex-start;
+  background-color: #f5f5f7;
+  border-radius: 6px;
+  order: -1;
+}
+
+.goryachinsk-bases__title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #76767a;
+}
+
+.goryachinsk-bases__list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 16px;
+  color: #0050b2;
+}
+
+.catalog__title {
+  margin: 58px 0 48px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.catalog__card {
+  width: 352px;
+  height: 352px;
+  border: 1px solid #D9D9DE;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.catalog__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__image {
+  width: 100%;
+  height: 224px;
+}
+
+.catalog__content {
+  padding: 17px 25px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.catalog__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.catalog__cost {
+  font-size: 16px;
+  margin-top: auto;
+}
+
 @media (min-width: 992px) {
   .link:hover {
     color: #d51a1a;
