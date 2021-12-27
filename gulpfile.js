@@ -75,6 +75,7 @@ const html = () => {
       title: "HTML",
       message: "Error: <%= error.message %>"
     })))
+    .pipe(newer('./app/'))
     .pipe(htmlInclude())
     .pipe(gulpIf(isBuild,
       versionNumber({
