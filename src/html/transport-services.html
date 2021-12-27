@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/head.html', {
+"title":'Трансфер (транспортные услуги)'
+})
+
+<body>
+  @@include('components/preloader.html')
+
+  <div class="wrapper">
+    @@include('components/header-page.html')
+
+    <main class="main">
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="link breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__text">Трансфер</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="main__content">
+        <div class="banner" style="background-image: url('img/transport-services/banner-transfer.jpg');">
+          <div class="container">
+            <div class="banner__content">
+              <h1 class="title banner__title banner__title--center">Трансфер (транспортные услуги)</h1>
+              <a class="button banner__button-download" href="#">Скачать прайс</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="preview-info">
+          <div class="container">
+            <div class="preview-info__wrapper">
+              <p class="preview-info__text">
+                Задача организации, в особенности же сложившаяся структура организации играет важную роль в
+                формировании
+                новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по
+                формированию позиции играет важную роль в формировании модели развития.
+              </p>
+              <p class="preview-info__text">
+                Значимость этих проблем настолько очевидна, что постоянное информационное обеспечение нашей
+                деятельности
+                позволяет оценить значение существенных финансовых и административных условий. Повседневная практика
+                показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет
+                оценить значение модели развития.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="transportServices">
+          <div class="container">
+            <div class="transportServices__wrapper">
+              <div class="transportServices__card">
+                <a class="transportServices__link" href="#">
+                  <img class="transportServices__image" src="img/transport-services/transport-1.jpg"
+                    alt="Легковой автомобиль (универсал) Toyota Ipsum">
+                  <h3 class="transportServices__text">Легковой автомобиль (универсал) Toyota Ipsum, 2007 года
+                    выпуска</h3>
+                  <span class="transportServices__cost">1 час по городу – 700 руб.</span>
+                </a>
+              </div>
+              <div class="transportServices__card">
+                <a class="transportServices__link" href="#">
+                  <img class="transportServices__image" src="img/transport-services/transport-2.jpg"
+                    alt="Микроавтобус туристический Mercedes Benz Sprinter">
+                  <h3 class="transportServices__text">Микроавтобус туристический Mercedes Benz Sprinter (18 мест)</h3>
+                  <span class="transportServices__cost">1 час по городу – 800 руб.</span>
+                </a>
+              </div>
+              <div class="transportServices__card">
+                <a class="transportServices__link" href="#">
+                  <img class="transportServices__image" src="img/transport-services/transport-3.jpg"
+                    alt="Микроавтобус Hyundai Starex">
+                  <h3 class="transportServices__text">Микроавтобус Hyundai Starex</h3>
+                  <span class="transportServices__cost">1 час по городу – 800 руб.</span>
+                </a>
+              </div>
+              <div class="transportServices__card">
+                <a class="transportServices__link" href="#">
+                  <img class="transportServices__image" src="img/transport-services/transport-4.jpg"
+                    alt="Автобус Hyundai County">
+                  <h3 class="transportServices__text">Автобус Hyundai County, 2010 года выпуска (вместимость до 25
+                    человек, есть кондиционер)</h3>
+                  <span class="transportServices__cost">1 час по городу – 1400 руб.</span>
+                </a>
+              </div>
+              <div class="transportServices__card">
+                <a class="transportServices__link" href="#">
+                  <img class="transportServices__image" src="img/transport-services/transport-1.jpg"
+                    alt="Легковой автомобиль (универсал) Toyota Ipsum">
+                  <h3 class="transportServices__text">Легковой автомобиль (универсал) Toyota Ipsum, 2007 года
+                    выпуска</h3>
+                  <span class="transportServices__cost">1 час по городу – 700 руб.</span>
+                </a>
+              </div>
+              <div class="transportServices__card">
+                <a class="transportServices__link" href="#">
+                  <img class="transportServices__image" src="img/transport-services/transport-2.jpg"
+                    alt="Микроавтобус туристический Mercedes Benz Sprinter">
+                  <h3 class="transportServices__text">Микроавтобус туристический Mercedes Benz Sprinter (18 мест)</h3>
+                  <span class="transportServices__cost">1 час по городу – 800 руб.</span>
+                </a>
+              </div>
+              <div class="transportServices__card">
+                <a class="transportServices__link" href="#">
+                  <img class="transportServices__image" src="img/transport-services/transport-3.jpg"
+                    alt="Микроавтобус Hyundai Starex">
+                  <h3 class="transportServices__text">Микроавтобус Hyundai Starex</h3>
+                  <span class="transportServices__cost">1 час по городу – 800 руб.</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('components/booking.html')
+    </main>
+
+    @@include('components/footer.html')
+    @@include('components/modal.html')
+  </div>
+</body>
+
+</html>

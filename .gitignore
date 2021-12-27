@@ -1,0 +1,4 @@
+/node_modules/
+/app
+/gulp
+package-lock.json

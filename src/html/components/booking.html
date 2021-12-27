@@ -1,0 +1,66 @@
+<section class="booking" id="booking">
+  <div class="booking__container">
+    <h2 class="title">Забронируйте отдых на Байкале</h2>
+
+    <form class="form" id="form1" name="user-form" action="#">
+      <div class="form__input-wrapper">
+        <div class="form__input-group">
+          <input class="form__input" type="text" name="user-name" placeholder="Ваше имя" required>
+          <div class="error"></div>
+        </div>
+        <div class="form__input-group">
+          <input class="form__input" type="tel" name="user-phone" placeholder="Телефон" required>
+          <div class="error"></div>
+        </div>
+        <div class="form__input-group">
+          <input class="form__input" type="email" name="user-email" placeholder="E-mail" required>
+          <div class="error"></div>
+        </div>
+      </div>
+
+      <div class="form__input-wrapper">
+        <div class="form__input-group">
+          <input class="form__input" type="text" name="location" placeholder="Местность Байкала" required>
+          <div class="error"></div>
+        </div>
+        <div class="form__input-group">
+          <input class="form__input" type="text" name="adults" placeholder="Количество взрослых" required>
+          <div class="error"></div>
+        </div>
+        <div class="form__input-group">
+          <input class="form__input" type="text" name="children" placeholder="Количество детей, их возраст">
+          <div class="error"></div>
+        </div>
+      </div>
+
+      <div class="form__input-wrapper">
+        <div class="form__date-wrapper">
+          <div class="form__date">
+            <input class="form__input" type="text" name="dateOn" placeholder="Дата заезда" id="dateOn">
+            <div class="error"></div>
+          </div>
+          <div class="form__date">
+            <input class="form__input" type="text" name="dateOff" placeholder="Дата отъезда">
+            <div class="error"></div>
+          </div>
+        </div>
+        <div class="form__message-wrapper">
+          <textarea class="form__message" name="user-comment" placeholder="Комментарий"></textarea>
+          <div class="error"></div>
+        </div>
+      </div>
+
+      <div class="form__input-wrapper">
+        <div class="form__button-wrapper">
+          <button class="button form__button" type="submit">Отправить заявку</button>
+          <div class="error"></div>
+        </div>
+
+        <div class="form__checkbox-wrapper">
+          <input class="form__checkbox" type="checkbox">
+          <label>Согласие на обработку персональных данных</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
