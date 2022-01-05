@@ -1,7 +1,8 @@
 .gallery
-  padding-top: 46px
-  padding-bottom: 80px
-  background-color: rgba($green, 0.07)
+  &__container
+    padding-top: 46px
+    padding-bottom: 80px
+    background-color: rgba($green, 0.07)
   &__top
     display: flex
     justify-content: space-between
@@ -19,19 +20,22 @@
     color: $blue
   &__buttons
     width: 104px
-    display: flex
-    justify-content: space-between
-    align-items: center
+  &__slider
+    position: relative
   &__btn
+    position: absolute
+    top: -95px
     width: 44px
     height: 44px
     background-position: center
     background-repeat: no-repeat
     background-size: contain
     &--prev
-      background-image: url('../img/gallery/arrow-left.svg')
+      right: 62px
+      background-image: url('../img/gallery/arrow-prev.svg')
     &--next
-      background-image: url('../img/gallery/arrow-right.svg')
+      right: 0
+      background-image: url('../img/gallery/arrow-next.svg')
   &__wrapper
     display: flex
     justify-content: space-between
@@ -42,3 +46,7 @@
     height: 256px
     border-radius: 6px
     overflow: hidden
+
+.swiper
+  width: 100%
+  height: 256px

@@ -331,36 +331,41 @@
       </section>
 
       <section class="gallery">
-        <div class="container">
-          <div class="gallery__top">
-            <h2 class="title">Фотогалерея</h2>
-            <div class="gallery__inner">
-              <a class="link gallery__link" href="#">Перейти в раздел</a>
-              <div class="gallery__buttons">
-                <button class="button gallery__btn gallery__btn--prev" type="button"></button>
-                <button class="button gallery__btn gallery__btn--next" type="button"></button>
+        <div class="gallery__container">
+          <div class="container">
+            <div class="gallery__top">
+              <h2 class="title">Фотогалерея</h2>
+              <div class="gallery__inner">
+                <a class="link gallery__link" href="#">Перейти в раздел</a>
+                <div class="gallery__buttons"></div>
               </div>
             </div>
-          </div>
 
-          <div class="gallery__wrapper">
-            <div class="gallery__card">
-              <img src="img/gallery/gallery-1.jpg" alt="" width="352" height="256" />
-            </div>
-            <div class="gallery__card">
-              <img src="img/gallery/gallery-2.jpg" alt="" width="352" height="256" />
-            </div>
-            <div class="gallery__card">
-              <img src="img/gallery/gallery-3.jpg" alt="" width="352" height="256" />
-            </div>
-            <div class="gallery__card">
-              <img src="img/gallery/gallery-4.jpg" alt="" width="352" height="256" />
-            </div>
-            <div class="gallery__card">
-              <img src="img/gallery/gallery-5.jpg" alt="" width="352" height="256" />
-            </div>
-            <div class="gallery__card">
-              <img src="img/gallery/gallery-6.jpg" alt="" width="352" height="256" />
+            <div class="gallery__slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide gallery__card">
+                    <img src="img/gallery/gallery-1.jpg" alt="gallery-1" width="352" height="256" />
+                  </div>
+                  <div class="swiper-slide gallery__card">
+                    <img src="img/gallery/gallery-2.jpg" alt="gallery-2" width="352" height="256" />
+                  </div>
+                  <div class="swiper-slide gallery__card">
+                    <img src="img/gallery/gallery-3.jpg" alt="gallery-3" width="352" height="256" />
+                  </div>
+                  <div class="swiper-slide gallery__card">
+                    <img src="img/gallery/gallery-4.jpg" alt="gallery-4" width="352" height="256" />
+                  </div>
+                  <div class="swiper-slide gallery__card">
+                    <img src="img/gallery/gallery-5.jpg" alt="gallery-5" width="352" height="256" />
+                  </div>
+                  <div class="swiper-slide gallery__card">
+                    <img src="img/gallery/gallery-6.jpg" alt="gallery-6" width="352" height="256" />
+                  </div>
+                </div>
+              </div>
+              <button class="button gallery__btn gallery__btn--prev" type="button"></button>
+              <button class="button gallery__btn gallery__btn--next" type="button"></button>
             </div>
           </div>
         </div>
