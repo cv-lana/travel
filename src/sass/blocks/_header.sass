@@ -17,22 +17,30 @@
     display: flex
     justify-content: space-between
     align-items: center
+    gap: 15px
   &-contact
     display: flex
     justify-content: flex-end
     align-items: center
-    column-gap: 33px
+    column-gap: 45px
     font-weight: 700
     line-height: 24px
+    &--mobile
+      display: none
+      &-visible
+        display: none
     &__icon
       opacity: 0.8
       fill: $white
-      &--page
+      &-page
         opacity: 0.4
         fill: $black
+    &__links
+      display: flex
+      gap: 33px
     &__link
       display: flex
-      justify-content: space-between
+      justify-content: center
       align-items: center
       column-gap: 13px
     &__btn
@@ -44,9 +52,13 @@
         background-color: $white
         border-color: $blue-dark
         color: $blue-dark
+  &__button-menu
+    display: none
   &__menu
     padding-top: 20px
     padding-bottom: 9px
+    &--mobile
+      display: none
 
 .logo
   display: flex
@@ -61,11 +73,11 @@
     font-weight: 700
     font-size: 20px
     line-height: 26px
-    &-strong
-      font-family: $roboto
-      font-weight: 400
-      font-size: 18px
-      line-height: 21px
+  &__subtitle
+    font-family: $roboto
+    font-weight: 400
+    font-size: 18px
+    line-height: 21px
 
 .menu
   font-size: 16px
@@ -75,6 +87,8 @@
     position: relative
     display: inline-block
     margin-right: 32px
+  &__close
+    display: none
 
 .submenu
   display: none

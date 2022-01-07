@@ -1,5 +1,5 @@
 const toggleModal = () => {
-  const btnModal = document.querySelector('.header-contact__btn');
+  const btnModal = document.querySelectorAll('[data-btn=modal]');
   const modal = document.querySelector('.modal__overlay');
 
   const modalOpen = () => {
@@ -10,7 +10,9 @@ const toggleModal = () => {
     modal.classList.remove('modal__overlay--open');
   };
 
-  btnModal.addEventListener('click', modalOpen);
+  btnModal.forEach(item => {
+    item.addEventListener('click', modalOpen);
+  });
 
   modal.addEventListener('click', (event) => {
     const target = event.target;

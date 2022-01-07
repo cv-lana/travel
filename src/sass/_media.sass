@@ -1,3 +1,11 @@
+@media (max-width: 1200px)
+  .header
+    &-contact
+      column-gap: 25px
+      &__btn
+        padding: 13px 20px
+        margin-left: 0
+
 @media (min-width: 992px)
   .link
     &:hover
@@ -48,3 +56,103 @@
     &:hover
       background-color: $blue-dark
       color: $white
+
+@media (max-width: 992px)
+  .header
+    &-contact
+      &__links--hidden
+        display: none
+
+@media (max-width: 768px)
+  .header
+    position: fixed
+    background-color: #718d99
+    &-contact
+      &--mobile
+        &-hidden
+          display: none
+        &-visible
+          margin-top: 23px
+          display: flex
+          flex-direction: column
+          gap: 23px
+      &__links--visible
+        display: flex
+        flex-direction: column
+        gap: 23px
+        color: $black
+    &__button-menu
+      display: block
+      width: 32px
+      height: 24px
+      background-image: url('../img/header/menu-open.svg')
+      background-color: transparent
+      cursor: pointer
+      border: none
+      outline: none
+    &__menu
+      padding-bottom: 25px
+      position: fixed
+      top: 81px
+      right: 0
+      bottom: 0
+      left: 0
+      background-color: $white
+      transform: translateX(100%)
+      transition: all 1s
+      &--visible
+        transform: translateX(0)
+        overflow: auto
+
+  .menu
+    &__list
+      padding-bottom: 20px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 10px
+      text-align: center
+      border-bottom: 1px solid $white-light
+    &__item
+      padding: 0
+      margin-right: 0
+    &__link
+      font-weight: 500
+      line-height: 38px
+      text-transform: uppercase
+      color: $black-light-2
+    &__close
+      display: block
+      position: absolute
+      top: 17px
+      right: 16px
+      width: 14px
+      height: 14px
+      background-image: url('../img/header/menu-close.svg')
+      background-color: transparent
+      cursor: pointer
+      border: none
+      outline: none
+
+  .submenu
+    display: block
+    position: relative
+    padding: 0
+
+@media (min-width: 320px) and (max-width: 480px)
+  .logo
+    &__img
+      width: 39px
+      height: 39px
+    &__title
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+    &__subtitle
+      font-size: 14px
+      line-height: 19px
+
+  .header
+    &__menu
+      top: 67px
