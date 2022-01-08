@@ -1,5 +1,4 @@
 import { disableScroll, enableScroll } from './functions.js';
-// import enableScroll from './enableScroll.js';
 
 const playVideo = () => {
   const btnPlay = document.querySelector('.aboutBaikal-info__button');
