@@ -12,6 +12,22 @@
       margin-bottom: 16px
     &__text
       margin-bottom: 23px
+  .popularOffers
+    &__wrapper
+      grid-template-columns: repeat(auto-fit, minmax(234px, 1fr))
+      column-gap: 29px
+    &__card:nth-child(3)
+      height: 494px
+  .card
+    height: 234px
+
+  .aboutBaikal, .aboutUs
+    display: none
+
+@media (max-width: 1082px)
+  .popularOffers
+    &__card:nth-child(12)
+      display: none
 
 @media (min-width: 992px)
   .link
@@ -72,11 +88,27 @@
   .promo
     &__content
       width: 100%
+  .card
+    &__title
+      font-size: 16px
+      line-height: 21px
+      &--all
+        font-size: 22px
+        line-height: 29px
+    &__cost
+      font-size: 14px
+      line-height: 18px
+  .popularOffers
+    &__wrapper
+      grid-template-columns: repeat(auto-fit, minmax(248px, 1fr))
+    &__card:nth-child(3)
+      display: none
+    &__card:nth-child(12)
+      display: block
+  .card
+    height: 248px
 
 @media (max-width: 768px)
-  .container
-    padding: 0 30px
-
   .header
     position: fixed
     background: linear-gradient(to top, $blue-turquoise, $blue-brilliant)
@@ -170,6 +202,15 @@
     &__link
       bottom: 24px
 
+  .directions
+    &__wrapper
+      grid-template-columns: repeat(auto-fit, minmax(246px, 1fr))
+      column-gap: 25px
+
+  .popularOffers
+    &__wrapper
+      column-gap: 20px
+
 @media (max-width: 576px)
   .promo
     min-height: 550px
@@ -180,10 +221,32 @@
     &__text
       font-size: 16px
       line-height: 23px
+  .directions
+    padding-bottom: 60px
+    &__wrapper
+      grid-template-columns: repeat(auto-fit, minmax(246px, 320px))
+      justify-content: center
+    &__image
+      display: block
+      margin: 0 auto
+    &__text
+      text-align: center
 
-@media (min-width: 320px) and (max-width: 480px)
+  .popularOffers
+    &__wrapper
+      grid-template-columns: repeat(auto-fit, minmax(248px, 320px))
+      justify-content: center
+  .card
+    height: 288px
+    &:nth-child(n+5):not(:last-child)
+      display: none
+
+@media (max-width: 480px)
   .container
     padding: 0 15px
+  .title
+    font-size: 22px
+    line-height: 29px
   .logo
     &__img
       margin-right: 15px
@@ -248,6 +311,8 @@
         background: linear-gradient(rgba($black,0),$white)
       &--opened
         height: auto
+        &::after
+          bottom: -30px
     &__text
       margin-bottom: 18px
     &__btn
@@ -257,3 +322,24 @@
           display: none
       &--minimize-active
         display: block
+        margin-top: 30px
+  .directions
+    &__wrapper
+      margin-top: 30px
+      position: relative
+      height: 500px
+      row-gap: 26px
+      overflow: hidden
+      &--opened
+        height: auto
+    &__btn
+      &--show
+        display: block
+        &-hidden
+          display: none
+      &--minimize-active
+        display: block
+  .popularOffers
+    padding-top: 40px
+    &__wrapper
+      padding-bottom: 60px
