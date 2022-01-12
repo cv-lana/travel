@@ -26,6 +26,12 @@
       height: 233px
   .swiper
     height: 233px
+  .aboutUs
+    &-advantages
+      &__list
+        gap: 20px
+      &__item
+        max-width: 210px
 
 @media (max-width: 1082px)
   .popularOffers
@@ -131,6 +137,21 @@
       height: 256px
   .swiper
     height: 256px
+  .aboutUs
+    &-content
+      grid-template-columns: 1fr
+      &__img
+        display: none
+    &-advantages
+      &__item
+        min-width: 105px
+        max-width: 180px
+      &__count
+        font-size: 43px
+        line-height: 57px
+      &__text
+        font-size: 18px
+        line-height: 23px
 
 @media (max-width: 768px)
   .header
@@ -174,7 +195,6 @@
       &--visible
         transform: translateX(0)
         overflow: auto
-
   .menu
     &__list
       padding-bottom: 20px
@@ -205,12 +225,10 @@
       cursor: pointer
       border: none
       outline: none
-
   .submenu
     display: block
     position: relative
     padding: 0
-
   .promo
     min-height: 640px
     padding-top: 165px
@@ -225,16 +243,13 @@
       line-height: 25px
     &__link
       bottom: 24px
-
   .directions
     &__wrapper
       grid-template-columns: repeat(auto-fit, minmax(246px, 1fr))
       column-gap: 25px
-
   .popularOffers
     &__wrapper
       column-gap: 20px
-
   .aboutBaikal
     &-map
       &__image
@@ -245,6 +260,11 @@
       height: 233px
   .swiper
     height: 233px
+  .aboutUs
+    &-advantages
+      &__list
+        flex-wrap: wrap
+        justify-content: space-evenly
 
 @media (max-width: 576px)
   .promo
@@ -266,7 +286,6 @@
       margin: 0 auto
     &__text
       text-align: center
-
   .popularOffers
     &__wrapper
       grid-template-columns: repeat(auto-fit, minmax(248px, 320px))
@@ -292,6 +311,15 @@
       left: 50%
       transform: translateX(-50%)
       bottom: 35px
+  .aboutUs
+    padding-top: 60px
+    &__title
+      font-size: 30px
+      line-height: 39px
+    &-content
+      &__text
+        font-size: 16px
+        line-height: 21px
 
 @media (max-width: 480px)
   .container
@@ -422,3 +450,16 @@
       top: -68px
   .swiper
     height: 210px
+  .aboutUs
+    &-advantages
+      &__list
+        padding-bottom: 60px
+        justify-content: space-between
+        gap: 15px
+        column-gap: 10px
+      &__item
+        min-width: 140px
+        max-width: 140px
+      &__text
+        font-size: 16px
+        line-height: 18px
