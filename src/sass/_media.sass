@@ -32,6 +32,9 @@
         gap: 20px
       &__item
         max-width: 210px
+  .tourBases
+    &__card
+      grid-template-columns: 318px 1fr
 
 @media (max-width: 1082px)
   .popularOffers
@@ -169,6 +172,15 @@
       width: 100%
     &-copy
       align-self: flex-end
+  .tourBases
+    &__content
+      grid-template-columns: 1fr
+    &-description
+      padding: 0
+      max-width: 100%
+      border: none
+    &-inner
+      display: none
 
 @media (max-width: 768px)
   input, textarea
@@ -299,6 +311,10 @@
     &__button
       width: 270px
   .footer
+    &--page
+      position: relative
+      top: 82px
+      padding-bottom: 127px
     &__top
       display: none
     &__bottom
@@ -310,6 +326,23 @@
           display: none
     &-contact
       width: 237px
+  .main
+    position: relative
+    top: 82px
+  .banner
+    height: 400px
+    &__content
+      margin-top: 50px
+  .tourBases
+    &__card
+      margin: 0 auto
+      max-width: 500px
+      grid-template-columns: 1fr
+    &__image
+      width: 100%
+      height: 450px
+    &__content
+      padding: 23px 16px
 
 @media (max-width: 576px)
   .promo
@@ -397,6 +430,20 @@
       align-self: flex-start
       &__text
         margin-right: auto
+  .banner
+    height: 350px
+    &__content
+      margin-top: 30px
+    &__title
+      font-size: 29px
+      line-height: 38px
+  .tourBases
+    padding: 60px 0
+    &__text
+      font-size: 18px
+      line-height: 25px
+    &__image
+      height: 350px
 
 @media (max-width: 480px)
   .container
@@ -543,3 +590,19 @@
   .booking
     &__container
       padding: 0 15px
+  .main
+    top: 73px
+  .footer
+    &--page
+      top: 73px
+      padding-bottom: 118px
+  .banner
+    height: 250px
+    &__content
+      margin-top: 0
+    &__title
+      font-size: 29px
+      line-height: 38px
+  .tourBases
+    &__image
+      height: 290px
