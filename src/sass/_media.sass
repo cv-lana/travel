@@ -99,7 +99,6 @@
   input, textarea
     &::placeholder
       font-size: 13px
-
   .header
     &-contact
       &__links--hidden
@@ -156,6 +155,20 @@
       &__text
         font-size: 18px
         line-height: 23px
+  .footer
+    &-menu
+      flex-wrap: wrap
+      justify-content: flex-start
+      gap: 40px
+      &__item
+        width: 190px
+    &__bottom
+      flex-direction: column
+      gap: 40px
+    &-contact
+      width: 100%
+    &-copy
+      align-self: flex-end
 
 @media (max-width: 768px)
   input, textarea
@@ -285,6 +298,18 @@
           max-width: 47%
     &__button
       width: 270px
+  .footer
+    &__top
+      display: none
+    &__bottom
+      padding: 0
+      flex-direction: row
+    &-contact
+      &__item
+        &:not(:first-child)
+          display: none
+    &-contact
+      width: 237px
 
 @media (max-width: 576px)
   .promo
@@ -365,6 +390,13 @@
     &__checkbox
       &-wrapper
         order: -1
+  .footer
+    &__bottom
+      flex-direction: column
+    &-copy
+      align-self: flex-start
+      &__text
+        margin-right: auto
 
 @media (max-width: 480px)
   .container
