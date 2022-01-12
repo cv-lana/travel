@@ -20,6 +20,12 @@
       height: 494px
   .card
     height: 234px
+  .gallery
+    &__image
+      width: 320px
+      height: 233px
+  .swiper
+    height: 233px
 
 @media (max-width: 1082px)
   .popularOffers
@@ -119,6 +125,12 @@
         max-width: 100%
         height: 398px
         background-position: center
+  .gallery
+    &__image
+      width: 352px
+      height: 256px
+  .swiper
+    height: 256px
 
 @media (max-width: 768px)
   .header
@@ -227,6 +239,12 @@
     &-map
       &__image
         height: 500px
+  .gallery
+    &__image
+      width: 320px
+      height: 233px
+  .swiper
+    height: 233px
 
 @media (max-width: 576px)
   .promo
@@ -266,6 +284,14 @@
     &-info
       &__video
         background-position: left
+  .gallery
+    &__container
+      position: relative
+    &__link
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 35px
 
 @media (max-width: 480px)
   .container
@@ -284,7 +310,6 @@
       line-height: 21px
     &__subtitle
       font-size: 14px
-
   .header
     &__menu
       top: 67px
@@ -295,13 +320,11 @@
         justify-content: flex-start
       &__btn
         padding: 13px 40px
-
   .menu
     &__list
       padding-left: 5px
       text-align: left
       align-items: flex-start
-
   .promo
     padding-top: 111px
     min-height: 460px
@@ -388,3 +411,14 @@
         width: 44px
         height: 44px
         background-size: cover
+  .gallery
+    &__container
+      padding-top: 36px
+    &__top
+      margin-bottom: 33px
+    &__image
+      height: 210px
+    &__btn
+      top: -68px
+  .swiper
+    height: 210px
