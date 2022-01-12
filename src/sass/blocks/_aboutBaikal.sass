@@ -2,18 +2,22 @@
   padding-top: 70px
   margin-bottom: 79px
   &-map
-    width: 1120px
-    height: 609px
     margin-top: 31px
     margin-bottom: 76px
+    &__image
+      max-width: 1120px
+      width: 100%
+      height: 609px
+      overflow: hidden
   &-info
     display: flex
     justify-content: space-between
-    column-gap: 32px
-    margin-bottom: 79px
+    gap: 32px
+    &__content
+      max-width: 448px
+      width: 100%
     &__text
       margin-top: 21px
-      width: 448px
       font-size: 18px
       line-height: 25px
     &__link
@@ -24,9 +28,21 @@
       text-decoration: underline
     &__video
       position: relative
-      width: 640px
-      height: 380px
+      max-width: 640px
+      width: 100%
       background-image: url('../img/baikal/baikal-video.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba($black, 0.3)
+        mix-blend-mode: multiply
+        z-index: 1
     &__button
       content: ''
       position: absolute
@@ -37,45 +53,4 @@
       height: 60px
       background-image: url('../img/baikal/btn-play.svg')
       border: none
-  &-video
-    display: none
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background-color: rgba($black, 0.6)
-    backdrop-filter: blur(3px)
-    z-index: 2
-    &:hover
-      .aboutBaikal-video__button
-        opacity: 1
-        visibility: visible
-    &__content
-      padding: 44px
-      position: absolute
-      left: 0
-      top: 0
-      width: 100%
-      height: 100%
-      display: flex
-      justify-content: center
-      align-items: center
-    &__container
-      margin: auto
-      max-width: 800px
-      width: 100%
-      max-height: 500px
-      height: 100%
-    &__player
-      width: 100%
-      height: 100%
-    &__button
-      position: absolute
-      top: 10px
-      right: 10px
-      width: 40px
-      height: 40px
-      opacity: 0
-      visibility: hidden
-      border: none
+      z-index: 2

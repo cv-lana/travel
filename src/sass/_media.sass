@@ -21,9 +21,6 @@
   .card
     height: 234px
 
-  .aboutBaikal, .aboutUs
-    display: none
-
 @media (max-width: 1082px)
   .popularOffers
     &__card:nth-child(12)
@@ -58,6 +55,12 @@
       .card__image
         transform: scale(1.1)
         transition: 1s
+  .aboutBaikal
+    &-video
+      &:hover
+        .aboutBaikal-video__button
+          opacity: 1
+          visibility: visible
   .form__button
     &:hover
       background-color: $white
@@ -107,6 +110,15 @@
       display: block
   .card
     height: 248px
+  .aboutBaikal
+    &-info
+      flex-direction: column
+      &__content
+        max-width: 100%
+      &__video
+        max-width: 100%
+        height: 398px
+        background-position: center
 
 @media (max-width: 768px)
   .header
@@ -211,6 +223,11 @@
     &__wrapper
       column-gap: 20px
 
+  .aboutBaikal
+    &-map
+      &__image
+        height: 500px
+
 @media (max-width: 576px)
   .promo
     min-height: 550px
@@ -240,6 +257,15 @@
     height: 288px
     &:nth-child(n+5):not(:last-child)
       display: none
+  .aboutBaikal
+    padding-top: 40px
+    &-map
+      margin-bottom: 50px
+      &__image
+        height: 400px
+    &-info
+      &__video
+        background-position: left
 
 @media (max-width: 480px)
   .container
@@ -343,3 +369,22 @@
     padding-top: 40px
     &__wrapper
       padding-bottom: 60px
+  .aboutBaikal
+    margin-bottom: 60px
+    &-map
+      margin-bottom: 40px
+      &__image
+        height: 360px
+    &-info
+      &__text
+        font-size: 16px
+        line-height: 21px
+      &__link
+        font-size: 14px
+        line-height: 16px
+      &__video
+        height: 200px
+      &__button
+        width: 44px
+        height: 44px
+        background-size: cover
