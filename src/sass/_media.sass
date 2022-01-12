@@ -96,6 +96,10 @@
       color: $white
 
 @media (max-width: 992px)
+  input, textarea
+    &::placeholder
+      font-size: 13px
+
   .header
     &-contact
       &__links--hidden
@@ -154,6 +158,9 @@
         line-height: 23px
 
 @media (max-width: 768px)
+  input, textarea
+    &::placeholder
+      font-size: 16px
   .header
     position: fixed
     background: linear-gradient(to top, $blue-turquoise, $blue-brilliant)
@@ -265,6 +272,19 @@
       &__list
         flex-wrap: wrap
         justify-content: space-evenly
+  .form
+    row-gap: 16px
+    &__input
+      &-wrapper
+        &:not(:nth-child(3), :last-child)
+          flex-wrap: wrap
+          row-gap: 16px
+      &-group
+        max-width: 100%
+        &--count
+          max-width: 47%
+    &__button
+      width: 270px
 
 @media (max-width: 576px)
   .promo
@@ -320,6 +340,31 @@
       &__text
         font-size: 16px
         line-height: 21px
+  .booking
+    padding-bottom: 60px
+  .form
+    &__input
+      &-wrapper
+        &:nth-child(3)
+          flex-direction: column
+          row-gap: 16px
+        &:last-child
+          flex-direction: column
+          row-gap: 27px
+      &-group--count
+        max-width: 100%
+    &__date
+      width: 50%
+      &-wrapper
+        flex-direction: row
+        gap: 16px
+    &__message
+      height: 180px
+    &__button
+      max-width: 288px
+    &__checkbox
+      &-wrapper
+        order: -1
 
 @media (max-width: 480px)
   .container
@@ -463,3 +508,6 @@
       &__text
         font-size: 16px
         line-height: 18px
+  .booking
+    &__container
+      padding: 0 15px
