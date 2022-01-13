@@ -40,12 +40,11 @@
   .preview
     &-info__wrapper
       width: 100%
-  .shipsYachts
-    &__wrapper
+  .block
+    width: 450px
+    height: 290px
+    &-wrapper
       justify-content: space-evenly
-    &__card
-      width: 450px
-      height: 290px
 
 @media (max-width: 1082px)
   .popularOffers
@@ -192,12 +191,11 @@
       border: none
     &-inner
       display: none
-  .shipsYachts
-    &__wrapper
+  .block
+    width: 344px
+    height: 221px
+    &-wrapper
       column-gap: 21px
-    &__card
-      width: 344px
-      height: 221px
     &__link
       padding: 21px 17px
     &__text
@@ -360,6 +358,8 @@
       margin-top: 50px
     &__button
       display: none
+      &-download
+        display: none
   .tourBases
     &__card
       margin: 0 auto
@@ -633,6 +633,8 @@
     &__title
       font-size: 25px
       line-height: 35px
+      &--center
+        margin-top: 25px
   .tourBases
     &__image
       height: 290px
@@ -647,9 +649,9 @@
       margin-bottom: 40px
       font-size: 22px
       line-height: 29px
-    &__card
-      width: 290px
-      height: 187px
+  .block
+    width: 290px
+    height: 187px
     &__text
       font-size: 16px
       line-height: 21px
