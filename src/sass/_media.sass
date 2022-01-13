@@ -45,6 +45,10 @@
     height: 290px
     &-wrapper
       justify-content: space-evenly
+  .allExcursions
+    &__wrapper
+      justify-content: space-evenly
+      gap: 33px
 
 @media (max-width: 1082px)
   .popularOffers
@@ -201,6 +205,14 @@
     &__text
       font-size: 20px
       line-height: 25px
+  .allExcursions
+    &__card
+      width: 338px
+      height: 400px
+      &:nth-child(n+5)
+        display: none
+    &__image
+      height: 214px
 
 @media (max-width: 768px)
   input, textarea
@@ -373,6 +385,9 @@
   .shipsYachts
     &__title
       text-align: center
+  .allExcursions
+    &__card:nth-child(4)
+      display: none
 
 @media (max-width: 576px)
   .promo
@@ -655,3 +670,21 @@
     &__text
       font-size: 16px
       line-height: 21px
+  .transportServices
+    margin-bottom: 60px
+  .allExcursions
+    margin-bottom: 60px
+    &__card
+      width: 290px
+      height: 340px
+    &__image
+      height: 183px
+    &__content
+      padding-top: 10px
+      padding-bottom: 15px
+    &__title
+      font-size: 18px
+      line-height: 21px
+    &__info
+      font-size: 14px
+      line-height: 18px
