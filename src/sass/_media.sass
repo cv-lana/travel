@@ -2,6 +2,8 @@
   .header
     &-contact
       column-gap: 25px
+      &__links
+        gap: 25px
       &__btn
         padding: 13px 20px
         margin-left: 0
@@ -35,6 +37,15 @@
   .tourBases
     &__card
       grid-template-columns: 318px 1fr
+  .preview
+    &-info__wrapper
+      width: 100%
+  .shipsYachts
+    &__wrapper
+      justify-content: space-evenly
+    &__card
+      width: 450px
+      height: 290px
 
 @media (max-width: 1082px)
   .popularOffers
@@ -181,6 +192,17 @@
       border: none
     &-inner
       display: none
+  .shipsYachts
+    &__wrapper
+      column-gap: 21px
+    &__card
+      width: 344px
+      height: 221px
+    &__link
+      padding: 21px 17px
+    &__text
+      font-size: 20px
+      line-height: 25px
 
 @media (max-width: 768px)
   input, textarea
@@ -205,6 +227,9 @@
         flex-direction: column
         gap: 23px
         color: $black
+      &__btn--page
+        background-color: $blue-dark
+        color: $white
     &__button-menu
       display: block
       width: 32px
@@ -333,6 +358,8 @@
     height: 400px
     &__content
       margin-top: 50px
+    &__button
+      display: none
   .tourBases
     &__card
       margin: 0 auto
@@ -343,6 +370,9 @@
       height: 450px
     &__content
       padding: 23px 16px
+  .shipsYachts
+    &__title
+      text-align: center
 
 @media (max-width: 576px)
   .promo
@@ -464,7 +494,7 @@
       font-size: 14px
   .header
     &__menu
-      top: 67px
+      top: 73px
     &-contact
       &--mobile-visible
         align-items: flex-start
@@ -601,8 +631,25 @@
     &__content
       margin-top: 0
     &__title
-      font-size: 29px
-      line-height: 38px
+      font-size: 25px
+      line-height: 35px
   .tourBases
     &__image
       height: 290px
+  .preview-ifo
+    padding: 40px 0
+    &__text
+      font-size: 16px
+      line-height: 21px
+  .shipsYachts
+    margin-bottom: 60px
+    &__title
+      margin-bottom: 40px
+      font-size: 22px
+      line-height: 29px
+    &__card
+      width: 290px
+      height: 187px
+    &__text
+      font-size: 16px
+      line-height: 21px
