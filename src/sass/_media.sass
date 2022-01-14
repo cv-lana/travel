@@ -235,6 +235,9 @@
   .placesInterest
     &__card
       grid-template-columns: 320px 1fr
+  .contacts
+    &__wrapper
+      margin: 0 auto
 
 @media (max-width: 768px)
   input, textarea
@@ -428,6 +431,9 @@
       margin: 0 auto
     &__image
       height: 450px
+  .contacts
+    &-item__image, &__map
+      height: 450px
 
 @media (max-width: 576px)
   .promo
@@ -534,7 +540,11 @@
       height: 350px
     &__title
       font-size: 20px
-      line-height: 26px
+      line-height: 25px
+  .contacts
+    margin: 60px 0
+    &-item__image, &__map
+      height: 350px
 
 @media (max-width: 480px)
   .container
@@ -777,3 +787,31 @@
     &__item
       &:nth-child(4), &:nth-child(5)
         display: none
+  .contacts
+    margin: 20px 0 40px
+    &__title
+      font-size: 30px
+      line-height: 35px
+      margin-bottom: 30px
+    &-item
+      &__desc
+        font-size: 16px
+        line-height: 21px
+      &__image
+        margin: 30px 0
+        height: 250px
+      &__title
+        font-size: 22px
+        line-height: 29px
+      &__subtitle
+        font-size: 18px
+        line-height: 23px
+      &__text, &__link
+        font-size: 16px
+        line-height: 21px
+    &__adress
+      font-weight: 500
+      font-size: 16px
+      line-height: 21px
+    &__map
+      height: 300px
