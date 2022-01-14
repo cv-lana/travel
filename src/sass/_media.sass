@@ -226,6 +226,12 @@
         display: none
     &__image
       height: 215px
+  .huntingFishing
+    &__card
+      grid-template-columns: 320px 1fr
+    &-details
+      &__wrapper
+        display: none
 
 @media (max-width: 768px)
   input, textarea
@@ -391,7 +397,6 @@
       max-width: 500px
       grid-template-columns: 1fr
     &__image
-      width: 100%
       height: 450px
     &__content
       padding: 23px 16px
@@ -404,6 +409,15 @@
   .extremeTours
     &__card:nth-child(4)
       display: none
+  .huntingFishing
+    &__card
+      grid-template-columns: 1fr
+      max-width: 500px
+      margin: 0 auto
+    &__image
+      height: 450px
+    &__title
+      margin-bottom: 14px
 
 @media (max-width: 576px)
   .promo
@@ -505,6 +519,12 @@
       line-height: 25px
     &__image
       height: 350px
+  .huntingFishing
+    &__image
+      height: 350px
+    &__title
+      font-size: 20px
+      line-height: 26px
 
 @media (max-width: 480px)
   .container
@@ -717,5 +737,17 @@
       font-size: 18px
       line-height: 23px
     &__info
+      font-size: 14px
+      line-height: 18px
+  .huntingFishing
+    margin-bottom: 60px
+    &__image
+      height: 290px
+    &__content
+      padding: 16px 16px 24px 16px
+    &__title
+      font-size: 18px
+      line-height: 23px
+    &__text
       font-size: 14px
       line-height: 18px
