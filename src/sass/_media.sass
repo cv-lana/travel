@@ -49,6 +49,9 @@
     &__wrapper
       justify-content: space-evenly
       gap: 33px
+  .extremeTours
+    &__wrapper
+      justify-content: space-evenly
 
 @media (max-width: 1082px)
   .popularOffers
@@ -213,6 +216,16 @@
         display: none
     &__image
       height: 214px
+  .extremeTours
+    &__wrapper
+      column-gap: 25px
+    &__card
+      width: 342px
+      height: 374px
+      &:nth-child(n+5)
+        display: none
+    &__image
+      height: 215px
 
 @media (max-width: 768px)
   input, textarea
@@ -386,6 +399,9 @@
     &__title
       text-align: center
   .allExcursions
+    &__card:nth-child(4)
+      display: none
+  .extremeTours
     &__card:nth-child(4)
       display: none
 
@@ -653,7 +669,7 @@
   .tourBases
     &__image
       height: 290px
-  .preview-ifo
+  .preview-info
     padding: 40px 0
     &__text
       font-size: 16px
@@ -685,6 +701,21 @@
     &__title
       font-size: 18px
       line-height: 21px
+    &__info
+      font-size: 14px
+      line-height: 18px
+  .extremeTours
+    margin-bottom: 60px
+    &__card
+      width: 290px
+      height: 320px
+    &__image
+      height: 183px
+    &__content
+      padding: 12px 16px
+    &__title
+      font-size: 18px
+      line-height: 23px
     &__info
       font-size: 14px
       line-height: 18px
