@@ -127,10 +127,82 @@
     &::placeholder
       font-size: 13px
   .header
+    position: fixed
+    background: linear-gradient(to top, $blue-turquoise, $blue-brilliant)
+    &--position-relative
+      color: $white
     &-contact
-      &__links--hidden
-        display: none
+      &--mobile
+        &-hidden
+          display: none
+        &-visible
+          margin-top: 23px
+          display: flex
+          flex-direction: column
+          gap: 23px
+      &__links--visible
+        display: flex
+        flex-direction: column
+        gap: 23px
+        color: $black
+      &__btn--page
+        background-color: $blue-dark
+        color: $white
+    &__button-menu
+      display: block
+    &__menu
+      padding-bottom: 25px
+      position: fixed
+      top: 81px
+      right: 0
+      bottom: 0
+      left: 0
+      background-color: $white
+      transform: translateX(100%)
+      transition: all 1s
+      &--visible
+        transform: translateX(0)
+        overflow: auto
+  .menu
+    &__list
+      padding-bottom: 20px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 10px
+      text-align: center
+      border-bottom: 1px solid $white-light
+    &__item
+      padding: 0
+      margin-right: 0
+    &__link
+      font-weight: 500
+      line-height: 38px
+      text-transform: uppercase
+      color: $black-light-2
+    &__close
+      display: block
+      position: absolute
+      top: 17px
+      right: 16px
+      width: 14px
+      height: 14px
+      background-image: url('../img/header/menu-close.svg')
+      background-color: transparent
+      cursor: pointer
+      border: none
+      outline: none
+  .submenu
+    display: block
+    position: relative
+    padding: 0
+  .main
+    position: relative
+    top: 82px
   .promo
+    min-height: 740px
+    padding-top: 84px
     &__content
       width: 100%
   .card
@@ -275,87 +347,8 @@
   input, textarea
     &::placeholder
       font-size: 16px
-  .header
-    position: fixed
-    background: linear-gradient(to top, $blue-turquoise, $blue-brilliant)
-    &--position-relative
-      color: $white
-    &-contact
-      &--mobile
-        &-hidden
-          display: none
-        &-visible
-          margin-top: 23px
-          display: flex
-          flex-direction: column
-          gap: 23px
-      &__links--visible
-        display: flex
-        flex-direction: column
-        gap: 23px
-        color: $black
-      &__btn--page
-        background-color: $blue-dark
-        color: $white
-    &__button-menu
-      display: block
-      width: 32px
-      height: 24px
-      background-image: url('../img/header/menu-open.svg')
-      background-color: transparent
-      cursor: pointer
-      border: none
-      outline: none
-    &__menu
-      padding-bottom: 25px
-      position: fixed
-      top: 81px
-      right: 0
-      bottom: 0
-      left: 0
-      background-color: $white
-      transform: translateX(100%)
-      transition: all 1s
-      &--visible
-        transform: translateX(0)
-        overflow: auto
-  .menu
-    &__list
-      padding-bottom: 20px
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: center
-      gap: 10px
-      text-align: center
-      border-bottom: 1px solid $white-light
-    &__item
-      padding: 0
-      margin-right: 0
-    &__link
-      font-weight: 500
-      line-height: 38px
-      text-transform: uppercase
-      color: $black-light-2
-    &__close
-      display: block
-      position: absolute
-      top: 17px
-      right: 16px
-      width: 14px
-      height: 14px
-      background-image: url('../img/header/menu-close.svg')
-      background-color: transparent
-      cursor: pointer
-      border: none
-      outline: none
-  .submenu
-    display: block
-    position: relative
-    padding: 0
   .promo
     min-height: 640px
-    padding-top: 165px
     margin-bottom: 40px
     &__content
       margin-bottom: 40px
@@ -418,9 +411,6 @@
           display: none
     &-contact
       width: 237px
-  .main
-    position: relative
-    top: 82px
   .banner
     height: 400px
     &__content
@@ -482,7 +472,7 @@
       font-size: 12px
   .promo
     min-height: 550px
-    padding-top: 135px
+    padding-top: 70px
     &__title
       font-size: 55px
       line-height: 75px
@@ -676,9 +666,12 @@
       text-align: left
       align-items: flex-start
   .promo
+    margin-top: -73px
     padding-top: 111px
     min-height: 460px
+    background-position: 35% 50%
     &__title
+      margin-bottom: 13px
       font-size: 40px
       line-height: 52px
     &__text

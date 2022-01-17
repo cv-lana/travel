@@ -1,13 +1,17 @@
+import { disableScroll, enableScroll } from '../modules/functions.js';
+
 const toggleModal = () => {
   const btnModal = document.querySelectorAll('[data-btn=modal]');
   const modal = document.querySelector('.modal__overlay');
 
   const modalOpen = () => {
     modal.classList.add('modal__overlay--open');
+    disableScroll();
   };
 
   const modalClose = () => {
     modal.classList.remove('modal__overlay--open');
+    enableScroll();
   };
 
   btnModal.forEach(item => {
