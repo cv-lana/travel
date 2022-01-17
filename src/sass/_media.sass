@@ -247,7 +247,7 @@
     padding: 30px 0 60px
     &__content
       width: 100%
-    &_image
+    &__image
       height: 450px
   .catalog
     &__card
@@ -255,6 +255,11 @@
       height: 345px
     &__image
       height: 214px
+  .base
+    &__content
+      width: 100%
+    &__image
+      height: 450px
 
 @media (max-width: 768px)
   input, textarea
@@ -451,11 +456,20 @@
   .contacts
     &-item__image, &__map
       height: 450px
-  .goryachinsk
+  .base
+    padding: 11px 0 60px
     &__image
-      height: 450px
+      height: 337px
+  .rooms
+    &__content
+      grid-template-columns: 1fr 196px
 
 @media (max-width: 576px)
+  .breadcrumbs
+    &__list
+      flex-wrap: wrap
+    &__item
+      font-size: 12px
   .promo
     min-height: 550px
     padding-top: 135px
@@ -568,6 +582,56 @@
   .goryachinsk
     &__image
       height: 350px
+  .base
+    &__title
+      margin-bottom: 20px
+      font-size: 29px
+      line-height: 38px
+    &__image
+      height: 250px
+    &__btn
+      padding: 13px 23px
+      width: 200px
+      height: 44px
+    &-description
+      &__text
+        font-size: 16px
+        line-height: 21px
+    &-info
+      &__title
+        margin-top: 30px
+        font-size: 20px
+        line-height: 26px
+        &--strong
+          font-size: 22px
+          line-height: 29px
+      &__text, &__item
+        font-size: 16px
+        line-height: 21px
+      &__subtitle
+        line-height: 21px
+  .rooms
+    margin-top: 30px
+    &__inner
+      flex-direction: column
+      align-items: flex-start
+      gap: 10px
+    &__title
+      font-size: 24px
+      line-height: 29px
+    &__card
+      padding: 17px 17px 27px
+    &__content
+      grid-template-columns: 1fr
+      gap: 20px
+    &__image
+      order: -1
+    &__block
+      gap: 15px
+  .btn-download
+    &--blue
+      width: 143px
+      font-size: 16px
 
 @media (max-width: 480px)
   .container
@@ -872,3 +936,19 @@
     &__subtitle
       font-size: 18px
       line-height: 23px
+  .base
+    &__image
+      margin-bottom: 20px
+      height: 200px
+  .rooms
+    &__wrapper
+      margin-top: 30px
+    &__subtitle
+      font-size: 18px
+      line-height: 21px
+    &__cost
+      font-size: 14px
+      line-height: 16px
+    &-info__text, &__text, &-description
+      font-size: 14px
+      line-height: 18px
