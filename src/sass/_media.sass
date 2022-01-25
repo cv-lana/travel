@@ -121,11 +121,16 @@
     &:hover
       background-color: $blue-dark
       color: $white
+  .to-top:hover
+    opacity: 0.8
 
 @media (max-width: 992px)
   input, textarea
     &::placeholder
       font-size: 13px
+  .wrapper
+    position: relative
+    top: 82px
   .header
     position: fixed
     background: linear-gradient(to top, $blue-turquoise, $blue-brilliant)
@@ -157,12 +162,7 @@
       right: 0
       bottom: 0
       left: 0
-      background-color: $white
       transform: translateX(100%)
-      transition: all 1s
-      &--visible
-        transform: translateX(0)
-        overflow: auto
   .menu
     &__list
       padding-bottom: 20px
@@ -197,9 +197,7 @@
     display: block
     position: relative
     padding: 0
-  .main
-    position: relative
-    top: 82px
+    background-color: transparent
   .promo
     min-height: 740px
     padding-top: 84px
@@ -396,10 +394,6 @@
     &__button
       width: 270px
   .footer
-    &--page
-      position: relative
-      top: 82px
-      padding-bottom: 127px
     &__top
       display: none
     &__bottom
@@ -636,6 +630,10 @@
 @media (max-width: 480px)
   .container
     padding: 0 15px
+  .wrapper
+    top: 73px
+  .to-top
+    right: 15px
   .title
     font-size: 22px
     line-height: 29px
@@ -781,12 +779,6 @@
   .booking
     &__container
       padding: 0 15px
-  .main
-    top: 73px
-  .footer
-    &--page
-      top: 73px
-      padding-bottom: 118px
   .banner
     height: 250px
     &__content

@@ -6,6 +6,7 @@
 })
 
 <body>
+  <a id="top"></a>
   @@include('components/preloader.html')
 
   <div class="wrapper">
@@ -21,8 +22,8 @@
               <span class="promo__text-strong">Поехали с нами за новыми впечатлениями!</span>
             </p>
           </div>
-          <a class="button promo__button" href="#booking">подобрать тур</a>
-          <a class="promo__link" href="#tours"></a>
+          <a class="button promo__button" href="#booking" data-scroll="link">подобрать тур</a>
+          <a class="promo__link" href="#tours" data-scroll="link"></a>
         </div>
       </section>
 
@@ -443,6 +444,7 @@
 
     @@include('components/footer.html')
     @@include('components/modal.html')
+    <a class="to-top" href="#top"></a>
   </div>
 </body>
 

@@ -1,6 +1,7 @@
 .modal
   &__overlay
     display: none
+    padding: 0 16px
     position: fixed
     top: 0
     left: 0
@@ -39,10 +40,14 @@
     font-size: 22px
     line-height: 29px
     text-align: center
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    gap: 16px
   &__input
-    margin-bottom: 16px
     padding: 11px 14px
-    width: 288px
+    width: 100%
     height: 44px
     font-size: 16px
     line-height: 21px
@@ -50,7 +55,7 @@
     outline: none
   &__wrapper
     margin-top: 4px
-    margin-bottom: 28px
+    margin-bottom: 12px
     display: flex
     align-items: center
     column-gap: 16px
@@ -64,7 +69,7 @@
     border-radius: 2px
   &__button
     padding: 0
-    width: 288px
+    width: 100%
     height: 48px
     font-size: 16px
     line-height: 19px
