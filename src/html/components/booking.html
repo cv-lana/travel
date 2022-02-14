@@ -1,51 +1,47 @@
 <section class="booking" id="booking">
   <div class="booking__container">
-    <h2 class="title">Забронируйте отдых на Байкале</h2>
+    <h2 class="title">Забронируйте отдых на&nbsp;Байкале</h2>
 
-    <form class="form" id="form1" name="user-form" action="#">
+    <form class="form" id="booking-form" action="#">
       <div class="form__input-wrapper">
         <div class="form__input-group">
-          <input class="form__input" type="text" name="user-name" placeholder="Ваше имя" required>
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
           <div class="error"></div>
         </div>
         <div class="form__input-group">
-          <input class="form__input" type="tel" name="user-phone" placeholder="Телефон" required>
+          <input class="form__input" id="booking-phone" type="tel" name="phone" placeholder="Телефон" required>
           <div class="error"></div>
         </div>
         <div class="form__input-group">
-          <input class="form__input" type="email" name="user-email" placeholder="E-mail" required>
+          <input class="form__input" type="email" name="email" placeholder="E-mail" required>
           <div class="error"></div>
         </div>
       </div>
 
       <div class="form__input-wrapper">
-        <div class="form__input-group">
-          <input class="form__input" type="text" name="location" placeholder="Местность Байкала" required>
-          <div class="error"></div>
+        <div class="form__input-group form__input-group--locality">
+          <input class="form__input" id="locality" type="text" name="locality" placeholder="Местность Байкала" readonly>
+          <ul class="form__input-content locality"></ul>
         </div>
         <div class="form__input-group form__input-group--count">
-          <input class="form__input" type="text" name="adults" placeholder="Количество взрослых" required>
-          <div class="error"></div>
+          <input class="form__input" type="number" min="1" max="10" name="adults" placeholder="Количество взрослых">
         </div>
         <div class="form__input-group form__input-group--count">
-          <input class="form__input" type="text" name="children" placeholder="Количество детей, их возраст">
-          <div class="error"></div>
+          <input class="form__input" type="text" name="childrens" placeholder="Количество детей, их возраст">
         </div>
       </div>
 
       <div class="form__input-wrapper">
         <div class="form__date-wrapper">
           <div class="form__date">
-            <input class="form__input" type="text" name="dateOn" placeholder="Дата заезда" id="dateOn">
-            <div class="error"></div>
+            <input class="form__input" type="text" name="dateFrom" placeholder="Дата заезда" data-input="date" readonly>
           </div>
           <div class="form__date">
-            <input class="form__input" type="text" name="dateOff" placeholder="Дата отъезда">
-            <div class="error"></div>
+            <input class="form__input" type="text" name="dateTo" placeholder="Дата отъезда" data-input="date" readonly>
           </div>
         </div>
         <div class="form__message-wrapper">
-          <textarea class="form__message" name="user-comment" placeholder="Комментарий"></textarea>
+          <textarea class="form__message" name="message" placeholder="Комментарий"></textarea>
           <div class="error"></div>
         </div>
       </div>
@@ -53,13 +49,11 @@
       <div class="form__input-wrapper">
         <div class="form__button-wrapper">
           <button class="button form__button" type="submit">Отправить заявку</button>
-          <div class="error"></div>
         </div>
-
-        <div class="form__checkbox-wrapper">
-          <input class="form__checkbox" type="checkbox">
-          <label>Согласие на обработку персональных данных</label>
-        </div>
+        <label class="form__checkbox-wrapper" for="booking-checkbox">
+          <input class="form__checkbox" type="checkbox" id="booking-checkbox" checked>
+          <a href="#">Согласие на&nbsp;обработку персональных данных</a>
+        </label>
       </div>
     </form>
   </div>

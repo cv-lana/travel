@@ -1,12 +1,11 @@
 @media (max-width: 1200px)
-  .header
-    &-contact
-      column-gap: 25px
-      &__links
-        gap: 25px
-      &__btn
-        padding: 13px 20px
-        margin-left: 0
+  .header-contact
+    column-gap: 25px
+    &__links
+      gap: 25px
+    &__btn
+      padding: 13px 20px
+      margin-left: 0
   .tours
     &__card
       max-width: 320px
@@ -18,47 +17,30 @@
     &__wrapper
       grid-template-columns: repeat(auto-fit, minmax(234px, 1fr))
       column-gap: 29px
-    &__card:nth-child(3)
-      height: 494px
-  .card
-    height: 234px
-  .gallery
-    &__image
-      width: 320px
-      height: 233px
+    &__card
+      height: 234px
+      &:nth-child(3)
+        height: 494px
+  .gallery__image
+    width: 320px
+    height: 233px
   .swiper
     height: 233px
-  .aboutUs
-    &-advantages
-      &__list
-        gap: 20px
-      &__item
-        max-width: 210px
-  .tourBases
-    &__card
-      grid-template-columns: 318px 1fr
-  .preview
-    &-info__wrapper
-      width: 100%
-  .block
+  .aboutUs-advantages
+    &__list
+      gap: 20px
+    &__item
+      max-width: 210px
+  .preview__wrapper
+    width: 100%
+  .tourBases__card
+    grid-template-columns: 318px 1fr
+  .content__wrapper, .catalog__wrapper, .excursion-gallery__wrapper
+    justify-content: space-evenly
+    gap: 25px
+  .sq-card
     width: 450px
     height: 290px
-    &-wrapper
-      justify-content: space-evenly
-  .allExcursions
-    &__wrapper
-      justify-content: space-evenly
-      gap: 33px
-  .extremeTours
-    &__wrapper
-      justify-content: space-evenly
-  .catalog
-    &__wrapper
-      justify-content: space-evenly
-  .hotels
-    &__wrapper
-      justify-content: space-evenly
-      gap: 33px
 
 @media (max-width: 1082px)
   .popularOffers
@@ -66,9 +48,8 @@
       display: none
 
 @media (min-width: 992px)
-  .link
-    &:hover
-      color: $red
+  .link:hover
+    color: $red
   .header-contact__btn, .promo__button
     &:hover
       background-color: $white
@@ -86,43 +67,42 @@
         color: $black
       .submenu
         display: block
-  .promo__link
+  .promo__link:hover
+    background-image: url('../img/promo/arrow-down-hover.svg')
+  .popularOffers__link
     &:hover
-      background-image: url('../img/promo/arrow-down-hover.svg')
-  .card__link
-    &:hover
-      .card__image
+      .popularOffers__image
         transform: scale(1.1)
-        transition: 1s
-  .aboutBaikal
-    &-video
-      &:hover
-        .aboutBaikal-video__button
-          opacity: 1
-          visibility: visible
-  .form__button
+        transition: transform 0.5s ease 0s
+  .gallery__btn:hover
+    opacity: 0.7
+  .form__button:hover
+    background-color: $white
+    color: $blue-dark
+  .to-top:hover
+    opacity: 0.8
+  .banner__button
     &:hover
-      background-color: $white
-      color: $blue-dark
-  .tourBases-description__button, .huntingFishing__btn
+      background-color: $blue-dark
+      border-color: $blue-dark
+    &-download
+      &:hover
+        background-color: green
+        border-color: green
+  .tourBases-description__button, .vw-card__button
     &:hover
       background-color: $blue
       color: $white
-  .banner
-    &__button
-      &:hover
-        background-color: $blue-dark
-        border-color: $blue-dark
-      &-download
-        &:hover
-          background-color: green
-          border-color: green
-  .placesInterest__button
+  .sq-card__link
     &:hover
-      background-color: $blue-dark
-      color: $white
-  .to-top:hover
-    opacity: 0.8
+      .sq-card__image
+        transform: scale(1.1)
+        transition: transform 0.5s ease 0s
+  .vh-card, .vw-card, .tourBases__card
+    &:hover
+      box-shadow: 0 4px 16px 0 rgba($black, 0.3)
+      .vh-card__title
+        color: $red
 
 @media (max-width: 992px)
   input, textarea
@@ -163,6 +143,7 @@
       bottom: 0
       left: 0
       transform: translateX(100%)
+      background-color: $white
   .menu
     &__list
       padding-bottom: 20px
@@ -203,7 +184,15 @@
     padding-top: 84px
     &__content
       width: 100%
-  .card
+  .popularOffers
+    &__wrapper
+      grid-template-columns: repeat(auto-fit, minmax(248px, 1fr))
+    &__card
+      height: 248px
+      &:nth-child(3)
+        display: none
+      &:nth-child(12)
+        display: block
     &__title
       font-size: 16px
       line-height: 21px
@@ -213,28 +202,17 @@
     &__cost
       font-size: 14px
       line-height: 18px
-  .popularOffers
-    &__wrapper
-      grid-template-columns: repeat(auto-fit, minmax(248px, 1fr))
-    &__card:nth-child(3)
-      display: none
-    &__card:nth-child(12)
-      display: block
-  .card
-    height: 248px
-  .aboutBaikal
-    &-info
-      flex-direction: column
-      &__content
-        max-width: 100%
-      &__video
-        max-width: 100%
-        height: 398px
-        background-position: center
-  .gallery
-    &__image
-      width: 352px
-      height: 256px
+  .aboutBaikal-info
+    flex-direction: column
+    &__content
+      max-width: 100%
+    &__video
+      max-width: 100%
+      height: 398px
+      background-position: center
+  .gallery__image
+    width: 352px
+    height: 256px
   .swiper
     height: 256px
   .aboutUs
@@ -275,46 +253,25 @@
       border: none
     &-inner
       display: none
-  .block
-    width: 344px
+  .sq-card
+    width: 342px
     height: 221px
-    &-wrapper
-      column-gap: 21px
     &__link
       padding: 21px 17px
     &__text
       font-size: 20px
       line-height: 25px
-  .allExcursions
-    &__card
-      width: 338px
-      height: 400px
-      &:nth-child(n+5)
-        display: none
+  .vh-card
+    width: 342px
+    min-height: 342px
     &__image
-      height: 214px
-  .extremeTours
-    &__wrapper
-      column-gap: 25px
-    &__card
-      width: 342px
-      height: 374px
-      &:nth-child(n+5)
-        display: none
-    &__image
-      height: 215px
-  .huntingFishing
-    &__card
-      grid-template-columns: 320px 1fr
-    &-details
-      &__wrapper
-        display: none
-  .placesInterest
-    &__card
-      grid-template-columns: 320px 1fr
-  .contacts
-    &__wrapper
-      margin: 0 auto
+      height: 216px
+  .vw-card
+    grid-template-columns: 320px 1fr
+    &__details-wrapper
+      display: none
+  .contacts__wrapper
+    margin: 0 auto
   .bases
     display: none
   .goryachinsk
@@ -323,23 +280,19 @@
       width: 100%
     &__image
       height: 450px
-  .catalog
-    &__card
-      max-width: 338px
-      height: 345px
-    &__image
-      height: 214px
   .base
     &__content
       width: 100%
     &__image
       height: 450px
-  .hotels
-    &__card
-      width: 338px
-      height: 338px
+  .excursion
+    &__title, &__info
+      width: 100%
     &__image
-      height: 218px
+      height: 400px
+    &-gallery__card
+      width: 342px
+      height: 249px
 
 @media (max-width: 768px)
   input, textarea
@@ -358,28 +311,23 @@
       line-height: 25px
     &__link
       bottom: 24px
-  .directions
-    &__wrapper
-      grid-template-columns: repeat(auto-fit, minmax(246px, 1fr))
-      column-gap: 25px
-  .popularOffers
-    &__wrapper
-      column-gap: 20px
-  .aboutBaikal
-    &-map
-      &__image
-        height: 500px
-  .gallery
+  .directions__wrapper
+    grid-template-columns: repeat(auto-fit, minmax(246px, 1fr))
+    column-gap: 25px
+  .popularOffers__wrapper
+    column-gap: 20px
+  .aboutBaikal-map
     &__image
-      width: 320px
-      height: 233px
+      height: 500px
+  .gallery__image
+    width: 320px
+    height: 233px
   .swiper
     height: 233px
-  .aboutUs
-    &-advantages
-      &__list
-        flex-wrap: wrap
-        justify-content: space-evenly
+  .aboutUs-advantages
+    &__list
+      flex-wrap: wrap
+      justify-content: space-evenly
   .form
     row-gap: 16px
     &__input
@@ -400,11 +348,10 @@
       padding: 0
       flex-direction: row
     &-contact
+      width: 237px
       &__item
         &:not(:first-child)
           display: none
-    &-contact
-      width: 237px
   .banner
     height: 400px
     &__content
@@ -413,40 +360,17 @@
       display: none
       &-download
         display: none
-  .tourBases
-    &__card
-      margin: 0 auto
-      max-width: 500px
-      grid-template-columns: 1fr
-    &__image
-      height: 450px
-    &__content
-      padding: 23px 16px
-  .shipsYachts
+  .content
     &__title
       text-align: center
-  .allExcursions
-    &__card:nth-child(4)
-      display: none
-  .extremeTours
-    &__card:nth-child(4)
-      display: none
-  .huntingFishing
-    &__card
-      grid-template-columns: 1fr
-      max-width: 500px
-      margin: 0 auto
+  .vw-card, .tourBases
+    margin: 0 auto
+    max-width: 500px
+    grid-template-columns: 1fr
     &__image
       height: 450px
-    &__title
-      margin-bottom: 14px
-  .placesInterest
-    &__card
-      grid-template-columns: 1fr
-      max-width: 500px
-      margin: 0 auto
-    &__image
-      height: 450px
+  .tourBases__content
+    padding: 23px 16px
   .contacts
     &-item__image, &__map
       height: 450px
@@ -454,9 +378,14 @@
     padding: 11px 0 60px
     &__image
       height: 337px
-  .rooms
-    &__content
-      grid-template-columns: 1fr 196px
+  .rooms__content
+    grid-template-columns: 1fr 196px
+  .excursion
+    &__title
+      font-size: 33px
+      line-height: 43px
+    &__image
+      height: 330px
 
 @media (max-width: 576px)
   .breadcrumbs
@@ -487,19 +416,18 @@
     &__wrapper
       grid-template-columns: repeat(auto-fit, minmax(248px, 320px))
       justify-content: center
-  .card
-    height: 288px
-    &:nth-child(n+5):not(:last-child)
-      display: none
+    &__card
+      height: 288px
+      &:nth-child(n+5):not(:last-child)
+        display: none
   .aboutBaikal
     padding-top: 40px
     &-map
       margin-bottom: 50px
       &__image
         height: 400px
-    &-info
-      &__video
-        background-position: left
+    &-info__video
+      background-position: left
   .gallery
     &__container
       position: relative
@@ -513,10 +441,9 @@
     &__title
       font-size: 30px
       line-height: 39px
-    &-content
-      &__text
-        font-size: 16px
-        line-height: 21px
+    &-content__text
+      font-size: 16px
+      line-height: 21px
   .booking
     padding-bottom: 60px
   .form
@@ -539,9 +466,8 @@
       height: 180px
     &__button
       max-width: 288px
-    &__checkbox
-      &-wrapper
-        order: -1
+    &__checkbox-wrapper
+      order: -1
   .footer
     &__bottom
       flex-direction: column
@@ -556,14 +482,7 @@
     &__title
       font-size: 29px
       line-height: 38px
-  .tourBases
-    padding: 60px 0
-    &__text
-      font-size: 18px
-      line-height: 25px
-    &__image
-      height: 350px
-  .huntingFishing, .placesInterest
+  .vw-card
     &__image
       height: 350px
     &__title
@@ -573,9 +492,8 @@
     margin: 60px 0
     &-item__image, &__map
       height: 350px
-  .goryachinsk
-    &__image
-      height: 350px
+  .tourBases__image, .goryachinsk__image
+    height: 350px
   .base
     &__title
       margin-bottom: 20px
@@ -626,12 +544,21 @@
     &--blue
       width: 143px
       font-size: 16px
+  .excursion
+    padding: 40px 0
+    &__title
+      font-size: 27px
+      line-height: 37px
+    &__image
+      height: 260px
 
 @media (max-width: 480px)
   .container
     padding: 0 15px
   .wrapper
     top: 73px
+  .main__content
+    padding-bottom: 40px
   .to-top
     right: 15px
   .title
@@ -658,11 +585,10 @@
         justify-content: flex-start
       &__btn
         padding: 13px 40px
-  .menu
-    &__list
-      padding-left: 5px
-      text-align: left
-      align-items: flex-start
+  .menu__list
+    padding-left: 5px
+    text-align: left
+    align-items: flex-start
   .promo
     margin-top: -73px
     padding-top: 111px
@@ -699,20 +625,10 @@
         left: 0
         bottom: 0
         background: linear-gradient(rgba($black,0),$white)
-      &--opened
-        height: auto
-        &::after
-          bottom: -30px
     &__text
       margin-bottom: 18px
-    &__btn
-      &--show
-        display: block
-        &-hidden
-          display: none
-      &--minimize-active
-        display: block
-        margin-top: 30px
+    &__btn--show
+      display: block
   .directions
     &__wrapper
       margin-top: 30px
@@ -720,15 +636,8 @@
       height: 500px
       row-gap: 26px
       overflow: hidden
-      &--opened
-        height: auto
-    &__btn
-      &--show
-        display: block
-        &-hidden
-          display: none
-      &--minimize-active
-        display: block
+    &__btn--show
+      display: block
   .popularOffers
     padding-top: 40px
     &__wrapper
@@ -776,85 +685,46 @@
       &__text
         font-size: 16px
         line-height: 18px
-  .booking
-    &__container
-      padding: 0 15px
+  .booking__container
+    padding: 0 15px
   .banner
     height: 250px
     &__content
       margin-top: 0
     &__title
-      font-size: 25px
-      line-height: 35px
+      font-size: 23px
+      line-height: 33px
       &--center
         margin-top: 25px
-  .tourBases
-    &__image
-      height: 290px
-  .preview-info
+  .tourBases__image
+    height: 290px
+  .preview
     padding: 40px 0
     &__text
       font-size: 16px
       line-height: 21px
-  .shipsYachts
-    margin-bottom: 60px
-    &__title
-      margin-bottom: 40px
-      font-size: 22px
-      line-height: 29px
-  .block
+  .content__title
+    margin-bottom: 40px
+    font-size: 22px
+    line-height: 29px
+  .sq-card
     width: 290px
     height: 187px
     &__text
       font-size: 16px
       line-height: 21px
-  .transportServices
-    margin-bottom: 60px
-  .allExcursions
-    margin-bottom: 60px
-    &__card
-      width: 290px
-      height: 340px
+  .vh-card
+    width: 290px
+    min-height: 280px
     &__image
       height: 183px
-    &__content
-      padding-top: 10px
-      padding-bottom: 15px
-    &__title
-      font-size: 18px
-      line-height: 21px
-    &__info
-      font-size: 14px
-      line-height: 18px
-  .extremeTours
-    margin-bottom: 60px
-    &__card
-      width: 290px
-      height: 320px
-    &__image
-      height: 183px
-    &__content
-      padding: 12px 16px
     &__title
       font-size: 18px
       line-height: 23px
-    &__info
+    &__info, &__price
       font-size: 14px
       line-height: 18px
-  .huntingFishing
-    margin-bottom: 60px
-    &__image
-      height: 290px
-    &__content
-      padding: 16px 16px 24px 16px
-    &__title
-      font-size: 18px
-      line-height: 23px
-    &__text
-      font-size: 14px
-      line-height: 18px
-  .placesInterest
-    margin-bottom: 60px
+  .vw-card
     &__image
       height: 290px
     &__content
@@ -862,10 +732,11 @@
     &__title
       font-size: 18px
       line-height: 23px
-    &__info
+    &__text
       font-size: 14px
       line-height: 18px
   .pagination
+    margin-top: 40px
     &__item
       &:nth-child(4), &:nth-child(5)
         display: none
@@ -898,7 +769,7 @@
     &__map
       height: 300px
   .goryachinsk
-    padding-top: 20px
+    padding: 20px 0 40px
     &__wrapper
       padding-bottom: 40px
     &__title
@@ -907,10 +778,9 @@
       line-height: 38px
     &__image
       height: 250px
-    &-description
-      &__text
-        font-size: 16px
-        line-height: 21px
+    &-description__text
+      font-size: 16px
+      line-height: 21px
     &-info
       &__title
         margin-top: 30px
@@ -920,21 +790,12 @@
         font-size: 16px
         line-height: 21px
   .catalog
+    padding-top: 30px
     &__title
-      margin: 30px 0 30px
-    &__card
-      height: 300px
-    &__image
-      height: 188px
-    &__content
-      padding: 14px 20px
-    &__subtitle
-      font-size: 18px
-      line-height: 23px
-  .base
-    &__image
-      margin-bottom: 20px
-      height: 200px
+      margin-bottom: 30px
+  .base__image
+    margin-bottom: 20px
+    height: 200px
   .rooms
     &__wrapper
       margin-top: 30px
@@ -947,18 +808,29 @@
     &-info__text, &__text, &-description
       font-size: 14px
       line-height: 18px
-  .hotels
-    margin-bottom: 60px
-    &__card
-      width: 290px
-      height: 290px
-    &__image
-      height: 188px
-    &__content
-      padding: 17px 20px 20px
+  .excursion
+    padding-top: 20px
     &__title
-      font-size: 18px
-      line-height: 23px
-    &__cost
-      font-size: 14px
-      line-height: 18px
+      margin-bottom: 30px
+    &__image
+      margin-bottom: 30px
+      height: 230px
+    &__info
+      margin-bottom: 30px
+      font-size: 16px
+    &-details
+      margin-bottom: 30px
+      &__title
+        font-size: 16px
+    &-gallery__card
+      width: 290px
+      height: 211px
+  .open
+    height: auto
+    &::after
+      bottom: -30px
+  .hidden
+    display: none
+  .active
+    display: block
+    margin-top: 30px

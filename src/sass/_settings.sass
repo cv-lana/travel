@@ -1,5 +1,6 @@
 *
   box-sizing: border-box
+  outline: none
 html,
 body
   height: 100%
@@ -10,7 +11,6 @@ body
   line-height: 21px
   background-color: $white
   color: $black
-  scroll-behavior: smooth
 a
   text-decoration: none
   display: inline-block
@@ -39,6 +39,8 @@ textarea
   overflow: hidden
 .main
   flex: 1 0 auto
+  &__content
+    padding-bottom: 60px
 .container
   max-width: 1180px
   margin: 0 auto

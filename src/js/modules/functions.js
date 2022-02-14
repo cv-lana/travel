@@ -1,3 +1,5 @@
+import ShowBlock from './showBlock.js';
+
 export function disableScroll() {
   const header = document.querySelector('.header');
   const widthScroll = window.innerWidth - document.body.offsetWidth;
@@ -26,45 +28,11 @@ export function enableScroll() {
 }
 
 export function showBlockTours() {
-  const blockWrapper = document.querySelector('.tours__wrapper');
-  const btnShow = document.querySelector('.tours__btn--show');
-  const btnMinimize = document.querySelector('.tours__btn--minimize');
-
-  if (btnShow) {
-    btnShow.addEventListener('click', () => {
-      blockWrapper.classList.add('tours__wrapper--opened');
-      btnShow.classList.add('tours__btn--show-hidden');
-      btnMinimize.classList.add('tours__btn--minimize-active');
-    });
-  }
-
-  if (btnMinimize) {
-    btnMinimize.addEventListener('click', () => {
-      blockWrapper.classList.remove('tours__wrapper--opened');
-      btnShow.classList.remove('tours__btn--show-hidden');
-      btnMinimize.classList.remove('tours__btn--minimize-active');
-    });
-  }
+  const block = new ShowBlock('.tours__wrapper', '.tours__btn--show', '.tours__btn--minimize');
+  block.init();
 }
 
 export function showBlockDirections() {
-  const blockWrapper = document.querySelector('.directions__wrapper');
-  const btnShow = document.querySelector('.directions__btn--show');
-  const btnMinimize = document.querySelector('.directions__btn--minimize');
-
-  if (btnShow) {
-    btnShow.addEventListener('click', () => {
-      blockWrapper.classList.add('directions__wrapper--opened');
-      btnShow.classList.add('directions__btn--show-hidden');
-      btnMinimize.classList.add('directions__btn--minimize-active');
-    });
-  }
-
-  if (btnMinimize) {
-    btnMinimize.addEventListener('click', () => {
-      blockWrapper.classList.remove('directions__wrapper--opened');
-      btnShow.classList.remove('directions__btn--show-hidden');
-      btnMinimize.classList.remove('directions__btn--minimize-active');
-    });
-  }
+  const block = new ShowBlock('.directions__wrapper', '.directions__btn--show', '.directions__btn--minimize');
+  block.init();
 }

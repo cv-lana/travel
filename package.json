@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.16",
+    "js-datepicker": "^5.18.0",
     "swiper": "^7.4.1"
   }
 }

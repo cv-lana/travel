@@ -6,15 +6,14 @@ const toggleMenu = () => {
   menuOpen.addEventListener('click', () => {
     menu.style.cssText = `
       overflow: auto;
-      transition: 1s;
+      transition: 0.5s ease-out;
       transform: translateX(0);
-      background-color: #fff;
     `;
   });
 
   menuClose.addEventListener('click', () => {
     menu.style.cssText = `
-    transition: 1s;
+    transition: 0.5s ease-out;
     transform: translateX(100%);
     `;
   });

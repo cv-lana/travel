@@ -1,0 +1,113 @@
+.vw-card
+  display: grid
+  grid-template-columns: 352px 1fr
+  background-color: $grey-light
+  border-radius: 6px
+  overflow: hidden
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__content
+    padding: 24px 33px
+    display: flex
+    flex-direction: column
+  &__title
+    margin-bottom: 17px
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+  &__text
+    margin-bottom: 20px
+    font-size: 16px
+  &__button
+    margin-top: auto
+    padding: 12px
+    width: 156px
+    height: 44px
+    border: 1px solid $blue
+    border-radius: 50px
+    text-align: center
+    color: $blue
+  &__details
+    margin-top: auto
+    display: flex
+    justify-content: space-between
+    &-wrapper
+      display: flex
+      flex-direction: column
+      font-size: 16px
+    &-text
+      font-weight: 500
+
+.vh-card
+  width: 352px
+  min-height: 352px
+  border: 1px solid $white-light
+  border-radius: 6px
+  overflow: hidden
+  &__link
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+  &__image
+    width: 100%
+    height: 224px
+  &__content
+    padding: 16px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex-basis: 100%
+    gap: 15px
+  &__title
+    font-weight: 500
+    font-size: 20px
+    line-height: 26px
+  &__info
+    display: flex
+    flex-direction: column
+    font-size: 16px
+
+.sq-card
+  position: relative
+  width: 544px
+  height: 352px
+  border-radius: 6px
+  overflow: hidden
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: linear-gradient(180deg, $white 54.17%, $black 100%)
+    mix-blend-mode: multiply
+    opacity: 0.7
+    z-index: -1
+  &__link
+    padding: 32px 23px
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    gap: 10px
+  &__image
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    object-fit: cover
+    z-index: -2
+  &__text
+    margin-top: auto
+    font-weight: 500
+    font-size: 22px
+    line-height: 29px
+    color: $white
+  &__price
+    font-size: 16px
+    color: $white

@@ -1,5 +1,4 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
 
 const slider = () => {
   const swiper = new Swiper('.swiper', {
