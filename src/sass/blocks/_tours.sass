@@ -1,12 +1,11 @@
 .tours
-  padding: 64px 0
+  padding: 70px 0
   &__wrapper
-    display: flex
-    flex-wrap: wrap
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr))
     justify-content: space-evenly
     gap: 32px
   &__card
-    max-width: 256px
     width: 100%
   &__link
     display: block
@@ -27,12 +26,8 @@
     font-size: 16px
     line-height: 19px
   &__btn
-    border: none
     display: none
     margin: 12px auto 0
     border-bottom: 1px dashed
     border-color: $blue-dark
     color: $blue-dark
-    background-color: transparent
-    cursor: pointer
-    outline: none

@@ -6,7 +6,8 @@
 })
 
 <body>
-  <a id="top"></a>
+  @@include('components/preloader.html')
+
   <div class="wrapper">
     @@include('components/header-page.html')
 
@@ -29,7 +30,7 @@
 
       <section class="excursion">
         <div class="container">
-          <h1 class="title excursion__title">Обзорная экскурсия по&nbsp;городу Улан-Удэ (на&nbsp;транспорте)</h1>
+          <h1 class="excursion__title">Обзорная экскурсия по&nbsp;городу Улан-Удэ (на&nbsp;транспорте)</h1>
           <img class="excursion__image" src="img/excursion/excursion-bg.jpg"
             alt="Обзорная экскурсия по городу Улан-Удэ (на транспорте)">
           <div class="excursion__info">
@@ -170,7 +171,7 @@
 
     @@include('components/footer.html')
     @@include('components/modal.html')
-    <a class="to-top" href="#top"></a>
+    <button class="to-top" type="button"></button>
   </div>
 </body>
 

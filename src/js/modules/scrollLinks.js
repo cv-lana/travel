@@ -2,7 +2,7 @@ const scrollLinks = () => {
   const allLinks = document.querySelectorAll('[data-scroll=link]');
   const arrowTop = document.querySelector('.to-top');
 
-  const arrLinks = [...allLinks, arrowTop];
+  // const arrLinks = [...allLink];
 
   const windowScroll = () => {
     const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -13,7 +13,15 @@ const scrollLinks = () => {
     }
   };
 
-  arrLinks.forEach(link => {
+  const smoothScroll = () => {
+    const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+      window.requestAnimationFrame(smoothScroll);
+      window.scrollTo(0, currentScroll - (currentScroll / 15));
+    }
+  };
+
+  allLinks.forEach(link => {
     if (link) {
       link.addEventListener('click', (event) => {
         event.preventDefault();
@@ -25,6 +33,8 @@ const scrollLinks = () => {
       });
     }
   })
+
+  arrowTop.addEventListener('click', smoothScroll);
 
   window.addEventListener('load', () => {
     windowScroll();

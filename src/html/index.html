@@ -6,7 +6,6 @@
 })
 
 <body>
-  <a id="top"></a>
   @@include('components/preloader.html')
 
   <div class="wrapper">
@@ -22,7 +21,7 @@
               <span class="promo__text-strong">Поехали с&nbsp;нами за&nbsp;новыми впечатлениями!</span>
             </p>
           </div>
-          <a class="button promo__button" href="#booking" data-scroll="link">подобрать тур</a>
+          <a class="promo__button" href="#booking" data-scroll="link">подобрать тур</a>
           <a class="promo__link" href="#tours" data-scroll="link"></a>
         </div>
       </section>
@@ -111,7 +110,7 @@
 
       <section class="directions">
         <div class="container">
-          <h2 class="title">Основные направления деятельности</h2>
+          <h2 class="title directions__title">Основные направления деятельности</h2>
           <div class="directions__wrapper">
             <div class="directions__card">
               <img class="directions__image" src="img/directions/icon-1.svg" alt="Иконка" width="84" height="84" />
@@ -169,13 +168,13 @@
 
       <section class="popularOffers">
         <div class="container">
-          <h2 class="title">Популярные предложения</h2>
+          <h2 class="title popularOffers__title">Популярные предложения</h2>
           <div class="popularOffers__wrapper">
             <div class="popularOffers__card">
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-1.jpg"
                   alt="Зимний однодневный тур на Чивыркуйский залив" width="256" height="256">
-                <h3 class="popularOffers__title">Зимний однодневный тур на&nbsp;Чивыркуйский залив</h3>
+                <h3 class="popularOffers__link-title">Зимний однодневный тур на&nbsp;Чивыркуйский залив</h3>
                 <p class="popularOffers__cost">Cтоимость 4000 руб.</p>
               </a>
             </div>
@@ -183,7 +182,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-2.jpg"
                   alt="Зимний однодневный тур на остров Ольхон" width="256" height="256">
-                <h3 class="popularOffers__title">Зимний однодневный тур на&nbsp;остров Ольхон</h3>
+                <h3 class="popularOffers__link-title">Зимний однодневный тур на&nbsp;остров Ольхон</h3>
                 <p class="popularOffers__cost">Cтоимость 5000 руб.</p>
               </a>
             </div>
@@ -191,7 +190,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-3.jpg"
                   alt="Экскурсия в Иволгинский дацан" width="544" height="544">
-                <h3 class="popularOffers__title">Экскурсия в&nbsp;Иволгинский дацан</h3>
+                <h3 class="popularOffers__link-title">Экскурсия в&nbsp;Иволгинский дацан</h3>
                 <p class="popularOffers__cost">
                   Продолжительность 4 часа
                   <span class="popularOffers__cost-strong">Cтоимость от 500 руб.</span>
@@ -202,7 +201,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-4.jpg"
                   alt="Обзорная экскурсия по Улан-Удэ" width="256" height="256">
-                <h3 class="popularOffers__title">Обзорная экскурсия по&nbsp;Улан-Удэ</h3>
+                <h3 class="popularOffers__link-title">Обзорная экскурсия по&nbsp;Улан-Удэ</h3>
                 <p class="popularOffers__cost">
                   Продолжительность 3 часа<br />
                   <span class="popularOffers__cost-strong">Cтоимость от 500 руб.</span>
@@ -213,7 +212,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-5.jpg"
                   alt="Эко-отель «Байкальское шале», с. Максимиха" width="256" height="256">
-                <h3 class="popularOffers__title">Эко-отель &laquo;Байкальское шале&raquo;, с.Максимиха</h3>
+                <h3 class="popularOffers__link-title">Эко-отель &laquo;Байкальское шале&raquo;, с.Максимиха</h3>
                 <p class="popularOffers__cost">Cтоимость 6500 руб.</p>
               </a>
             </div>
@@ -221,7 +220,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-6.jpg"
                   alt="Летний однодневный тур в Чивыркуйский залив" width="256" height="256">
-                <h3 class="popularOffers__title">Летний однодневный тур в&nbsp;Чивыркуйский залив</h3>
+                <h3 class="popularOffers__link-title">Летний однодневный тур в&nbsp;Чивыркуйский залив</h3>
                 <p class="popularOffers__cost">Cтоимость 4000 руб.</p>
               </a>
             </div>
@@ -229,7 +228,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-7.jpg"
                   alt="Отель «Белая Карета», с. Горячинск" width="256" height="256">
-                <h3 class="popularOffers__title">Отель &laquo;Белая Карета&raquo;, с.Горячинск</h3>
+                <h3 class="popularOffers__link-title">Отель &laquo;Белая Карета&raquo;, с.Горячинск</h3>
                 <p class="popularOffers__cost">Cтоимость от 3200 руб.</p>
               </a>
             </div>
@@ -237,7 +236,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-8.jpg"
                   alt="Однодневная поездка на Байкал «Байкальская Гавань»" width="256" height="256">
-                <h3 class="popularOffers__title">
+                <h3 class="popularOffers__link-title">
                   Однодневная поездка на&nbsp;Байкал &laquo;Байкальская Гавань&raquo;
                 </h3>
                 <p class="popularOffers__cost">Cтоимость от 1000 руб.</p>
@@ -247,7 +246,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-9.jpg"
                   alt="Парк-отель «Сагаан-Морин», с. Сухая" width="256" height="256">
-                <h3 class="popularOffers__title">Парк-отель &laquo;Сагаан-Морин&raquo;, с.Сухая</h3>
+                <h3 class="popularOffers__link-title">Парк-отель &laquo;Сагаан-Морин&raquo;, с.Сухая</h3>
                 <p class="popularOffers__cost">Cтоимость от 3500 руб.</p>
               </a>
             </div>
@@ -255,7 +254,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-10.jpg"
                   alt="Летний однодневный тур на остров Ольхон" width="256" height="256">
-                <h3 class="popularOffers__title">Летний однодневный тур на&nbsp;остров Ольхон</h3>
+                <h3 class="popularOffers__link-title">Летний однодневный тур на&nbsp;остров Ольхон</h3>
                 <p class="popularOffers__cost">Cтоимость 8500 руб.</p>
               </a>
             </div>
@@ -263,7 +262,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-11.jpg"
                   alt="Зимний тур «Чивыркуйская сказка»" width="256" height="256">
-                <h3 class="popularOffers__title">Зимний тур &laquo;Чивыркуйская сказка&raquo;</h3>
+                <h3 class="popularOffers__link-title">Зимний тур &laquo;Чивыркуйская сказка&raquo;</h3>
                 <p class="popularOffers__cost">Cтоимость 2000 руб.</p>
               </a>
             </div>
@@ -271,7 +270,7 @@
               <a class="popularOffers__link" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offer-12.jpg"
                   alt="Парк-отель «Байкальская Ривьера», с. Гремячинск" width="256" height="256">
-                <h3 class="popularOffers__title">Парк-отель &laquo;Байкальская Ривьера&raquo;, с.Гремячинск</h3>
+                <h3 class="popularOffers__link-title">Парк-отель &laquo;Байкальская Ривьера&raquo;, с.Гремячинск</h3>
                 <p class="popularOffers__cost">Cтоимость от 3700 руб.</p>
               </a>
             </div>
@@ -279,7 +278,7 @@
               <a class="popularOffers__link popularOffers__link--all" href="#">
                 <img class="popularOffers__image" src="img/popular-offers/offers-all.jpg" alt="Показать все предложения"
                   width="256" height="256">
-                <h3 class="popularOffers__title popularOffers__title--all">Показать все предложения</h3>
+                <h3 class="popularOffers__link-title popularOffers__link-title--all">Показать все предложения</h3>
               </a>
             </div>
           </div>
@@ -288,9 +287,9 @@
 
       <section class="aboutBaikal">
         <div class="container">
-          <h2 class="title">Карта Байкала</h2>
+          <h2 class="title aboutBaikal__title">Карта Байкала</h2>
           <div class="aboutBaikal-map">
-            <iframe class="aboutBaikal-map__image"
+            <iframe class="aboutBaikal-map__iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4777005.475354303!2d108.14292420157587!3d54.22394596847182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5dab7dedcf8dd873%3A0xf2489412c5853349!2z0JHQsNC50LrQsNC7!5e0!3m2!1sru!2sru!4v1621896083108!5m2!1sru!2sru"
               width="1120" height="609" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
@@ -298,7 +297,7 @@
 
           <div class="aboutBaikal-info">
             <div class="aboutBaikal-info__content">
-              <h2 class="title">О Байкале</h2>
+              <h2 class="title aboutBaikal-info__title">О Байкале</h2>
               <p class="aboutBaikal-info__text">
                 Озеро Байкал&nbsp;&mdash; глубочайшее и&nbsp;древнейшее озеро планеты. Древние жители Прибайкалья
                 называли его Священным морем и&nbsp;считали, что в&nbsp;Байкале нет дна, обожествляли и&nbsp;наделяли
@@ -312,56 +311,51 @@
               <a class="link aboutBaikal-info__link" href="#">Читать подробней</a>
             </div>
             <a data-fancybox class="aboutBaikal-info__video" href="https://www.youtube.com/watch?v=dKMnkx0_18c">
-              <button class="button aboutBaikal-info__button" type="button"></button>
+              <button class="aboutBaikal-info__button" type="button"></button>
             </a>
           </div>
         </div>
       </section>
 
       <section class="gallery">
-        <div class="gallery__container">
-          <div class="container">
-            <div class="gallery__top">
-              <h2 class="title">Фотогалерея</h2>
-              <div class="gallery__inner">
-                <a class="link gallery__link" href="#">Перейти в&nbsp;раздел</a>
-                <div class="gallery__buttons"></div>
-              </div>
-            </div>
+        <div class="container">
+          <div class="gallery__top">
+            <h2 class="title">Фотогалерея</h2>
+            <a class="link gallery__link" href="#">Перейти в&nbsp;раздел</a>
+          </div>
 
-            <div class="gallery__slider">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide gallery__card">
-                    <img class="gallery__image" src="img/gallery/gallery-1.jpg" alt="gallery-1" />
-                  </div>
-                  <div class="swiper-slide gallery__card">
-                    <img class="gallery__image" src="img/gallery/gallery-2.jpg" alt="gallery-2" />
-                  </div>
-                  <div class="swiper-slide gallery__card">
-                    <img class="gallery__image" src="img/gallery/gallery-3.jpg" alt="gallery-3" />
-                  </div>
-                  <div class="swiper-slide gallery__card">
-                    <img class="gallery__image" src="img/gallery/gallery-4.jpg" alt="gallery-4" />
-                  </div>
-                  <div class="swiper-slide gallery__card">
-                    <img class="gallery__image" src="img/gallery/gallery-5.jpg" alt="gallery-5" />
-                  </div>
-                  <div class="swiper-slide gallery__card">
-                    <img class="gallery__image" src="img/gallery/gallery-6.jpg" alt="gallery-6" />
-                  </div>
+          <div class="gallery__slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide gallery__card">
+                  <img class="gallery__image" src="img/gallery/gallery-1.jpg" alt="gallery-1" />
+                </div>
+                <div class="swiper-slide gallery__card">
+                  <img class="gallery__image" src="img/gallery/gallery-2.jpg" alt="gallery-2" />
+                </div>
+                <div class="swiper-slide gallery__card">
+                  <img class="gallery__image" src="img/gallery/gallery-3.jpg" alt="gallery-3" />
+                </div>
+                <div class="swiper-slide gallery__card">
+                  <img class="gallery__image" src="img/gallery/gallery-4.jpg" alt="gallery-4" />
+                </div>
+                <div class="swiper-slide gallery__card">
+                  <img class="gallery__image" src="img/gallery/gallery-5.jpg" alt="gallery-5" />
+                </div>
+                <div class="swiper-slide gallery__card">
+                  <img class="gallery__image" src="img/gallery/gallery-6.jpg" alt="gallery-6" />
                 </div>
               </div>
-              <button class="button gallery__btn gallery__btn--prev" type="button"></button>
-              <button class="button gallery__btn gallery__btn--next" type="button"></button>
             </div>
+            <button class="gallery__btn gallery__btn--prev" type="button"></button>
+            <button class="gallery__btn gallery__btn--next" type="button"></button>
           </div>
         </div>
       </section>
 
       <section class="aboutUs">
         <div class="container">
-          <h2 class="title aboutUs__title">Байкальский отдых с нами – это легко!</h2>
+          <h2 class="aboutUs__title">Байкальский отдых с&nbsp;нами&nbsp;&mdash; это легко!</h2>
           <div class="aboutUs-content">
             <div class="aboutUs-content__img"></div>
             <div class="aboutUs-content__inner">
@@ -437,7 +431,7 @@
 
     @@include('components/footer.html')
     @@include('components/modal.html')
-    <a class="to-top" href="#top"></a>
+    <button class="to-top" type="button"></button>
   </div>
 </body>
 

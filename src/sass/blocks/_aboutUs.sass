@@ -1,12 +1,12 @@
 .aboutUs
-  padding-top: 80px
+  padding: 70px 0
   &__title
-    font-size: 44px
-    line-height: 57px
+    margin-bottom: 50px
+    @include title-large
+    text-align: center
     text-transform: uppercase
   &-content
-    margin-top: 45px
-    padding-bottom: 54px
+    padding-bottom: 60px
     display: grid
     grid-template-columns: 352px 1fr
     column-gap: 30px
@@ -20,9 +20,8 @@
       margin-bottom: 9px
       line-height: 25px
   &-advantages
+    padding-top: 60px
     &__list
-      padding-top: 41px
-      padding-bottom: 85px
       display: flex
       justify-content: space-between
       gap: 50px

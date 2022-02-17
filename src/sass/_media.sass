@@ -1,18 +1,14 @@
+@media (max-width: 1600px)
+  .banner
+    height: 470px
+
 @media (max-width: 1200px)
   .header-contact
     column-gap: 25px
     &__links
       gap: 25px
     &__btn
-      padding: 13px 20px
-      margin-left: 0
-  .tours
-    &__card
-      max-width: 320px
-    &__image
-      margin-bottom: 16px
-    &__text
-      margin-bottom: 23px
+      padding: 12px 20px
   .popularOffers
     &__wrapper
       grid-template-columns: repeat(auto-fit, minmax(234px, 1fr))
@@ -21,16 +17,23 @@
       height: 234px
       &:nth-child(3)
         height: 494px
-  .gallery__image
-    width: 320px
-    height: 233px
-  .swiper
-    height: 233px
   .aboutUs-advantages
     &__list
-      gap: 20px
+      gap: 18px
     &__item
       max-width: 210px
+  .banner
+    height: 410px
+    &__content
+      margin-top: 60px
+    &__title
+      padding: 30px
+      font-size: 40px
+      line-height: 50px
+      &--center
+        padding: 0 30px
+    &__button
+      margin-top: 35px
   .preview__wrapper
     width: 100%
   .tourBases__card
@@ -43,9 +46,8 @@
     height: 290px
 
 @media (max-width: 1082px)
-  .popularOffers
-    &__card:nth-child(12)
-      display: none
+  .popularOffers__card:nth-child(12)
+    display: none
 
 @media (min-width: 992px)
   .link:hover
@@ -54,10 +56,9 @@
     &:hover
       background-color: $white
       color: $black
-    &--page
-      &:hover
-        background-color: $blue-dark
-        color: $white
+    &--page:hover
+      background-color: $blue-dark
+      color: $white
   .menu__item
     &:hover
       padding: 5px
@@ -68,7 +69,7 @@
       .submenu
         display: block
   .promo__link:hover
-    background-image: url('../img/promo/arrow-down-hover.svg')
+    background-image: url('../img/promo/arrow-down-hover.png')
   .popularOffers__link
     &:hover
       .popularOffers__image
@@ -100,7 +101,7 @@
         transition: transform 0.5s ease 0s
   .vh-card, .vw-card, .tourBases__card
     &:hover
-      box-shadow: 0 4px 16px 0 rgba($black, 0.3)
+      box-shadow: 0 3px 29px 0 rgba($black, 0.3)
       .vh-card__title
         color: $red
 
@@ -136,7 +137,11 @@
     &__button-menu
       display: block
     &__menu
-      padding-bottom: 25px
+      display: none
+  .menu
+    &-mobile
+      display: block
+      padding: 25px 0
       position: fixed
       top: 81px
       right: 0
@@ -144,46 +149,40 @@
       left: 0
       transform: translateX(100%)
       background-color: $white
-  .menu
-    &__list
-      padding-bottom: 20px
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: center
-      gap: 10px
-      text-align: center
-      border-bottom: 1px solid $white-light
-    &__item
-      padding: 0
-      margin-right: 0
-    &__link
-      font-weight: 500
-      line-height: 38px
-      text-transform: uppercase
-      color: $black-light-2
-    &__close
-      display: block
-      position: absolute
-      top: 17px
-      right: 16px
-      width: 14px
-      height: 14px
-      background-image: url('../img/header/menu-close.svg')
-      background-color: transparent
-      cursor: pointer
-      border: none
-      outline: none
+      &__close
+        position: absolute
+        top: 17px
+        right: 16px
+        width: 14px
+        height: 14px
+        background: url('../img/header/menu-close.svg') center no-repeat
+      &__list
+        padding-bottom: 20px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        border-bottom: 1px solid $white-light
+      &__link
+        font-weight: 500
+        font-size: 16px
+        line-height: 38px
+        text-transform: uppercase
+        color: $black-light-2
   .submenu
     display: block
     position: relative
     padding: 0
     background-color: transparent
   .promo
-    min-height: 740px
-    padding-top: 84px
+    min-height: 660px
+    padding-top: 60px
     &__content
+      margin-bottom: 80px
       width: 100%
+  .tours__wrapper
+    grid-template-columns: repeat(auto-fit, minmax(242px, 1fr))
+    gap: 20px
   .popularOffers
     &__wrapper
       grid-template-columns: repeat(auto-fit, minmax(248px, 1fr))
@@ -193,7 +192,7 @@
         display: none
       &:nth-child(12)
         display: block
-    &__title
+    &__link-title
       font-size: 16px
       line-height: 21px
       &--all
@@ -208,13 +207,8 @@
       max-width: 100%
     &__video
       max-width: 100%
-      height: 398px
+      height: 400px
       background-position: center
-  .gallery__image
-    width: 352px
-    height: 256px
-  .swiper
-    height: 256px
   .aboutUs
     &-content
       grid-template-columns: 1fr
@@ -230,20 +224,25 @@
       &__text
         font-size: 18px
         line-height: 23px
+  .swiper
+    height: 240px
+  .form__button
+    padding: 19px 65px
   .footer
-    &-menu
-      flex-wrap: wrap
-      justify-content: flex-start
-      gap: 40px
-      &__item
-        width: 190px
+    &__top
+      display: none
     &__bottom
-      flex-direction: column
-      gap: 40px
+      padding: 0
     &-contact
-      width: 100%
-    &-copy
-      align-self: flex-end
+      width: 237px
+      &__item:not(:first-child)
+        display: none
+  .banner
+    height: 350px
+    &__content
+      margin-top: 40px
+    &__button-download
+      margin-top: 35px
   .tourBases
     &__content
       grid-template-columns: 1fr
@@ -257,7 +256,7 @@
     width: 342px
     height: 221px
     &__link
-      padding: 21px 17px
+      padding: 21px 16px
     &__text
       font-size: 20px
       line-height: 25px
@@ -295,12 +294,8 @@
       height: 249px
 
 @media (max-width: 768px)
-  input, textarea
-    &::placeholder
-      font-size: 16px
   .promo
-    min-height: 640px
-    margin-bottom: 40px
+    min-height: 540px
     &__content
       margin-bottom: 40px
     &__title
@@ -309,25 +304,25 @@
     &__text
       font-size: 18px
       line-height: 25px
-    &__link
-      bottom: 24px
   .directions__wrapper
     grid-template-columns: repeat(auto-fit, minmax(246px, 1fr))
     column-gap: 25px
   .popularOffers__wrapper
     column-gap: 20px
-  .aboutBaikal-map
-    &__image
-      height: 500px
-  .gallery__image
-    width: 320px
-    height: 233px
-  .swiper
-    height: 233px
-  .aboutUs-advantages
-    &__list
-      flex-wrap: wrap
-      justify-content: space-evenly
+  .aboutBaikal-map__iframe
+    height: 500px
+  .aboutUs
+    &__title
+      font-size: 40px
+      line-height: 50px
+    &-advantages
+      &__list
+        flex-wrap: wrap
+        justify-content: space-evenly
+        gap: 32px
+      &__text
+        font-size: 16px
+        line-height: 21px
   .form
     row-gap: 16px
     &__input
@@ -340,26 +335,19 @@
         &--count
           max-width: 47%
     &__button
-      width: 270px
-  .footer
-    &__top
-      display: none
-    &__bottom
-      padding: 0
-      flex-direction: row
-    &-contact
-      width: 237px
-      &__item
-        &:not(:first-child)
-          display: none
+      padding: 19px 55px
+      max-width: 270px
+      width: 100%
   .banner
-    height: 400px
+    height: 280px
     &__content
-      margin-top: 50px
-    &__button
+      margin-top: 0
+    &__title
+      padding: 30px
+      font-size: 35px
+      line-height: 45px
+    &__button, &__button-download
       display: none
-      &-download
-        display: none
   .content
     &__title
       text-align: center
@@ -372,7 +360,7 @@
   .tourBases__content
     padding: 23px 16px
   .contacts
-    &-item__image, &__map
+    &__image, &__map
       height: 450px
   .base
     padding: 11px 0 60px
@@ -388,65 +376,84 @@
       height: 330px
 
 @media (max-width: 576px)
-  .breadcrumbs
-    &__list
-      flex-wrap: wrap
-    &__item
-      font-size: 12px
   .promo
-    min-height: 550px
-    padding-top: 70px
+    min-height: 500px
+    padding-top: 50px
     &__title
       font-size: 55px
       line-height: 75px
     &__text
       font-size: 16px
       line-height: 23px
-  .directions
-    padding-bottom: 60px
+  .tours
+    padding: 40px 0
     &__wrapper
-      grid-template-columns: repeat(auto-fit, minmax(246px, 320px))
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+      gap: 16px
+    &__text
+      padding: 0 15px
+  .directions
+    padding: 40px 0
+    &__wrapper
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
       justify-content: center
+      gap: 26px 18px
     &__image
       display: block
       margin: 0 auto
     &__text
       text-align: center
   .popularOffers
+    padding-top: 40px
     &__wrapper
-      grid-template-columns: repeat(auto-fit, minmax(248px, 320px))
+      padding-bottom: 40px
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
       justify-content: center
     &__card
-      height: 288px
+      height: 200px
       &:nth-child(n+5):not(:last-child)
         display: none
   .aboutBaikal
-    padding-top: 40px
+    padding: 40px 0
     &-map
-      margin-bottom: 50px
-      &__image
+      margin-bottom: 40px
+      &__iframe
         height: 400px
     &-info__video
+      height: 300px
       background-position: left
   .gallery
-    &__container
-      position: relative
+    padding: 40px 0 85px
+    position: relative
+    &__top
+      margin-bottom: 30px
+      padding-right: 110px
     &__link
       position: absolute
       left: 50%
       transform: translateX(-50%)
       bottom: 35px
+    &__btn
+      top: -74px
+  .swiper
+    height: 220px
   .aboutUs
-    padding-top: 60px
+    padding: 40px 0
     &__title
       font-size: 30px
       line-height: 39px
-    &-content__text
-      font-size: 16px
-      line-height: 21px
+    &-content
+      padding-bottom: 40px
+      &__text
+        font-size: 16px
+        line-height: 21px
+    &-advantages
+      padding-top: 40px
   .booking
-    padding-bottom: 60px
+    padding: 40px 0
   .form
+    margin: 0 auto
+    max-width: 390px
     &__input
       &-wrapper
         &:nth-child(3)
@@ -458,28 +465,35 @@
       &-group--count
         max-width: 100%
     &__date
-      width: 50%
+      width: 100%
       &-wrapper
-        flex-direction: row
         gap: 16px
     &__message
       height: 180px
     &__button
       max-width: 288px
+      align-self: center
     &__checkbox-wrapper
       order: -1
   .footer
+    padding: 40px 0
     &__bottom
       flex-direction: column
-    &-copy
+      gap: 30px
+    &-info__text
       align-self: flex-start
-      &__text
-        margin-right: auto
+  .breadcrumbs
+    &__list
+      padding: 17px 0
+      flex-wrap: wrap
+    &__item
+      font-size: 12px
   .banner
-    height: 350px
-    &__content
-      margin-top: 30px
+    padding-top: 50px
+    margin-top: -50px
+    height: 220px
     &__title
+      padding: 15px 30px
       font-size: 29px
       line-height: 38px
   .vw-card
@@ -489,8 +503,12 @@
       font-size: 20px
       line-height: 25px
   .contacts
-    margin: 60px 0
-    &-item__image, &__map
+    padding: 20px 0 40px
+    &__title
+      margin-bottom: 30px
+      font-size: 40px
+      line-height: 50px
+    &__image, &__map
       height: 350px
   .tourBases__image, .goryachinsk__image
     height: 350px
@@ -505,10 +523,9 @@
       padding: 13px 23px
       width: 200px
       height: 44px
-    &-description
-      &__text
-        font-size: 16px
-        line-height: 21px
+    &-description__text
+      font-size: 16px
+      line-height: 21px
     &-info
       &__title
         margin-top: 30px
@@ -540,10 +557,9 @@
       order: -1
     &__block
       gap: 15px
-  .btn-download
-    &--blue
-      width: 143px
-      font-size: 16px
+  .btn-download--blue
+    width: 143px
+    font-size: 16px
   .excursion
     padding: 40px 0
     &__title
@@ -553,7 +569,7 @@
       height: 260px
 
 @media (max-width: 480px)
-  .container
+  .container, .booking__container
     padding: 0 15px
   .wrapper
     top: 73px
@@ -575,25 +591,24 @@
       line-height: 21px
     &__subtitle
       font-size: 14px
-  .header
-    &__menu
-      top: 73px
-    &-contact
-      &--mobile-visible
-        align-items: flex-start
-      &__link
-        justify-content: flex-start
-      &__btn
-        padding: 13px 40px
-  .menu__list
-    padding-left: 5px
-    text-align: left
-    align-items: flex-start
+  .header-contact
+    &--mobile-visible
+      align-items: flex-start
+    &__link
+      justify-content: flex-start
+    &__btn
+      padding: 13px 40px
+  .menu-mobile
+    top: 73px
+    &__list
+      padding-left: 5px
+      text-align: left
+      align-items: flex-start
   .promo
-    margin-top: -73px
-    padding-top: 111px
-    min-height: 460px
+    padding-top: 40px
+    min-height: 410px
     background-position: 35% 50%
+    text-align: center
     &__title
       margin-bottom: 13px
       font-size: 40px
@@ -602,20 +617,14 @@
       font-size: 14px
       line-height: 20px
     &__button
-      padding: 15px
-      margin: 0 auto
-      display: block
-      width: 226px
-      height: 48px
+      padding: 14px 48px
       font-size: 16px
       line-height: 19px
-      text-align: center
   .tours
-    margin-bottom: 45px
     &__wrapper
       position: relative
       height: 740px
-      gap: 16px
+      grid-template-columns: repeat(auto-fit, minmax(200px, 320px))
       overflow: hidden
       &::after
         content: ''
@@ -625,6 +634,8 @@
         left: 0
         bottom: 0
         background: linear-gradient(rgba($black,0),$white)
+    &__image
+      margin-bottom: 16px
     &__text
       margin-bottom: 18px
     &__btn--show
@@ -634,20 +645,18 @@
       margin-top: 30px
       position: relative
       height: 500px
-      row-gap: 26px
+      grid-template-columns: repeat(auto-fit, minmax(200px, 320px))
       overflow: hidden
     &__btn--show
       display: block
   .popularOffers
-    padding-top: 40px
     &__wrapper
-      padding-bottom: 60px
+      grid-template-columns: repeat(auto-fit, minmax(200px, 320px))
+    &__card
+      height: 288px
   .aboutBaikal
-    margin-bottom: 60px
-    &-map
-      margin-bottom: 40px
-      &__image
-        height: 360px
+    &-map__iframe
+      height: 360px
     &-info
       &__text
         font-size: 16px
@@ -656,46 +665,34 @@
         font-size: 14px
         line-height: 16px
       &__video
-        height: 200px
+        height: 220px
       &__button
         width: 44px
         height: 44px
         background-size: cover
-  .gallery
-    &__container
-      padding-top: 36px
-    &__top
-      margin-bottom: 33px
-    &__image
-      height: 210px
-    &__btn
-      top: -68px
-  .swiper
-    height: 210px
+  .gallery__btn
+    top: -68px
   .aboutUs
+    &__title
+      font-size: 22px
+      line-height: 29px
     &-advantages
       &__list
-        padding-bottom: 60px
         justify-content: space-between
-        gap: 15px
-        column-gap: 10px
+        row-gap: 15px
+        column-gap: 9px
       &__item
         min-width: 140px
         max-width: 140px
       &__text
-        font-size: 16px
+        font-size: 14px
         line-height: 18px
-  .booking__container
-    padding: 0 15px
   .banner
-    height: 250px
-    &__content
-      margin-top: 0
+    height: 150px
     &__title
-      font-size: 23px
-      line-height: 33px
-      &--center
-        margin-top: 25px
+      padding: 0
+      font-size: 22px
+      line-height: 29px
   .tourBases__image
     height: 290px
   .preview
@@ -741,27 +738,22 @@
       &:nth-child(4), &:nth-child(5)
         display: none
   .contacts
-    margin: 20px 0 40px
     &__title
       font-size: 30px
       line-height: 35px
-      margin-bottom: 30px
     &-item
-      &__desc
+      &__desc, &__text, &__link
         font-size: 16px
         line-height: 21px
-      &__image
-        margin: 30px 0
-        height: 250px
       &__title
         font-size: 22px
         line-height: 29px
       &__subtitle
         font-size: 18px
         line-height: 23px
-      &__text, &__link
-        font-size: 16px
-        line-height: 21px
+    &__image
+      margin-bottom: 30px
+      height: 250px
     &__adress
       font-weight: 500
       font-size: 16px

@@ -1,15 +1,9 @@
 .gallery
-  &__container
-    padding-top: 46px
-    padding-bottom: 80px
-    background-color: rgba($green, 0.07)
+  padding: 70px 0
+  background-color: rgba($green, 0.07)
   &__top
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin-bottom: 52px
-  &__inner
-    width: 293px
+    margin-bottom: 50px
+    padding-right: 160px
     display: flex
     justify-content: space-between
     align-items: center
@@ -18,8 +12,6 @@
     line-height: 19px
     text-decoration: underline
     color: $blue
-  &__buttons
-    width: 104px
   &__slider
     position: relative
   &__btn
@@ -29,7 +21,6 @@
     height: 44px
     background-position: center
     background-repeat: no-repeat
-    background-size: contain
     &--prev
       right: 62px
       background-image: url('../img/gallery/arrow-prev.svg')
@@ -37,13 +28,13 @@
       right: 0
       background-image: url('../img/gallery/arrow-next.svg')
   &__card
-    width: 352px
-    height: 256px
+    width: 100%
+    height: 100%
     border-radius: 6px
     overflow: hidden
   &__image
-    width: 352px
-    height: 256px
+    width: 100%
+    height: 100%
     object-fit: cover
     border-radius: 6px
 

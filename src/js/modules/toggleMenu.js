@@ -1,7 +1,7 @@
 const toggleMenu = () => {
-  const menu = document.querySelector('.header__menu');
+  const menu = document.querySelector('.menu-mobile');
   const menuOpen = document.querySelector('.header__button-menu');
-  const menuClose = document.querySelector('.menu__close');
+  const menuClose = document.querySelector('.menu-mobile__close');
 
   menuOpen.addEventListener('click', () => {
     menu.style.cssText = `

@@ -31,6 +31,11 @@ textarea
   &::placeholder
     font-size: 16px
     color: $grey
+button
+  padding: 0
+  background-color: transparent
+  cursor: pointer
+  border: none
 
 .wrapper
   display: flex
@@ -45,20 +50,9 @@ textarea
   max-width: 1180px
   margin: 0 auto
   padding: 0 30px
-.button
-  border: 1px solid $white
-  border-radius: 50px
-  color: $white
-  background-color: transparent
-  cursor: pointer
-  outline: none
 .btn-download
-  padding: 15px 38px
-  width: 234px
-  height: 50px
-  display: flex
-  justify-content: space-between
-  align-items: center
+  padding: 14px 40px
+  display: inline-flex
   font-weight: 500
   background-color: $green-light
   border: 1px solid $green-light
@@ -66,8 +60,6 @@ textarea
   color: $white
   &--blue
     padding: 0
-    width: 157px
-    height: 23px
     background-color: transparent
     border: none
     color: $blue
@@ -79,15 +71,15 @@ textarea
   font-size: 30px
   line-height: 39px
   text-align: center
+@mixin title-large
+  font-family: $ptserif
+  font-weight: 700
+  font-size: 44px
+  line-height: 58px
 .error
   font-size: 12px
   color: $red
   text-align: center
-.subtitle
-  color: $black-light-2
-#top
-  position: absolute
-  top: 0
 .to-top
   position: fixed
   right: 30px
@@ -99,4 +91,3 @@ textarea
   border-radius: 50%
   opacity: 0.7
   z-index: 1
-  outline: none
