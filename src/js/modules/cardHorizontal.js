@@ -1,6 +1,6 @@
 class CardHorizontal {
   constructor(wrapper) {
-    this.wrapper = document.querySelector(wrapper);
+    this.wrapper = document.getElementById(wrapper);
   }
 
   createCard(data) {

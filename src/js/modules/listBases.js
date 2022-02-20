@@ -1,6 +1,6 @@
 class ListBases {
   constructor(wrapper) {
-    this.wrapper = document.querySelector(wrapper);
+    this.wrapper = document.getElementById(wrapper);
   }
 
   createItem(data) {

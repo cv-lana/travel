@@ -5,7 +5,7 @@ import getData from './getData.js';
 
 const renderCards = () => {
   const placesInterest = () => {
-    const cards = new CardHorizontal('#placesInterest');
+    const cards = new CardHorizontal('placesInterest');
 
     getData().then(data => {
       cards.renderCard(data.placesInterest);
@@ -14,7 +14,7 @@ const renderCards = () => {
   placesInterest();
 
   const huntFish = () => {
-    const cards = new CardHorizontal('#huntingFishing');
+    const cards = new CardHorizontal('huntingFishing');
 
     getData().then(data => {
       cards.renderCard(data.huntFish);
@@ -23,7 +23,7 @@ const renderCards = () => {
   huntFish();
 
   const allExcursions = () => {
-    const cards = new CardVertical('#allExcursions');
+    const cards = new CardVertical('allExcursions');
 
     getData().then(data => {
       cards.renderCard(data.allExcursions);
@@ -32,7 +32,7 @@ const renderCards = () => {
   allExcursions();
 
   const extremeTours = () => {
-    const cards = new CardVertical('#extremeTours');
+    const cards = new CardVertical('extremeTours');
 
     getData().then(data => {
       cards.renderCard(data.extremeTours);
@@ -41,7 +41,7 @@ const renderCards = () => {
   extremeTours();
 
   const shipsYaсhts = () => {
-    const cards = new CardSquare('#shipsYachts');
+    const cards = new CardSquare('shipsYachts');
 
     getData().then(data => {
       cards.renderCard(data.shipsYaсhts);
@@ -50,7 +50,7 @@ const renderCards = () => {
   shipsYaсhts();
 
   const transportServices = () => {
-    const cards = new CardSquare('#transportServices');
+    const cards = new CardSquare('transportServices');
 
     getData().then(data => {
       cards.renderCard(data.transportServices);
@@ -59,21 +59,30 @@ const renderCards = () => {
   transportServices();
 
   const catalogGoryachinsk = () => {
-    const cards = new CardVertical('#catalog-goryachinsk');
+    const cards = new CardVertical('catalog-goryachinsk');
 
     getData().then(data => {
-      cards.renderCard(data.bases.goryachinsk);
+      cards.renderCard(data.goryachinsk);
     });
   };
   catalogGoryachinsk();
 
   const hotelsUlanUde = () => {
-    const cards = new CardVertical('#hotelsUlanUde');
+    const cards = new CardVertical('hotelsUlanUde');
 
     getData().then(data => {
       cards.renderCard(data.ulanUde);
     });
   };
   hotelsUlanUde();
+
+  const catalogBaikalpriboy = () => {
+    const cards = new CardVertical('catalog-baikalpriboy');
+
+    getData().then(data => {
+      cards.renderCard(data.baikalPriboy);
+    });
+  };
+  catalogBaikalpriboy();
 };
 export default renderCards;
