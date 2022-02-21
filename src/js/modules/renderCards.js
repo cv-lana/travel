@@ -84,5 +84,32 @@ const renderCards = () => {
     });
   };
   catalogBaikalpriboy();
+
+  const catalogGremyachinsk = () => {
+    const cards = new CardVertical('catalog-gremyachinsk');
+
+    getData().then(data => {
+      cards.renderCard(data.gremyachinsk);
+    });
+  };
+  catalogGremyachinsk();
+
+  const catalogKultushnaya = () => {
+    const cards = new CardVertical('catalog-kultushnaya');
+
+    getData().then(data => {
+      cards.renderCard(data.kultushnaya);
+    });
+  };
+  catalogKultushnaya();
+
+  const catalogLemasovo = () => {
+    const cards = new CardVertical('catalog-lemasovo');
+
+    getData().then(data => {
+      cards.renderCard(data.lemasovo);
+    });
+  };
+  catalogLemasovo();
 };
 export default renderCards;

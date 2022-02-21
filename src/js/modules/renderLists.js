@@ -19,5 +19,32 @@ const renderLists = () => {
     });
   };
   basesBaikalpriboy();
+
+  const basesGremyachinsk = () => {
+    const lists = new ListBases('bases-gremyachinsk');
+
+    getData().then(data => {
+      lists.renderList(data.gremyachinsk);
+    });
+  };
+  basesGremyachinsk();
+
+  const basesKultushnaya = () => {
+    const lists = new ListBases('bases-kultushnaya');
+
+    getData().then(data => {
+      lists.renderList(data.kultushnaya);
+    });
+  };
+  basesKultushnaya();
+
+  const basesLemasovo = () => {
+    const lists = new ListBases('bases-lemasovo');
+
+    getData().then(data => {
+      lists.renderList(data.lemasovo);
+    });
+  };
+  basesLemasovo();
 };
 export default renderLists;
