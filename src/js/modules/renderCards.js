@@ -111,5 +111,32 @@ const renderCards = () => {
     });
   };
   catalogLemasovo();
+
+  const catalogListvyanka = () => {
+    const cards = new CardVertical('catalog-listvyanka');
+
+    getData().then(data => {
+      cards.renderCard(data.listvyanka);
+    });
+  };
+  catalogListvyanka();
+
+  const catalogMaksimiha = () => {
+    const cards = new CardVertical('catalog-maksimiha');
+
+    getData().then(data => {
+      cards.renderCard(data.maksimiha);
+    });
+  };
+  catalogMaksimiha();
+
+  const catalogPosolskoe = () => {
+    const cards = new CardVertical('catalog-posolskoe');
+
+    getData().then(data => {
+      cards.renderCard(data.posolskoe);
+    });
+  };
+  catalogPosolskoe();
 };
 export default renderCards;

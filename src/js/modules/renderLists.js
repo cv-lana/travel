@@ -46,5 +46,32 @@ const renderLists = () => {
     });
   };
   basesLemasovo();
+
+  const basesListvyanka = () => {
+    const lists = new ListBases('bases-listvyanka');
+
+    getData().then(data => {
+      lists.renderList(data.listvyanka);
+    });
+  };
+  basesListvyanka();
+
+  const basesMaksimiha = () => {
+    const lists = new ListBases('bases-maksimiha');
+
+    getData().then(data => {
+      lists.renderList(data.maksimiha);
+    });
+  };
+  basesMaksimiha();
+
+  const basesPosolskoe = () => {
+    const lists = new ListBases('bases-posolskoe');
+
+    getData().then(data => {
+      lists.renderList(data.posolskoe);
+    });
+  };
+  basesPosolskoe();
 };
 export default renderLists;
