@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/head.html', {
+"title":'Турбазы в п. Турка'
+})
+
+<body>
+  @@include('components/preloader.html')
+
+  <div class="wrapper">
+    @@include('components/header-page.html')
+
+    <main class="main">
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item breadcrumbs__item--color-grey">
+              <a class="link breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--color-grey">
+              <a class="link breadcrumbs__link" href="tour-bases.html">Турбазы</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--color-grey">
+              <span class="breadcrumbs__text">Турка</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="region">
+        <div class="container">
+          <div class="region__wrapper">
+            <div class="bases">
+              <h2 class="bases__title">Турбазы Турки</h2>
+              <ul class="bases__list" id="bases-turka"></ul>
+            </div>
+
+            <div class="region__content">
+              <h1 class="region__title">Турка</h1>
+              <img class="region__image" src="img/turka/turka-bg.jpg" alt="Турка">
+              <div class="region-description">
+                <p class="region-description__text">
+                  Поселок Турка находится на&nbsp;восточном берегу озера Байкал в&nbsp;169&nbsp;км от&nbsp;города
+                  Улан-Удэ, в&nbsp;устье одноименной реки. Вокруг поселка богатые охотничьи угодья, а&nbsp;земля
+                  и&nbsp;мягкий климат позволяют выращивать без утепления малину и&nbsp;клубнику. Около села обширные
+                  плантации клюквы, черники, брусники, грибов.
+                </p>
+                <p class="region-description__text">
+                  Порт в&nbsp;поселке Турка стал первым участком, с&nbsp;которого началось создание особой экономической
+                  зоны &laquo;Байкальская гавань&raquo; в&nbsp;Бурятии. Здесь планируется строительство различных
+                  объектов для отдыха, таких как: гостиничный комплекс, коттеджный поселок, яхт-клуб, комплекс
+                  &laquo;Рыбацкая деревня&raquo;, спортивный центр, юрточный туристический поселок, кафе
+                  и&nbsp;рестораны, открытый бассейн с&nbsp;байкальской водой, прогулочные зоны с&nbsp;паркамии
+                  и&nbsp;многое другое.
+                </p>
+                <p class="region-description__text">
+                  Сейчас в&nbsp;Турке уже построена набережная и&nbsp;разводной пешеходный мост. Местность Турка станет
+                  одним из&nbsp;ключевых центров водного туризма и&nbsp;первым современным портом на&nbsp;восточном
+                  побережье Байкала.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog">
+            <h2 class="catalog__title">Выберите турбазу для&nbsp;отдыха</h2>
+            <div class="catalog__wrapper" id="catalog-turka"></div>
+          </div>
+        </div>
+      </section>
+
+      @@include('components/booking.html')
+    </main>
+
+    @@include('components/footer.html')
+    @@include('components/modal.html')
+    <button class="to-top" type="button"></button>
+  </div>
+</body>
+
+</html>

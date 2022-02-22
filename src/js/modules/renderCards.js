@@ -138,5 +138,50 @@ const renderCards = () => {
     });
   };
   catalogPosolskoe();
+
+  const catalogSuhaya = () => {
+    const cards = new CardVertical('catalog-suhaya');
+
+    getData().then(data => {
+      cards.renderCard(data.suhaya);
+    });
+  };
+  catalogSuhaya();
+
+  const catalogTurka = () => {
+    const cards = new CardVertical('catalog-turka');
+
+    getData().then(data => {
+      cards.renderCard(data.turka);
+    });
+  };
+  catalogTurka();
+
+  const catalogUstBarguzin = () => {
+    const cards = new CardVertical('catalog-ustBarguzin');
+
+    getData().then(data => {
+      cards.renderCard(data.ustBarguzin);
+    });
+  };
+  catalogUstBarguzin();
+
+  const catalogChivyrkui = () => {
+    const cards = new CardVertical('catalog-chivyrkuiskyZaliv');
+
+    getData().then(data => {
+      cards.renderCard(data.chivyrkuiskyZaliv);
+    });
+  };
+  catalogChivyrkui();
+
+  const catalogEnhaluk = () => {
+    const cards = new CardVertical('catalog-enhaluk');
+
+    getData().then(data => {
+      cards.renderCard(data.enhaluk);
+    });
+  };
+  catalogEnhaluk();
 };
 export default renderCards;

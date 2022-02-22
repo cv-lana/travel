@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/head.html', {
+"title":'Турбазы в п. Усть-Баргузин'
+})
+
+<body>
+  @@include('components/preloader.html')
+
+  <div class="wrapper">
+    @@include('components/header-page.html')
+
+    <main class="main">
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item breadcrumbs__item--color-grey">
+              <a class="link breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--color-grey">
+              <a class="link breadcrumbs__link" href="tour-bases.html">Турбазы</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--color-grey">
+              <span class="breadcrumbs__text">Усть-Баргузин</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="region">
+        <div class="container">
+          <div class="region__wrapper">
+            <div class="bases">
+              <h2 class="bases__title">Турбазы Усть-Баргузина</h2>
+              <ul class="bases__list" id="bases-ustBarguzin"></ul>
+            </div>
+
+            <div class="region__content">
+              <h1 class="region__title">Усть-Баргузин</h1>
+              <img class="region__image" src="img/ust-barguzin/ust-barguzin-bg.jpg" alt="Усть-Баргузин">
+              <div class="region-description">
+                <p class="region-description__text">
+                  Усть-Баргузин&nbsp;&mdash; посёлок городского типа в&nbsp;Баргузинском районе Бурятии. Расположен
+                  в&nbsp;устье реки Баргузин в&nbsp;50&nbsp;километрах к&nbsp;юго-западу от&nbsp;районного
+                  центра&nbsp;&mdash; поселка Баргузин и&nbsp;в&nbsp;270&nbsp;км от&nbsp;города Улан-Удэ. На&nbsp;берегу
+                  реки находится пристань, где в&nbsp;теплое время года через реку Баргузин ходит паромная переправа.
+                </p>
+                <p class="region-description__text">
+                  Летом Усть-Баргузин становится достаточно популярным местом для посещения. Через него проезжают
+                  туристы, направляющиеся сухопутным путем в&nbsp;Баргузинскую долину или в&nbsp;национальный парк
+                  &laquo;Забайкальский&raquo;. Именно за&nbsp;Усть-Баргузином начинаются владения Забайкальского
+                  национального парка, который охватывает акваторию Баргузинского и&nbsp;Чивыркуйского заливов, Ушканьи
+                  острова.
+                </p>
+                <p class="region-description__text">
+                  Это место считается одним из&nbsp;лухших на&nbsp;озере Байкал&nbsp;&mdash; живописная природа,
+                  мелководные песчаные пляжи, горячие источники, множество удивительных природных и&nbsp;культурных
+                  уголков привлекают сюда большое количество путешественников.
+                </p>
+              </div>
+
+              <div class="region-info">
+                <h3 class="region-info__title">Как добраться до&nbsp;Усть-Баргузина?</h3>
+                <div class="region-info__wrapper">
+                  <p class="region-info__text">
+                    Проезд маршрутными автобусами с&nbsp;автовокзала&nbsp;г. Улан-Удэ (ул. Советская, 1Б).
+                  </p>
+                </div>
+
+                <div class="region-info__wrapper">
+                  <div class="region-info__inner">
+                    <p class="region-info__subtitle">Время отправления:</p>
+                    <span class="region-info__text">ежедневно в 7:00 и 15:00</span>
+                  </div>
+                  <div class="region-info__inner">
+                    <p class="region-info__subtitle">Время в пути:</p>
+                    <span class="region-info__text">3,5 - 4 часа</span>
+                  </div>
+                  <div class="region-info__inner">
+                    <p class="region-info__subtitle">Заказ мест в автобусе по телефону:</p>
+                    <span class="region-info__text">8-951-626-88-88</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog">
+            <h2 class="catalog__title">Выберите турбазу для&nbsp;отдыха</h2>
+            <div class="catalog__wrapper" id="catalog-ustBarguzin"></div>
+          </div>
+        </div>
+      </section>
+
+      @@include('components/booking.html')
+    </main>
+
+    @@include('components/footer.html')
+    @@include('components/modal.html')
+    <button class="to-top" type="button"></button>
+  </div>
+</body>
+
+</html>

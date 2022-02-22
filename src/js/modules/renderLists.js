@@ -73,5 +73,50 @@ const renderLists = () => {
     });
   };
   basesPosolskoe();
+
+  const basesSuhaya = () => {
+    const lists = new ListBases('bases-suhaya');
+
+    getData().then(data => {
+      lists.renderList(data.suhaya);
+    });
+  };
+  basesSuhaya();
+
+  const basesTurka = () => {
+    const lists = new ListBases('bases-turka');
+
+    getData().then(data => {
+      lists.renderList(data.turka);
+    });
+  };
+  basesTurka();
+
+  const basesUstBarguzin = () => {
+    const lists = new ListBases('bases-ustBarguzin');
+
+    getData().then(data => {
+      lists.renderList(data.ustBarguzin);
+    });
+  };
+  basesUstBarguzin();
+
+  const basesChivyrkui = () => {
+    const lists = new ListBases('bases-chivyrkuiskyZaliv');
+
+    getData().then(data => {
+      lists.renderList(data.chivyrkuiskyZaliv);
+    });
+  };
+  basesChivyrkui();
+
+  const basesEnhaluk = () => {
+    const lists = new ListBases('bases-enhaluk');
+
+    getData().then(data => {
+      lists.renderList(data.enhaluk);
+    });
+  };
+  basesEnhaluk();
 };
 export default renderLists;
