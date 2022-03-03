@@ -1,8 +1,4 @@
 class CardVertical {
-  constructor(wrapper) {
-    this.wrapper = document.getElementById(wrapper);
-  }
-
   createCard(data) {
     const div = document.createElement('div');
     div.classList.add('vh-card');
@@ -29,15 +25,6 @@ class CardVertical {
     `;
 
     return div;
-  }
-
-  renderCard(data) {
-    const cards = data.map(this.createCard);
-    cards.forEach(card => {
-      if (this.wrapper) {
-        this.wrapper.append(card);
-      }
-    })
   }
 }
 

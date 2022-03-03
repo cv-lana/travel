@@ -78,29 +78,33 @@ const validateForm = () => {
     }
   })
 
-  message.addEventListener('blur', () => {
-    if (!regMessage.test(message.value)) {
-      message.nextElementSibling.textContent = 'Только кирилица';
-    } else {
-      message.value = message.value.trim().replace(/\s+/g, ' ');
-      message.value = message.value.replace(/^[а-яё]/g, item => item.toUpperCase());
-      message.value = message.value.replace(/-{2,}/g, '-');
-      message.nextElementSibling.textContent = '';
-    }
-  })
+  if (message) {
+    message.addEventListener('blur', () => {
+      if (!regMessage.test(message.value)) {
+        message.nextElementSibling.textContent = 'Только кирилица';
+      } else {
+        message.value = message.value.trim().replace(/\s+/g, ' ');
+        message.value = message.value.replace(/^[а-яё]/g, item => item.toUpperCase());
+        message.value = message.value.replace(/-{2,}/g, '-');
+        message.nextElementSibling.textContent = '';
+      }
+    })
+  }
 
-  wrapperInputLocality.addEventListener('click', (e) => {
-    const target = e.target;
-    if (target.closest('.form__input')) {
-      wrapperListLocality.classList.toggle('locality--open');
-    }
+  if (wrapperInputLocality) {
+    wrapperInputLocality.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target.closest('.form__input')) {
+        wrapperListLocality.classList.toggle('locality--open');
+      }
 
-    if (target.closest('.locality__item')) {
-      const formInputLocality = document.getElementById('locality');
-      formInputLocality.value = target.textContent;
-      wrapperListLocality.classList.remove('locality--open');
-    }
-  });
+      if (target.closest('.locality__item')) {
+        const formInputLocality = document.getElementById('locality');
+        formInputLocality.value = target.textContent;
+        wrapperListLocality.classList.remove('locality--open');
+      }
+    });
+  }
 
   getData().then(data => {
     renderList(data.tourBases);

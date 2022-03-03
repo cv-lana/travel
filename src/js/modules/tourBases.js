@@ -36,14 +36,14 @@ const tourBases = () => {
   const renderCards = (data) => {
     const cards = data.map(createCard);
     cards.forEach(card => {
-      if (wrapper) {
-        wrapper.append(card);
-      }
+      wrapper.append(card);
     })
   };
 
-  getData().then(data => {
-    renderCards(data.tourBases);
-  });
+  if (wrapper) {
+    getData().then(data => {
+      renderCards(data.tourBases);
+    });
+  }
 };
 export default tourBases;

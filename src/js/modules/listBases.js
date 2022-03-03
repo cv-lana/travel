@@ -1,6 +1,6 @@
 class ListBases {
   constructor(wrapper) {
-    this.wrapper = document.getElementById(wrapper);
+    this.wrapper = document.querySelector(wrapper);
   }
 
   createItem(data) {
@@ -17,10 +17,26 @@ class ListBases {
   renderList(data) {
     const cards = data.map(this.createItem);
     cards.forEach(card => {
-      if (this.wrapper) {
-        this.wrapper.append(card);
-      }
+      this.wrapper.append(card);
     })
+  }
+
+  getData() {
+    if (this.wrapper) {
+      const list = this.wrapper.dataset.bases;
+
+      fetch(`https://travel-d0bd7-default-rtdb.firebaseio.com/db/${list}.json`)
+        .then((response) => {
+          return response.json();
+        })
+        .then(data => {
+          this.renderList(data);
+        })
+    }
+  }
+
+  init() {
+    this.getData();
   }
 }
 export default ListBases;

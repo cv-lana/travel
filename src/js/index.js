@@ -7,8 +7,8 @@ import validateForm from './modules/validateForm.js';
 import { showBlockTours, showBlockDirections } from './modules/functions.js';
 import Fancybox from "@fancyapps/ui";
 import tourBases from './modules/tourBases.js';
-import renderCards from './modules/renderCards.js';
 import renderLists from './modules/renderLists.js';
+import renderCards from './modules/renderCards.js';
 
 preload();
 toggleModal();
@@ -19,5 +19,5 @@ showBlockTours();
 showBlockDirections();
 validateForm();
 tourBases();
-renderCards();
 renderLists();
+renderCards();
