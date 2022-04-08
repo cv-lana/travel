@@ -1,0 +1,39 @@
+.info
+  padding: 60px 0
+  &__content
+    display: flex
+    flex-direction: row
+    gap: 32px
+    &:not(:last-child)
+      margin-bottom: 50px
+      padding-bottom: 50px
+      border-bottom: 1px solid $white-light
+  &__wrapper
+    width: 736px
+  &__images
+    width: 352px
+    display: grid
+    gap: 32px
+  &__img
+    width: 100%
+    border-radius: 6px
+    object-fit: cover
+  &__title
+    margin-bottom: 30px
+    font-size: 30px
+    line-height: 35px
+  &__list
+    padding-left: 20px
+    margin-bottom: 20px
+  &__item
+    list-style: decimal
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__text
+    line-height: 25px
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__link
+    line-height: 25px
+    text-decoration: underline
+    color: $blue

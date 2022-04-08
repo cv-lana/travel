@@ -1,6 +1,8 @@
 @media (max-width: 1600px)
   .banner
     height: 470px
+  .map__iframe
+    height: 600px
 
 @media (max-width: 1200px)
   .header-contact
@@ -98,7 +100,7 @@
       .sq-card__image
         transform: scale(1.1)
         transition: transform 0.5s ease 0s
-  .vh-card, .vw-card, .tourBases__card
+  .vh-card, .vw-card, .tourBases__card, .hits__card
     &:hover
       box-shadow: 0 3px 29px 0 rgba($black, 0.3)
       .vh-card__title
@@ -291,6 +293,26 @@
     &-gallery__card
       width: 342px
       height: 249px
+  .map
+    &__iframe
+      height: 450px
+    &__wrapper
+      width: 100%
+    &__image
+      height: 1110px
+  .info
+    &__content
+      flex-direction: column
+    &__wrapper, &__images
+      width: 100%
+  .info__images, .photogallery__wrapper
+    grid-template-columns: repeat(auto-fit, minmax(219px, 1fr))
+    gap: 25px
+  .hits
+    &__wrapper
+      grid-template-columns: 1fr
+    &__list
+      flex-direction: row
 
 @media (max-width: 768px)
   .promo
@@ -373,6 +395,22 @@
       line-height: 43px
     &__image
       height: 330px
+  .map
+    &__image
+      height: 800px
+  .info__images, .photogallery__wrapper
+    grid-template-columns: repeat(auto-fit, minmax(246px, 1fr))
+  .hits
+    &__card
+      &-title
+        margin-bottom: 15px
+        font-size: 20px
+        line-height: 26px
+      &-description
+        margin-bottom: 15px
+    &__card-description, &__info
+      font-size: 14px
+      line-height: 18px
 
 @media (max-width: 576px)
   .promo
@@ -501,12 +539,14 @@
     &__title
       font-size: 20px
       line-height: 25px
-  .contacts
+  .contacts, .map, .info, .photogallery, .hits
     padding: 20px 0 40px
+  .contacts, .map, .photogallery, .hits
     &__title
       margin-bottom: 30px
       font-size: 40px
       line-height: 50px
+  .contacts
     &__image, &__map
       height: 350px
   .tourBases__image, .region__image
@@ -567,6 +607,23 @@
       line-height: 37px
     &__image
       height: 260px
+  .map
+    &__iframe
+      height: 380px
+    &__image
+      height: 600px
+  .info__images, .photogallery__wrapper
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    gap: 21px
+  .hits
+    &__list
+      flex-wrap: wrap
+    &__tab
+      text-align: left
+    &__card
+      grid-template-columns: 1fr
+      &-image
+        height: 290px
 
 @media (max-width: 480px)
   .container, .booking__container
@@ -697,6 +754,9 @@
     height: 290px
   .preview
     padding: 40px 0
+    &__title
+      font-size: 18px
+      line-height: 23px
     &__text
       font-size: 16px
       line-height: 21px
@@ -744,10 +804,11 @@
     &__item
       &:nth-child(4), &:nth-child(5)
         display: none
-  .contacts
+  .contacts, .map, .photogallery, .hits
     &__title
       font-size: 30px
       line-height: 35px
+  .contacts
     &-item
       &__desc, &__text, &__link
         font-size: 16px
@@ -833,3 +894,33 @@
   .active
     display: block
     margin-top: 30px
+  .map
+    &__iframe
+      height: 350px
+    &__inner
+      margin-bottom: 30px
+      &-text
+        font-size: 16px
+        line-height: 21px
+      &-title
+        font-size: 22px
+        line-height: 29px
+    &__subtitle
+      font-size: 18px
+      line-height: 23px
+    &__image
+      height: 450px
+  .info
+    &__content:not(:last-child)
+      margin-bottom: 30px
+      padding-bottom: 30px
+    &__text
+      font-size: 16px
+      line-height: 21px
+  .info__title, .photogallery__title
+    font-size: 22px
+    line-height: 29px
+    text-align: center
+  .info__images, .photogallery__wrapper
+    grid-template-columns: repeat(auto-fit, minmax(200px, 320px))
+    justify-content: center

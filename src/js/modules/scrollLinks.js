@@ -2,22 +2,12 @@ const scrollLinks = () => {
   const allLinks = document.querySelectorAll('[data-scroll=link]');
   const arrowTop = document.querySelector('.to-top');
 
-  // const arrLinks = [...allLink];
-
   const windowScroll = () => {
     const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
     if (currentScroll > 0) {
       arrowTop.style.visibility = 'visible';
     } else {
       arrowTop.style.visibility = 'hidden';
-    }
-  };
-
-  const smoothScroll = () => {
-    const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    if (currentScroll > 0) {
-      window.requestAnimationFrame(smoothScroll);
-      window.scrollTo(0, currentScroll - (currentScroll / 15));
     }
   };
 
@@ -34,7 +24,12 @@ const scrollLinks = () => {
     }
   })
 
-  arrowTop.addEventListener('click', smoothScroll);
+  arrowTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 
   window.addEventListener('load', () => {
     windowScroll();
