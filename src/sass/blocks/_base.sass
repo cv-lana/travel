@@ -1,10 +1,8 @@
 .base
   padding: 54px 0 80px
-  &__wrapper
-    display: flex
-    gap: 32px
   &__content
-    width: 736px
+    max-width: 832px
+    width: 100%
   &__title
     margin-bottom: 51px
     font-family: $ptserif
@@ -18,50 +16,51 @@
     border-radius: 6px
     object-fit: cover
   &__btn
-    margin-bottom: 29px
+    margin-bottom: 30px
   &__icon
     margin-right: 12px
     fill: $white
     &-blue
       margin-right: 12px
       fill: $blue
-  &-description
-    &__text
+  &__description
+    margin-bottom: 40px
+    &-text
       line-height: 25px
       color: $black-light-2
       &:not(:last-child)
         margin-bottom: 15px
-  &-info
-    &__title
-      margin: 40px 0 22px
+  &__info
+    &-wrapper
+      &:not(:last-child)
+        margin-bottom: 30px
+    &-title
+      margin-bottom: 22px
       font-weight: 700
       font-size: 22px
       line-height: 29px
       &--strong
         font-size: 30px
         line-height: 35px
-    &__wrapper
-      &:not(:last-child)
-        margin-bottom: 29px
-    &__text
+    &-text
       line-height: 25px
       color: $black-light-2
       &:not(:last-child)
         margin-bottom: 15px
       &--strong
         font-weight: 700
-    &__inner
+    &-inner
       &:not(:last-child)
         margin-bottom: 17px
       &:last-child
         margin-top: 17px
-    &__subtitle
+    &-subtitle
       font-weight: 700
       line-height: 25px
       color: $black-light-2
-    &__list
+    &-list
       padding-left: 21px
-    &__item
+    &-item
       list-style-type: disc
       line-height: 25px
       color: $black-light-2
@@ -106,9 +105,10 @@
     &__text
       &-strong
         font-weight: 700
-  &-description
+  &__button
     position: relative
     text-decoration: underline
+    align-self: flex-start
     color: $grey
     cursor: pointer
     &::after

@@ -9,36 +9,22 @@ class CardsMain {
 
   renderCard(data) {
     const cardType = this.wrapper.dataset.cardType;
+    let cards;
 
     if (cardType === 'vertical') {
       const type = new CardVertical();
-      const cards = data.map(type.createCard);
-      cards.forEach(card => {
-        if (this.wrapper) {
-          this.wrapper.append(card);
-        }
-      })
-    }
-
-    if (cardType === 'horizontal') {
+      cards = data.map(type.createCard);
+    } else if (cardType === 'horizontal') {
       const type = new CardHorizontal();
-      const cards = data.map(type.createCard);
-      cards.forEach(card => {
-        if (this.wrapper) {
-          this.wrapper.append(card);
-        }
-      })
+      cards = data.map(type.createCard);
+    } else if (cardType === 'square') {
+      const type = new CardSquare();
+      cards = data.map(type.createCard);
     }
 
-    if (cardType === 'square') {
-      const type = new CardSquare();
-      const cards = data.map(type.createCard);
-      cards.forEach(card => {
-        if (this.wrapper) {
-          this.wrapper.append(card);
-        }
-      })
-    }
+    cards.forEach(card => {
+      this.wrapper.append(card);
+    })
   }
 
   getData() {

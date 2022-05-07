@@ -89,8 +89,8 @@
       border-color: $blue-dark
     &-download
       &:hover
-        background-color: green
-        border-color: green
+        background-color: $green-dark
+        border-color: $green-dark
   .tourBases-description__button, .vw-card__button
     &:hover
       background-color: $blue
@@ -148,6 +148,8 @@
       right: 0
       bottom: 0
       left: 0
+      width: 100%
+      height: 100%
       transform: translateX(100%)
       background-color: $white
       &__close
@@ -280,11 +282,8 @@
       width: 100%
     &__image
       height: 450px
-  .base
-    &__content
-      width: 100%
-    &__image
-      height: 450px
+  .base__image
+    height: 450px
   .excursion
     &__title, &__info
       width: 100%
@@ -305,7 +304,7 @@
       flex-direction: column
     &__wrapper, &__images
       width: 100%
-  .info__images, .photogallery__wrapper
+  .info__images, .photogallery__wrapper, .page__gallery
     grid-template-columns: repeat(auto-fit, minmax(219px, 1fr))
     gap: 25px
   .hits
@@ -398,7 +397,7 @@
   .map
     &__image
       height: 800px
-  .info__images, .photogallery__wrapper
+  .info__images, .photogallery__wrapper, .page__gallery
     grid-template-columns: repeat(auto-fit, minmax(246px, 1fr))
   .hits
     &__card
@@ -539,9 +538,9 @@
     &__title
       font-size: 20px
       line-height: 25px
-  .contacts, .map, .info, .photogallery, .hits
+  .contacts, .map, .info, .photogallery, .hits, .page
     padding: 20px 0 40px
-  .contacts, .map, .photogallery, .hits
+  .contacts, .map, .photogallery, .hits, .page
     &__title
       margin-bottom: 30px
       font-size: 40px
@@ -612,7 +611,7 @@
       height: 380px
     &__image
       height: 600px
-  .info__images, .photogallery__wrapper
+  .info__images, .photogallery__wrapper, .page__gallery
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
     gap: 21px
   .hits
@@ -804,7 +803,7 @@
     &__item
       &:nth-child(4), &:nth-child(5)
         display: none
-  .contacts, .map, .photogallery, .hits
+  .contacts, .map, .photogallery, .hits, .page
     &__title
       font-size: 30px
       line-height: 35px
@@ -921,6 +920,14 @@
     font-size: 22px
     line-height: 29px
     text-align: center
-  .info__images, .photogallery__wrapper
+  .info__images, .photogallery__wrapper, .page__gallery
     grid-template-columns: repeat(auto-fit, minmax(200px, 320px))
     justify-content: center
+  .page
+    &__description, &__info
+      &-text, &-item
+        font-size: 16px
+        line-height: 21px
+    &__text
+      font-size: 16px
+      line-height: 21px

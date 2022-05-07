@@ -9,8 +9,9 @@
     "build": "gulp build --production"
   },
   "browserslist": [
-    "last 3 versions",
-    "> 1%"
+    "last 2 versions",
+    "> 0.2%",
+    "not dead"
   ],
   "repository": {
     "type": "git",
