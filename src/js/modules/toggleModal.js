@@ -2,15 +2,15 @@ import { disableScroll, enableScroll } from '../modules/functions.js';
 
 const toggleModal = () => {
   const btnModal = document.querySelectorAll('[data-btn=modal]');
-  const modal = document.querySelector('.modal__overlay');
+  const modal = document.querySelectorAll('.modal');
 
   const modalOpen = () => {
-    modal.classList.add('modal__overlay--open');
+    modal[0].style.display = 'block';
     disableScroll();
   };
 
-  const modalClose = () => {
-    modal.classList.remove('modal__overlay--open');
+  const modalClose = (item) => {
+    item.style.display = 'none';
     enableScroll();
   };
 
@@ -18,18 +18,14 @@ const toggleModal = () => {
     item.addEventListener('click', modalOpen);
   });
 
-  modal.addEventListener('click', (event) => {
-    const target = event.target;
-    if (target.matches('.modal__close') || target.matches('.modal__overlay')) {
-      modalClose();
-    }
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      modalClose();
-    }
-  });
+  modal.forEach(item => {
+    item.addEventListener('click', (event) => {
+      const target = event.target;
+      if (target.matches('.modal__close') || target.matches('.modal__overlay') || target.matches('.modal__button--response')) {
+        modalClose(item);
+      }
+    });
+  })
 };
 
 export default toggleModal;

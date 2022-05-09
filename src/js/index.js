@@ -10,6 +10,7 @@ import tourBases from './modules/tourBases.js';
 import renderLists from './modules/renderLists.js';
 import renderCards from './modules/renderCards.js';
 import tabs from './modules/tabs.js';
+import sendForm from './modules/sendForm.js';
 
 preload();
 toggleModal();
@@ -23,3 +24,4 @@ tourBases();
 renderLists();
 renderCards();
 tabs();
+sendForm();
