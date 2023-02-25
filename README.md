@@ -13,4 +13,4 @@
 - js-datepicker
 
 ### Ссылка для просмотра
-[Link](https://web-ron.ru/travel)
+[Link](https://cv-lana.github.io/travel/app/)
